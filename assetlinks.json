@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.viajapp.app",
+               "sha256_cert_fingerprints": ["AE:CA:AA:04:8F:F0:89:39:DE:94:5F:C7:14:7A:FE:AF:36:0D:25:27:6A:A5:01:28:7C:44:AA:43:E1:58:C5:C1"] }
+}]
