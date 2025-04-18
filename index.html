@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajapp - Viajes Compartidos</title>
+
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/sections/header-footer.css">
+    <link rel="stylesheet" href="/css/sections/hero.css">
+    <link rel="stylesheet" href="/css/sections/features.css">
+    <link rel="stylesheet" href="/css/sections/benefits.css">
+    <link rel="stylesheet" href="/css/sections/testimonials.css">
+    <link rel="stylesheet" href="/css/sections/download.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/viajapp-logo.png">
+    <meta name="theme-color" content="#2c5282">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-logo">
+            <img src="images/viajapp-logo.png" alt="Viajapp cargando">
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/viajapp-nombre-chato.png" alt="Viajapp">
+                </div>
+    
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Inicio</a></li>
+                    <li><a href="#features">Cómo Funciona</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <!-- <li><a href="#testimonials">Testimonios</a></li> -->
+                    <li><a href="#download">Descargar</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- <div class="social-link">
+                    <a href="https://instagram.com/viajapp_ar" target="_blank" aria-label="Instagram de Viajapp">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div> -->
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <div class="car-logo-container">
+                        <img src="images/viajapp-logo.png" alt="Viajapp Logo" class="car-logo">
+                    </div>
+                    <h1><span class="blue-text">Viajá más,</span> <span class="orange-text">gastá menos</span></h1>
+                    <p>Conectamos conductores con lugares disponibles y pasajeros que buscan una alternativa económica para viajar largas distancias en Argentina.</p>
+                    <div class="cta-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.viajapp.app&hl=es_AR" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-google-play"></i>
+                            Google Play
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-apple"></i>
+                            App Store (Próximamente)
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="phone-mockup">
+                        <img src="images/1.png" alt="Publicar viajes en Viajapp" class="phone-screen active">
+                        <img src="images/2.png" alt="Buscar viajes en Viajapp" class="phone-screen">
+                        <img src="images/3.png" alt="Explorar viajes cercanos en Viajapp" class="phone-screen">
+                        <img src="images/4.png" alt="Chatear con conductores en Viajapp" class="phone-screen">
+                        <img src="images/5.png" alt="Valorar viajes en Viajapp" class="phone-screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 data-aos="fade-up">¿Cómo funciona <span>Viajapp</span>?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Publicá tus viajes</h3>
+                    <p>Si sos conductor, compartí tus viajes de larga distancia y recuperá parte de tus gastos mientras ayudás a otros viajeros.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Buscá viajes disponibles</h3>
+                    <p>Encontrá viajes desde Córdoba a Rosario, Mar del Plata a La Plata y otras rutas populares a precios más accesibles que el colectivo o el tren.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Explorá viajes cercanos</h3>
+                    <p>Descubrí viajes disponibles cerca de tu ubicación y elegí el que mejor se adapte a tus necesidades y presupuesto.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Chateá con conductores</h3>
+                    <p>Coordiná los detalles de tu viaje directamente con el conductor a través de nuestro sistema de chat integrado.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Valorá tu experiencia</h3>
+                    <p>Calificá a los conductores y pasajeros para construir una comunidad confiable de viajeros argentinos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text" data-aos="fade-right">
+                    <h2>¿Por qué elegir <span>Viajapp</span>?</h2>
+                    <ul class="benefits-list">
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <div>
+                                <h3>Ahorrá en tus viajes</h3>
+                                <p>Viajá a precios más accesibles que el colectivo de larga distancia o el tren. Ideal para estudiantes y viajeros frecuentes.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h3>Viajá seguro/a</h3>
+                                <p>Sistema de valoraciones y perfiles verificados para garantizar la confianza entre usuarios. Tu seguridad es nuestra prioridad.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h3>Conocé gente</h3>
+                                <p>Conectá con otros viajeros y hacé que tus trayectos sean más amenos y sociales. ¡Hacé nuevas amistades en el camino!</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h3>Cuidá el medio ambiente</h3>
+                                <p>Reducí la huella de carbono al compartir viajes y disminuir la cantidad de vehículos en las rutas argentinas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits-image" data-aos="fade-left">
+                    <img src="images/2.png" alt="Buscar viajes en Viajapp" class="phone-screen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 data-aos="fade-up">Lo que dicen nuestros <span>usuarios</span></h2>
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-card active">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Viajo todas las semanas de Tandil a Capital y gracias a Viajapp pude reducir mis gastos a la mitad. Además conocí gente re copada en el camino."</p>
+                    <p class="testimonial-author">- Martín, 28 años</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Como conductora, me ayuda a cubrir los gastos de nafta y peajes cuando viajo a la costa. La app es súper intuitiva y el soporte es excelente."</p>
+                    <p class="testimonial-author">- Carolina, 34 años</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Soy estudiante y viajo seguido a Córdoba. Con Viajapp encontré una forma económica y segura de viajar. ¡Totalmente recomendable!"</p>
+                    <p class="testimonial-author">- Lucas, 22 años</p>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="download" id="download">
+        <div class="container">
+            <h2 data-aos="fade-up">¡Descargá <span>Viajapp</span> ahora!</h2>
+            <p data-aos="fade-up">Unite a nuestra comunidad de viajeros argentinos y comenzá a disfrutar de viajes compartidos más económicos y sustentables.</p>
+            <div class="cta-buttons" data-aos="fade-up">
+                <a href="https://play.google.com/store/apps/details?id=com.viajapp.app&hl=es_AR" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-google-play"></i>
+                    Google Play
+                </a>
+                <a href="#" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-apple"></i>
+                    App Store (Próximamente)
+                </a>
+            </div>
+            <div class="social-link-large" data-aos="fade-up">
+                <a href="https://instagram.com/viajapp_ar" target="_blank" aria-label="Seguinos en Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Seguinos en Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/viajapp-nombre.png" alt="Viajapp">
+                </div>
+                <p>&copy; 2025 Viajapp. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

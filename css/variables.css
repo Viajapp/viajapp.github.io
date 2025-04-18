@@ -1,0 +1,286 @@
+/* Variables y reset */
+:root {
+    --primary-color: #2c5282;
+    --secondary-color: #e05d44;
+    --black: #111;
+    --white: #f8f9fa;
+    --dark-color: #1a365d;
+    --gray-color: #333;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader-logo {
+    width: 100px;
+    height: 100px;
+    animation: pulse 1.5s infinite ease-in-out, spin 5s infinite linear;
+}
+
+.loader-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Botones */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.btn:hover:before {
+    left: 0;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(224, 93, 68, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #c04a38;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(224, 93, 68, 0.4);
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(44, 82, 130, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #234876;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(44, 82, 130, 0.4);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+/* Animaciones para elementos al hacer scroll */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(30px);
+}
+
+[data-aos="fade-right"] {
+    transform: translateX(-30px);
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(30px);
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-content, .benefits-content {
+        flex-direction: column;
+    }
+    
+    .hero-text, .benefits-text {
+        text-align: center;
+    }
+    
+    .benefits-text h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .benefits-list li {
+        justify-content: center;
+        text-align: left;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .app-logo-container {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .features, .benefits, .testimonials, .download {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .features h2, .benefits-text h2, .testimonials h2, .download h2 {
+        font-size: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .benefits-list i {
+        margin-bottom: 10px;
+    }
+    
+    .phone-mockup, .benefits-image .phone-screen {
+        width: 240px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text p, .download p {
+        font-size: 1rem;
+    }
+    
+    .phone-mockup, .benefits-image .phone-screen {
+        width: 220px;
+        height: 440px;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    .testimonial-card {
+        padding: 20px 15px;
+    }
+}
