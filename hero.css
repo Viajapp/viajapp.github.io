@@ -1,0 +1,191 @@
+/* Hero Section */
+.hero {
+  padding: 80px 0 120px 0;
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero:before { /*Circulo azul*/
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background-color: var(--primary-color);
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: 0;
+}
+  
+.hero:after { /*Circulo naranja*/
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background-color: var(--secondary-color);
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.car-logo-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.car-logo {
+  width: 160px;
+  animation: pulse 3s infinite ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px var(--black);
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text h1 .blue-text {
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-text h1 .orange-text {
+  color: var(--secondary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-text h1 span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.hero-text h1:hover span:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: var(--gray-color);
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.app-logo-container {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -40px;
+  right: 0;
+  z-index: 2;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.app-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.phone-mockup {
+  position: relative;
+  width: 280px;
+  height: 560px;
+  border-radius: 30px;
+  background-color: #000;
+  padding: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+  transition: var(--transition);
+}
+
+.phone-mockup:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.phone-screen.active {
+  opacity: 1;
+}
+
+/* Responsive para hero */
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .car-logo-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 60px 0 40px;
+  }
+}
+  
