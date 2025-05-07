@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Fallido - Viajapp</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/viajapp-logo.png">
+    <meta name="theme-color" content="#2c5282">
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #e05d44;
+            --black: #111;
+            --white: #f8f9fa;
+            --dark-color: #1a365d;
+            --gray-color: #718096;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background-color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .logo img {
+            height: 40px;
+            transition: var(--transition);
+        }
+
+        .status-page {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .status-icon {
+            font-size: 80px;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+        }
+
+        .status-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .status-message {
+            font-size: 1.2rem;
+            color: var(--gray-color);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(224, 93, 68, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #c04a38;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(224, 93, 68, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(44, 82, 130, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background-color: #234876;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(44, 82, 130, 0.4);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .status-title {
+                font-size: 2rem;
+            }
+            
+            .status-icon {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .status-title {
+                font-size: 1.8rem;
+            }
+            
+            .status-message {
+                font-size: 1rem;
+            }
+            
+            .status-icon {
+                font-size: 50px;
+            }
+            
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/viajapp-nombre.png" alt="Viajapp">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="status-page">
+        <div class="container">
+            <div class="status-icon">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <h1 class="status-title">Pago no completado</h1>
+            <p class="status-message">Hubo un problema al procesar tu pago. Por favor, intentá nuevamente o elegí otro método de pago.</p>
+            <div class="buttons">
+                <!-- <a href="#" class="btn btn-primary">
+                    <i class="fas fa-redo"></i>
+                    Intentar nuevamente
+                </a> -->
+                <a href="#" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver a la app
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Viajapp. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
