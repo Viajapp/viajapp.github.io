@@ -1,21 +1,20 @@
-    {
-      "applinks": {
-        "details": [
-          {
-            "appIDs": [ "KXFBZM3X7W.com.vldevelopment.viajapp" ], // Reemplaza TU_TEAM_ID con tu ID de equipo de Apple Developer
-            "components": [
-              {
-                "/": "/viaje/*" // Patrón para manejar enlaces /viaje/{id}
-              },
-              {
-                "/": "/profile/*" // Si también manejas enlaces /profile
-              },
-              {
-                "/": "/search/*" // Si también manejas enlaces /search
-              }
-              // Puedes añadir más patrones si tienes otros deep links
-            ]
-          }
+{
+    "applinks": {
+    "details": [
+        {
+        "appIDs": [ "KXFBZM3X7W.com.vldevelopment.viajapp" ],
+        "components": [
+            {
+            "/": "/viaje/*"
+            },
+            {
+            "/": "/profile/*"
+            },
+            {
+            "/": "/search/*"
+            }
         ]
-      }
+        }
+    ]
     }
+}
