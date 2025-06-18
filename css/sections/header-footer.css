@@ -15,9 +15,8 @@ nav {
 }
 
 .logo img {
-  height: 40px;
+  height: 80px;
   transition: var(--transition);
-  padding-top: 12px;
 }
 
 .logo img:hover {
@@ -108,7 +107,7 @@ footer {
 }
 
 .footer-logo img {
-  height: 80px;
+  height: 180px;
   border-radius: 10px;
 }
 

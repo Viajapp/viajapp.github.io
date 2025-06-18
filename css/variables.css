@@ -1,10 +1,10 @@
 /* Variables y reset */
 :root {
-    --primary-color: #2c5282;
-    --secondary-color: #e05d44;
+    --primary-color: #18243d;
+    --secondary-color: #da5c58;
     --black: #111;
     --white: #f8f9fa;
-    --dark-color: #1a365d;
+    --dark-color: #2f5478;
     --gray-color: #333;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

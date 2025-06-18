@@ -52,7 +52,6 @@
 
 .car-logo {
   width: 160px;
-  animation: pulse 3s infinite ease-in-out;
   border-radius: 20px;
   box-shadow: 0 5px 20px var(--black);
   margin-bottom: 20px;
