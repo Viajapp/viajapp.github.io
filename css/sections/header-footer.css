@@ -1,6 +1,6 @@
 /* Header */
 header {
-  background-color: white;
+  background-color: var(--primary-color);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -15,11 +15,11 @@ nav {
 }
 
 .logo img {
-  height: 80px;
-  transition: var(--transition);
+  height: 50px;
 }
 
 .logo img:hover {
+  transition: var(--transition);
   transform: scale(1.05);
 }
 
@@ -35,7 +35,7 @@ nav {
 }
 
 .nav-links a {
-  color: var(--gray-color);
+  color: var(--white);
   font-weight: 500;
   padding: 4px 0;
   transition: var(--transition);
@@ -43,7 +43,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .nav-links a::after {
@@ -53,7 +53,7 @@ nav {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   transition: var(--transition);
 }
 
@@ -62,7 +62,7 @@ nav {
 }
 
 .nav-links a.active {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 600;
 }
 
@@ -76,7 +76,7 @@ nav {
   display: none;
   background: none;
   border: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 24px;
   cursor: pointer;
 }
@@ -96,24 +96,23 @@ nav {
 footer {
   background-color: var(--primary-color);
   color: white;
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
 
 .footer-logo img {
-  height: 180px;
+  height: 120px;
   border-radius: 10px;
 }
 
 .footer-logo img:hover {
   transition: var(--transition);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Responsive para el header */
@@ -133,6 +132,14 @@ footer {
     z-index: 99;
     gap: 16px;
     text-align: center;
+  }
+
+  .nav-links a {
+    color: var(--primary-color);
+  }
+
+  .nav-links a:active {
+    color: var(--secondary-color);
   }
 
   .nav-links.active {
