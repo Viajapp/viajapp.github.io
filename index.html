@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/sections/header-footer.css">
     <link rel="stylesheet" href="/css/sections/hero.css">
+    <link rel="stylesheet" href="/css/sections/trips.css">
     <link rel="stylesheet" href="/css/sections/features.css">
     <link rel="stylesheet" href="/css/sections/benefits.css">
     <link rel="stylesheet" href="/css/sections/testimonials.css">
@@ -85,6 +86,26 @@
                         <img src="images/6.png" alt="Valorar viajes en Viajapp" class="phone-screen">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-trips" id="latest-trips">
+        <div class="container">
+            <h2 data-aos="fade-up">Últimos <span>viajes publicados</span></h2>
+            <div id="trips-list" class="trips-list" data-aos="fade-up">
+                <!-- Aquí se insertarán las tarjetas de viajes dinámicamente -->
+            </div>
+            <p class="trips-note" data-aos="fade-up">Para reservar un viaje es necesario descargar la app.</p>
+            <div class="cta-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.viajapp.app&hl=es_AR" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-google-play"></i>
+                    Google Play
+                </a>
+                <a href="https://apps.apple.com/us/app/viajapp/id6745457759" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-apple"></i>
+                    App Store
+                </a>
             </div>
         </div>
     </section>
@@ -260,5 +281,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="module" src="latest-trips.js"></script>
 </body>
 </html>
