@@ -92,15 +92,31 @@ async function mostrarUltimosViajes() {
 
   tripsList.innerHTML = '';
   const viajes = [];
+  const ahora = new Date();
   for (const doc of querySnapshot.docs) {
     const data = doc.data();
     if (data.finalizado === false) { // Solo viajes no finalizados
-      const userId = data.userId || data.ownerId || data.usuarioId || data.uid || null;
-      let userData = null;
-      if (userId) {
-        userData = await getUserData(userId);
+      // Filtrar por fecha y hora futura
+      const fechaObj = parseFecha(data.fecha);
+      let fechaHoraViaje = null;
+      if (fechaObj && !isNaN(fechaObj.getTime())) {
+        if (data.hora) {
+          // Si hay hora, combinar fecha y hora
+          const [h, m] = data.hora.split(":");
+          fechaObj.setHours(parseInt(h, 10));
+          fechaObj.setMinutes(parseInt(m, 10));
+          fechaObj.setSeconds(0);
+        }
+        fechaHoraViaje = fechaObj;
       }
-      viajes.push({ id: doc.id, ...data, userData });
+      if (fechaHoraViaje && fechaHoraViaje > ahora) {
+        const userId = data.userId || data.ownerId || data.usuarioId || data.uid || null;
+        let userData = null;
+        if (userId) {
+          userData = await getUserData(userId);
+        }
+        viajes.push({ id: doc.id, ...data, userData });
+      }
     }
     if (viajes.length >= 5) break; // Solo mostrar 5
   }
