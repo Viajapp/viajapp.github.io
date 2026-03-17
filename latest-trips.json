@@ -1,4 +1,155 @@
 {
-  "generatedAt": null,
-  "trips": []
+  "generatedAt": "2026-03-17T22:24:50.905Z",
+  "trips": [
+    {
+      "id": "cvb6V3S9CI3namVyTo2k",
+      "nombreOrigen": "Belgrano 450, Tandil",
+      "nombreDestino": "Bulnes 200, Buenos Aires",
+      "fecha": "2026-03-23T10:00:00.000Z",
+      "hora": "10:00",
+      "lugares": 0,
+      "precio": 0,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 15000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Eliana Wdoviak",
+        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7eEoB-OUV6fbHOnOPG50zb6Bm9BrQfs2jekZoHV4vxmX6jYyhrQ=s96-c"
+      }
+    },
+    {
+      "id": "oo5z7jWx88LqDJvKnR8d",
+      "nombreOrigen": "Bulnes 200, Buenos Aires",
+      "nombreDestino": "Belgrano 450, Tandil",
+      "fecha": "2026-03-21T10:00:00.000Z",
+      "hora": "10:00",
+      "lugares": 0,
+      "precio": 0,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Eliana Wdoviak",
+        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7eEoB-OUV6fbHOnOPG50zb6Bm9BrQfs2jekZoHV4vxmX6jYyhrQ=s96-c"
+      }
+    },
+    {
+      "id": "n7pLygCDvh0yjnd5tVyA",
+      "nombreOrigen": "Crisóstomo Alvarez 2775, San Miguel de Tucumán",
+      "nombreDestino": "Benjamín Zorrilla 211, Cachi",
+      "fecha": "2026-03-20T00:11:00.000Z",
+      "hora": "00:11",
+      "lugares": 3,
+      "precio": 55000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 15000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 23000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 47000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "jfquaranta4542",
+        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocLssUIYB3tb0ftjXPEJQ4Nd8seRCstKqF4C2syGvjoSt1rqkt_twA=s96-c"
+      }
+    },
+    {
+      "id": "BHfJyVh2gMd4McOneUaD",
+      "nombreOrigen": "Av. Sta. Catalina 6200, Posadas",
+      "nombreDestino": "C. Madre Teresa de Calcuta 1188, Cañuelas",
+      "fecha": "2026-07-27T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 2,
+      "precio": 50000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 35000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 55000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 75000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Diego Daniel Avila",
+        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGwdMEsBX_HsbTMN3jF3hBk63vgGILAZtHIvASGsbcCKgGWojw5g=s96-c"
+      }
+    },
+    {
+      "id": "IcpWeWOdDfR2RRCf9mUD",
+      "nombreOrigen": "C. Madre Teresa de Calcuta 1188, Cañuelas",
+      "nombreDestino": "Av. Sta. Catalina 6200, Posadas",
+      "fecha": "2026-07-19T04:00:00.000Z",
+      "hora": "04:00",
+      "lugares": 2,
+      "precio": 50000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 40000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 55500,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 70000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Diego Daniel Avila",
+        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGwdMEsBX_HsbTMN3jF3hBk63vgGILAZtHIvASGsbcCKgGWojw5g=s96-c"
+      }
+    }
+  ]
 }
