@@ -1,19 +1,3 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-import { getFirestore, collection, query, orderBy, limit, getDocs, doc as docRef, getDoc } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyAFmOsFGvjDg9ij94B7xYe07TwE6w9kQRE",
-  authDomain: "viajapp-fir.firebaseapp.com",
-  projectId: "viajapp-fir",
-  storageBucket: "viajapp-fir.appspot.com",
-  messagingSenderId: "714917887061",
-  appId: "1:714917887061:web:0de5a23e88d38e651028dc",
-  measurementId: "G-9D5FMS1VFT"
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
 function parseFecha(fechaRaw) {
   if (!fechaRaw) return '';
   // Si es string, parsear normal
@@ -170,54 +154,47 @@ function renderPaquetes(infoPaquetes) {
   `;
 }
 
-async function getUserData(userId) {
-  if (!userId) return null;
-  try {
-    const userDoc = await getDoc(docRef(db, 'users', userId));
-    if (userDoc.exists()) {
-      return userDoc.data();
-    }
-  } catch (e) {}
-  return null;
-}
-
 async function mostrarUltimosViajes() {
   const tripsList = document.getElementById('trips-list');
   if (!tripsList) return;
-
-  const viajesRef = collection(db, 'viajes');
-  const q = query(viajesRef, orderBy('fechaPublicado', 'desc'), limit(10)); // Traemos más por si hay varios finalizados
-  const querySnapshot = await getDocs(q);
-
   tripsList.innerHTML = '';
-  const viajes = [];
-  const ahora = new Date();
-  for (const doc of querySnapshot.docs) {
-    const data = doc.data();
-    if (data.finalizado === false) { // Solo viajes no finalizados
-      // Filtrar por fecha y hora futura
-      const fechaObj = parseFecha(data.fecha);
-      let fechaHoraViaje = null;
-      if (fechaObj && !isNaN(fechaObj.getTime())) {
-        if (data.hora) {
-          // Si hay hora, combinar fecha y hora
-          const [h, m] = data.hora.split(":");
-          fechaObj.setHours(parseInt(h, 10));
-          fechaObj.setMinutes(parseInt(m, 10));
-          fechaObj.setSeconds(0);
-        }
-        fechaHoraViaje = fechaObj;
-      }
-      if (fechaHoraViaje && fechaHoraViaje > ahora) {
-        const userId = data.userId || data.ownerId || data.usuarioId || data.uid || null;
-        let userData = null;
-        if (userId) {
-          userData = await getUserData(userId);
-        }
-        viajes.push({ id: doc.id, ...data, userData });
-      }
+
+  let payload;
+  try {
+    const response = await fetch('./latest-trips.json', { cache: 'no-store' });
+    if (!response.ok) {
+      throw new Error(`Failed to fetch latest-trips.json: ${response.status}`);
     }
-    if (viajes.length >= 5) break; // Solo mostrar 5
+    payload = await response.json();
+  } catch (error) {
+    console.error(error);
+    tripsList.innerHTML = `
+      <div class="trip-card">
+        <div class="trip-packages trip-packages-disabled">
+          <div class="trip-packages-title">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>No pudimos cargar los viajes ahora</span>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const viajes = Array.isArray(payload) ? payload : payload?.trips ?? [];
+
+  if (viajes.length === 0) {
+    tripsList.innerHTML = `
+      <div class="trip-card">
+        <div class="trip-packages trip-packages-disabled">
+          <div class="trip-packages-title">
+            <i class="fa-regular fa-calendar"></i>
+            <span>No hay viajes disponibles en este momento</span>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
   }
 
   viajes.forEach((data) => {
@@ -233,7 +210,7 @@ async function mostrarUltimosViajes() {
     const info = data.informacion || '';
     const qrData = `https://viajapp.github.io/viaje/${data.id}`;
     const qrUrl = generarQR(qrData);
-    const user = data.userData;
+    const user = data.userData || data.user || {};
     const username = user && user.username ? user.username : 'Usuario';
     const userImg = user && (user.profileImageUrl || user.profile_image_url) ? (user.profileImageUrl || user.profile_image_url) : 'images/viajapp-logo.png';
     const infoPaquetes = obtenerInfoPaquetes(data);

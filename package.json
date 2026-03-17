@@ -1,0 +1,25 @@
+{
+  "name": "viajapp-landing",
+  "version": "1.0.0",
+  "description": "Landing y generador de latest-trips.json para Viajapp",
+  "private": true,
+  "main": "latest-trips.js",
+  "scripts": {
+    "generate:latest-trips": "node ./scripts/generate-latest-trips.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viajapp/viajapp.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Viajapp/viajapp.github.io/issues"
+  },
+  "homepage": "https://github.com/Viajapp/viajapp.github.io#readme",
+  "dependencies": {
+    "firebase-admin": "^13.7.0"
+  }
+}
