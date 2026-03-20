@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-19T20:29:51.920Z",
+  "generatedAt": "2026-03-20T01:24:58.215Z",
   "trips": [
     {
       "id": "cvb6V3S9CI3namVyTo2k",
@@ -53,38 +53,6 @@
       "userData": {
         "username": "Eliana Wdoviak",
         "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7eEoB-OUV6fbHOnOPG50zb6Bm9BrQfs2jekZoHV4vxmX6jYyhrQ=s96-c"
-      }
-    },
-    {
-      "id": "n7pLygCDvh0yjnd5tVyA",
-      "nombreOrigen": "Crisóstomo Alvarez 2775, San Miguel de Tucumán",
-      "nombreDestino": "Benjamín Zorrilla 211, Cachi",
-      "fecha": "2026-03-20T00:11:00.000Z",
-      "hora": "00:11",
-      "lugares": 3,
-      "precio": 55000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 15000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 23000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 47000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "jfquaranta4542",
-        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocLssUIYB3tb0ftjXPEJQ4Nd8seRCstKqF4C2syGvjoSt1rqkt_twA=s96-c"
       }
     },
     {
