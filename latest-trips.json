@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-21T08:24:11.098Z",
+  "generatedAt": "2026-03-21T12:33:05.857Z",
   "trips": [
     {
       "id": "cvb6V3S9CI3namVyTo2k",
@@ -20,33 +20,6 @@
         "mediano": {
           "activo": true,
           "precio": 15000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "Eliana Wdoviak",
-        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7eEoB-OUV6fbHOnOPG50zb6Bm9BrQfs2jekZoHV4vxmX6jYyhrQ=s96-c"
-      }
-    },
-    {
-      "id": "oo5z7jWx88LqDJvKnR8d",
-      "nombreOrigen": "Bulnes 200, Buenos Aires",
-      "nombreDestino": "Belgrano 450, Tandil",
-      "fecha": "2026-03-21T10:00:00.000Z",
-      "hora": "10:00",
-      "lugares": 0,
-      "precio": 0,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 20000,
           "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
         }
       },
