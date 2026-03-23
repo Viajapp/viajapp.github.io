@@ -1,33 +1,6 @@
 {
-  "generatedAt": "2026-03-23T08:47:10.376Z",
+  "generatedAt": "2026-03-23T12:50:27.131Z",
   "trips": [
-    {
-      "id": "cvb6V3S9CI3namVyTo2k",
-      "nombreOrigen": "Belgrano 450, Tandil",
-      "nombreDestino": "Bulnes 200, Buenos Aires",
-      "fecha": "2026-03-23T10:00:00.000Z",
-      "hora": "10:00",
-      "lugares": 0,
-      "precio": 0,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 15000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "Eliana Wdoviak",
-        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7eEoB-OUV6fbHOnOPG50zb6Bm9BrQfs2jekZoHV4vxmX6jYyhrQ=s96-c"
-      }
-    },
     {
       "id": "BHfJyVh2gMd4McOneUaD",
       "nombreOrigen": "Av. Sta. Catalina 6200, Posadas",
