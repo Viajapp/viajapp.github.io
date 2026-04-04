@@ -1,21 +1,4 @@
 {
-  "generatedAt": "2026-04-04T12:38:46.257Z",
-  "trips": [
-    {
-      "id": "JBl2Gu9nTSCN2v6atzSV",
-      "nombreOrigen": "Bolivia 1656, San Miguel de Tucumán",
-      "nombreDestino": "Los De Salta barrio solidaridad manzana 413 lote 22B 4ta etapa, Salta",
-      "fecha": "2026-04-04T16:00:00.000Z",
-      "hora": "16:00",
-      "lugares": 2,
-      "precio": 10000,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Luis DiCo",
-        "profileImageUrl": ""
-      }
-    }
-  ]
+  "generatedAt": "2026-04-04T16:26:56.285Z",
+  "trips": []
 }
