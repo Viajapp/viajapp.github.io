@@ -1,4 +1,21 @@
 {
-  "generatedAt": "2026-04-09T13:07:04.531Z",
-  "trips": []
+  "generatedAt": "2026-04-09T16:59:47.352Z",
+  "trips": [
+    {
+      "id": "D1eWUS46CYC5JLdfEhn8",
+      "nombreOrigen": "Av. Gral. Paz 7587, Comuna 11",
+      "nombreDestino": "San Juan 215, Salta",
+      "fecha": "2026-04-20T06:00:00.000Z",
+      "hora": "06:00",
+      "lugares": 1,
+      "precio": 120000,
+      "informacion": "viaje turismo por 9 dias dw buenos aires a salta y jujuy con escala córdoba,  quizás tucuman ida y vuelta ",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "TM97",
+        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocKFNzxypRBo2yxue5JveNdZ5sT0NgYj-m1mNvw-L7IEbX6HttvM=s96-c"
+      }
+    }
+  ]
 }
