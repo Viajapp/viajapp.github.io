@@ -1,16 +1,22 @@
 function parseFecha(fechaRaw) {
   if (!fechaRaw) return '';
-  // Si es string, parsear normal
   if (typeof fechaRaw === 'string') {
     const fecha = new Date(fechaRaw);
     if (isNaN(fecha.getTime())) return '';
     return fecha;
   }
-  // Si es objeto tipo Timestamp de Firestore
   if (typeof fechaRaw === 'object' && typeof fechaRaw.seconds === 'number') {
     return new Date(fechaRaw.seconds * 1000);
   }
   return '';
+}
+
+function esViajeConSalidaPosteriorAhora(data) {
+  const instante = parseFecha(data.fecha);
+  if (!instante || isNaN(instante.getTime())) {
+    return false;
+  }
+  return instante.getTime() > Date.now();
 }
 
 function formatearFecha(fechaRaw) {
@@ -181,7 +187,8 @@ async function mostrarUltimosViajes() {
     return;
   }
 
-  const viajes = Array.isArray(payload) ? payload : payload?.trips ?? [];
+  const viajesRaw = Array.isArray(payload) ? payload : payload?.trips ?? [];
+  const viajes = viajesRaw.filter(esViajeConSalidaPosteriorAhora);
 
   if (viajes.length === 0) {
     tripsList.innerHTML = `
