@@ -1,20 +1,100 @@
 {
-  "generatedAt": "2026-04-15T13:08:43.557Z",
+  "generatedAt": "2026-04-15T18:20:07.946Z",
   "trips": [
     {
-      "id": "D1eWUS46CYC5JLdfEhn8",
-      "nombreOrigen": "Av. Gral. Paz 7587, Comuna 11",
-      "nombreDestino": "San Juan 215, Salta",
-      "fecha": "2026-04-20T06:00:00.000Z",
-      "hora": "06:00",
-      "lugares": 1,
-      "precio": 120000,
-      "informacion": "viaje turismo por 9 dias dw buenos aires a salta y jujuy con escala córdoba,  quizás tucuman ida y vuelta ",
+      "id": "b96e4e5c-7035-430f-9de2-7434b624a1aa",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-04-16T00:26:00.000Z",
+      "hora": "00:26",
+      "lugares": 5,
+      "precio": 100,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 1,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 2000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 3000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "291351f5-9895-48bb-b04a-a1165725ba2a",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-04-16T18:40:00.000Z",
+      "hora": "18:40",
+      "lugares": 9,
+      "precio": 100,
+      "informacion": "",
       "aceptaPaquetes": false,
       "paquetesConfig": null,
       "userData": {
-        "username": "TM97",
-        "profileImageUrl": "https://lh3.googleusercontent.com/a/ACg8ocKFNzxypRBo2yxue5JveNdZ5sT0NgYj-m1mNvw-L7IEbX6HttvM=s96-c"
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "989cd67d-9531-49a7-bd97-1f45cdc7aff4",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-04-18T18:40:00.000Z",
+      "hora": "18:40",
+      "lugares": 9,
+      "precio": 100,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "2673cf7a-deab-4028-b774-c1c2da770948",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-04-20T18:40:00.000Z",
+      "hora": "18:40",
+      "lugares": 9,
+      "precio": 100,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "786d58cf-1370-4674-958b-0ab95f65b000",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-04-23T18:40:00.000Z",
+      "hora": "18:40",
+      "lugares": 9,
+      "precio": 100,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
       }
     }
   ]
