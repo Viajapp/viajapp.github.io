@@ -215,7 +215,7 @@ async function mostrarUltimosViajes() {
     const lugares = data.lugares || (data.listaPasajeros && data.listaPasajeros.lugares) || '';
     const precio = formatearPrecio(data.precio);
     const info = data.informacion || '';
-    const qrData = `https://viajapp.github.io/viaje/${data.id}`;
+    const qrData = `https://viajapp.com.ar/viaje/${data.id}`;
     const qrUrl = generarQR(qrData);
     const user = data.userData || data.user || {};
     const username = user && user.username ? user.username : 'Usuario';

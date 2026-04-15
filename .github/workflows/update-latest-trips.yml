@@ -27,7 +27,8 @@ jobs:
 
       - name: Generate latest-trips.json
         env:
-          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          BACKEND_API_BASE_URL: ${{ secrets.BACKEND_API_BASE_URL }}
+          BACKEND_API_BEARER_TOKEN: ${{ secrets.BACKEND_API_BEARER_TOKEN }}
         run: npm run generate:latest-trips
 
       - name: Commit updated JSON

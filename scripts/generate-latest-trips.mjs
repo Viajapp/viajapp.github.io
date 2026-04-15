@@ -1,54 +1,44 @@
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { cert, getApps, initializeApp } from 'firebase-admin/app';
-import { getFirestore, Timestamp } from 'firebase-admin/firestore';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const OUTPUT_PATH = path.resolve(__dirname, '../latest-trips.json');
+const DEFAULT_LIMIT = 20;
+const MAX_RENDERED_TRIPS = 5;
+const API_TIMEOUT_MS = 15000;
 
-function getServiceAccount() {
-  const raw = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
-  if (!raw) {
-    throw new Error('Missing FIREBASE_SERVICE_ACCOUNT_JSON secret.');
+function getApiBaseUrl() {
+  const baseUrl = (process.env.BACKEND_API_BASE_URL || '').trim();
+  if (!baseUrl) {
+    throw new Error('Missing BACKEND_API_BASE_URL secret.');
   }
-
-  const serviceAccount = JSON.parse(raw);
-  if (serviceAccount.private_key) {
-    serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, '\n');
-  }
-
-  return serviceAccount;
+  return baseUrl.replace(/\/+$/, '');
 }
 
-function ensureFirebaseApp() {
-  if (getApps().length > 0) {
-    return getApps()[0];
-  }
-
-  return initializeApp({
-    credential: cert(getServiceAccount())
-  });
+function withTimeout(ms) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), ms);
+  return { controller, timeout };
 }
 
 function parseFecha(fechaRaw) {
   if (!fechaRaw) return null;
   if (fechaRaw instanceof Date) return fechaRaw;
-  if (fechaRaw instanceof Timestamp) return fechaRaw.toDate();
-  if (typeof fechaRaw?.toDate === 'function') return fechaRaw.toDate();
   if (typeof fechaRaw === 'string') {
     const fecha = new Date(fechaRaw);
     return Number.isNaN(fecha.getTime()) ? null : fecha;
-  }
-  if (typeof fechaRaw === 'object' && typeof fechaRaw.seconds === 'number') {
-    return new Date(fechaRaw.seconds * 1000);
   }
   return null;
 }
 
 function buildFechaHoraViaje(data) {
-  const fecha = parseFecha(data.fecha);
+  const sourceDate =
+    data.estimated_arrival_at ||
+    data.departure_at ||
+    data.fecha;
+  const fecha = parseFecha(sourceDate);
   if (!fecha) return null;
 
   const fechaHora = new Date(fecha);
@@ -106,16 +96,24 @@ function sanitizeTrip(id, data, userData) {
   const paquetesConfig = sanitizePackagesConfig(
     data.paquetesConfig || data.paquetes_config || data.packages_config
   );
+  const seatsAvailable = Number(data.seats_available ?? data.lugares ?? data.listaPasajeros?.lugares ?? 0) || 0;
+  const seatsCommitted = Number(data.seats_committed ?? 0) || 0;
+  const seatsFree = Math.max(seatsAvailable - seatsCommitted, 0);
+  const rawDate = fechaHoraViaje || parseFecha(data.estimated_arrival_at) || parseFecha(data.departure_at);
+  const hora =
+    typeof data.hora === 'string'
+      ? data.hora
+      : (rawDate ? rawDate.toISOString().slice(11, 16) : '');
 
   return {
     id,
     nombreOrigen: data.nombreOrigen || data.origin_name || parseDireccion(data.coordOrigen) || '',
     nombreDestino: data.nombreDestino || data.destination_name || parseDireccion(data.coordDestino) || '',
-    fecha: fechaHoraViaje ? fechaHoraViaje.toISOString() : '',
-    hora: typeof data.hora === 'string' ? data.hora : '',
-    lugares: Number(data.lugares || data.listaPasajeros?.lugares || 0) || 0,
-    precio: Number(data.precio || 0) || 0,
-    informacion: data.informacion || '',
+    fecha: rawDate ? rawDate.toISOString() : '',
+    hora,
+    lugares: seatsFree,
+    precio: Number(data.precio ?? data.price_per_seat ?? 0) || 0,
+    informacion: data.informacion || data.info || '',
     aceptaPaquetes: Boolean(
       data.aceptaPaquetes ??
       data.acepta_paquetes ??
@@ -129,35 +127,55 @@ function sanitizeTrip(id, data, userData) {
   };
 }
 
-async function fetchUserData(db, userId) {
-  if (!userId) return null;
-  const userSnapshot = await db.collection('users').doc(userId).get();
-  return userSnapshot.exists ? userSnapshot.data() : null;
+async function fetchTripsFromApi() {
+  const baseUrl = getApiBaseUrl();
+  const fromTime = new Date().toISOString();
+  const url = new URL('/api/v1/trips', `${baseUrl}/`);
+  url.searchParams.set('limit', String(DEFAULT_LIMIT));
+  url.searchParams.set('from_time', fromTime);
+
+  const headers = {
+    Accept: 'application/json'
+  };
+  const token = (process.env.BACKEND_API_BEARER_TOKEN || '').trim();
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
+
+  const { controller, timeout } = withTimeout(API_TIMEOUT_MS);
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'GET',
+      headers,
+      signal: controller.signal
+    });
+  } finally {
+    clearTimeout(timeout);
+  }
+
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(`Trips API request failed (${response.status}): ${body.slice(0, 300)}`);
+  }
+
+  const payload = await response.json();
+  if (!Array.isArray(payload)) {
+    throw new Error('Trips API returned an invalid payload. Expected array.');
+  }
+  return payload;
 }
 
 async function buildLatestTrips() {
-  ensureFirebaseApp();
-  const db = getFirestore();
+  const apiTrips = await fetchTripsFromApi();
   const now = new Date();
-  const tripsSnapshot = await db
-    .collection('viajes')
-    .orderBy('fechaPublicado', 'desc')
-    .limit(20)
-    .get();
-
   const trips = [];
-  for (const tripDoc of tripsSnapshot.docs) {
-    const data = tripDoc.data();
-    if (data.finalizado !== false) continue;
-
+  for (const data of apiTrips) {
+    if (data.finalized === true) continue;
     const fechaHoraViaje = buildFechaHoraViaje(data);
     if (!fechaHoraViaje || fechaHoraViaje <= now) continue;
-
-    const userId = data.userId || data.ownerId || data.usuarioId || data.uid || null;
-    const userData = await fetchUserData(db, userId);
-    trips.push(sanitizeTrip(tripDoc.id, data, userData));
-
-    if (trips.length >= 5) break;
+    trips.push(sanitizeTrip(data.id, data, null));
+    if (trips.length >= MAX_RENDERED_TRIPS) break;
   }
 
   return {
