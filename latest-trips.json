@@ -1,33 +1,6 @@
 {
-  "generatedAt": "2026-04-19T20:29:20.695Z",
+  "generatedAt": "2026-04-20T02:01:08.624Z",
   "trips": [
-    {
-      "id": "fe4281e0-b05b-4138-805d-e0c40bc75709",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "San Cayetano",
-      "fecha": "2026-04-19T23:19:00.000Z",
-      "hora": "23:19",
-      "lugares": 3,
-      "precio": 100000000,
-      "informacion": "testing",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 1000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 3000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Usuario",
-        "profileImageUrl": ""
-      }
-    },
     {
       "id": "3debc39d-a6a8-4709-b885-d19512de7806",
       "nombreOrigen": "Mar del Plata",
@@ -103,6 +76,33 @@
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "San Cayetano",
       "fecha": "2026-04-26T23:19:00.000Z",
+      "hora": "23:19",
+      "lugares": 3,
+      "precio": 100000000,
+      "informacion": "testing",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 1000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 3000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "02deb3e3-380c-4c85-a78a-5f962a0713ef",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "San Cayetano",
+      "fecha": "2026-04-27T23:19:00.000Z",
       "hora": "23:19",
       "lugares": 3,
       "precio": 100000000,
