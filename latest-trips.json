@@ -1,33 +1,6 @@
 {
-  "generatedAt": "2026-04-20T20:39:02.419Z",
+  "generatedAt": "2026-04-21T01:56:59.806Z",
   "trips": [
-    {
-      "id": "3debc39d-a6a8-4709-b885-d19512de7806",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "San Cayetano",
-      "fecha": "2026-04-20T23:19:00.000Z",
-      "hora": "23:19",
-      "lugares": 3,
-      "precio": 100000000,
-      "informacion": "testing",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 1000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 3000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Usuario",
-        "profileImageUrl": ""
-      }
-    },
     {
       "id": "0daa5910-eb52-434c-90cb-3f2c025fc130",
       "nombreOrigen": "Mar del Plata",
@@ -120,6 +93,22 @@
           "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
         }
       },
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "29189a4d-eda8-4e67-a8ba-c578db23a844",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-04-30T18:40:00.000Z",
+      "hora": "18:40",
+      "lugares": 9,
+      "precio": 100,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
       "userData": {
         "username": "Usuario",
         "profileImageUrl": ""
