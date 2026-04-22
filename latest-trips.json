@@ -1,33 +1,6 @@
 {
-  "generatedAt": "2026-04-22T13:11:22.605Z",
+  "generatedAt": "2026-04-22T16:52:09.224Z",
   "trips": [
-    {
-      "id": "0daa5910-eb52-434c-90cb-3f2c025fc130",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "San Cayetano",
-      "fecha": "2026-04-23T23:19:00.000Z",
-      "hora": "23:19",
-      "lugares": 3,
-      "precio": 100000000,
-      "informacion": "testing",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 1000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 3000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Usuario",
-        "profileImageUrl": ""
-      }
-    },
     {
       "id": "336f6fde-eaf0-447e-9504-f9e3453bd365",
       "nombreOrigen": "Bahía Blanca",
@@ -45,64 +18,42 @@
       }
     },
     {
-      "id": "4c62319f-a80a-43db-a472-26faae2ff35f",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "San Cayetano",
-      "fecha": "2026-04-26T23:19:00.000Z",
-      "hora": "23:19",
-      "lugares": 3,
-      "precio": 100000000,
-      "informacion": "testing",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 1000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 3000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Usuario",
-        "profileImageUrl": ""
-      }
-    },
-    {
-      "id": "02deb3e3-380c-4c85-a78a-5f962a0713ef",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "San Cayetano",
-      "fecha": "2026-04-27T23:19:00.000Z",
-      "hora": "23:19",
-      "lugares": 3,
-      "precio": 100000000,
-      "informacion": "testing",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 1000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 3000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Usuario",
-        "profileImageUrl": ""
-      }
-    },
-    {
       "id": "29189a4d-eda8-4e67-a8ba-c578db23a844",
       "nombreOrigen": "Bahía Blanca",
       "nombreDestino": "Buenos Aires",
       "fecha": "2026-04-30T18:40:00.000Z",
+      "hora": "18:40",
+      "lugares": 9,
+      "precio": 100,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "ca199492-1ccb-4874-af5f-5125b7efa25c",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-05-02T18:40:00.000Z",
+      "hora": "18:40",
+      "lugares": 9,
+      "precio": 100,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Usuario",
+        "profileImageUrl": ""
+      }
+    },
+    {
+      "id": "8d246ea2-6685-4dcb-9817-e3fa24093d6d",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-05-04T18:40:00.000Z",
       "hora": "18:40",
       "lugares": 9,
       "precio": 100,
