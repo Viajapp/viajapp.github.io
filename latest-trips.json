@@ -1,21 +1,4 @@
 {
-  "generatedAt": "2026-05-04T17:24:37.315Z",
-  "trips": [
-    {
-      "id": "8d246ea2-6685-4dcb-9817-e3fa24093d6d",
-      "nombreOrigen": "Bahía Blanca",
-      "nombreDestino": "Buenos Aires",
-      "fecha": "2026-05-04T18:40:00.000Z",
-      "hora": "18:40",
-      "lugares": 9,
-      "precio": 100,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Usuario",
-        "profileImageUrl": ""
-      }
-    }
-  ]
+  "generatedAt": "2026-05-04T21:01:08.743Z",
+  "trips": []
 }
