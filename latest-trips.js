@@ -27,13 +27,17 @@ function formatearFecha(fechaRaw) {
 
 function formatearHora(horaStr) {
   if (!horaStr) return '';
-  return horaStr.slice(0,5); // "14:00"
+  return horaStr.slice(0, 5);
 }
 
 function formatearPrecio(valor) {
   const numero = Number(valor);
   if (!Number.isFinite(numero) || numero <= 0) return '';
-  return `${numero} AR$`;
+  return new Intl.NumberFormat('es-AR', {
+    style: 'currency',
+    currency: 'ARS',
+    maximumFractionDigits: 0
+  }).format(numero);
 }
 
 function escapeHtml(texto) {
@@ -46,16 +50,13 @@ function escapeHtml(texto) {
 }
 
 function generarQR(texto) {
-  // Usamos api.qrserver.com para generar el QR
-  return `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(texto)}`;
+  return `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(texto)}`;
 }
 
 function parseDireccion(obj) {
-  // Si es string, devolver directo. Si es objeto, intentar armar string legible.
   if (!obj) return '';
   if (typeof obj === 'string') return obj;
   if (typeof obj === 'object') {
-    // Si tiene lat/lng, mostrar "Lat, Lng". Si tiene dirección, mostrar dirección.
     if (obj.direccion) return obj.direccion;
     if (obj.lat && obj.lng) return `${obj.lat}, ${obj.lng}`;
     return JSON.stringify(obj);
@@ -69,7 +70,6 @@ function splitLocalidadDireccion(nombre) {
   if (partes.length === 1) {
     return { localidad: nombre.trim(), direccion: '' };
   }
-  // localidad es lo que está después de la primera coma
   return {
     direccion: partes[0].trim(),
     localidad: partes.slice(1).join(',').trim()
@@ -128,12 +128,37 @@ function obtenerInfoPaquetes(data) {
   };
 }
 
+function obtenerConductor(data) {
+  const user = data.userData || data.user || data.driver || {};
+  const candidatos = [
+    user.username,
+    user.name,
+    data.driverName,
+    data.driver_name,
+    data.driverUsername,
+    data.driver_username
+  ];
+
+  const nombre = candidatos
+    .map((valor) => String(valor || '').trim())
+    .find((valor) => valor && valor.toLowerCase() !== 'usuario');
+
+  const profileImageUrl = user.profileImageUrl || user.profile_image_url || '';
+  const verified = Boolean(user.verified ?? user.nosis_verified ?? user.nosisVerified);
+
+  return {
+    nombre: nombre || '',
+    profileImageUrl,
+    verified
+  };
+}
+
 function renderPaquetes(infoPaquetes) {
   if (!infoPaquetes.acepta) {
     return `
       <div class="trip-packages trip-packages-disabled">
         <div class="trip-packages-title">
-          <i class="fa-solid fa-box-open"></i>
+          <i class="fa-solid fa-box-open" aria-hidden="true"></i>
           <span>No acepta paquetes</span>
         </div>
       </div>
@@ -150,11 +175,113 @@ function renderPaquetes(infoPaquetes) {
   return `
     <div class="trip-packages">
       <div class="trip-packages-title">
-        <i class="fa-solid fa-box-open"></i>
+        <i class="fa-solid fa-box-open" aria-hidden="true"></i>
         <span>Acepta paquetes</span>
       </div>
       <div class="trip-packages-list">
         ${chips}
+      </div>
+    </div>
+  `;
+}
+
+function renderRuta(origenSplit, destinoSplit) {
+  const origenDetalle = origenSplit.direccion
+    ? `<span class="trip-direccion">${escapeHtml(origenSplit.direccion)}</span>`
+    : '';
+  const destinoDetalle = destinoSplit.direccion
+    ? `<span class="trip-direccion">${escapeHtml(destinoSplit.direccion)}</span>`
+    : '';
+
+  return `
+    <div class="trip-route">
+      <div class="trip-route-point">
+        <span class="trip-localidad">${escapeHtml(origenSplit.localidad || 'Origen')}</span>
+        ${origenDetalle}
+      </div>
+      <div class="trip-arrow" aria-hidden="true">
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+      <div class="trip-route-point">
+        <span class="trip-localidad">${escapeHtml(destinoSplit.localidad || 'Destino')}</span>
+        ${destinoDetalle}
+      </div>
+    </div>
+  `;
+}
+
+function renderConductor(conductor) {
+  if (!conductor.nombre) {
+    return '';
+  }
+
+  const userImg = conductor.profileImageUrl || 'images/viajapp-logo.png';
+  const verifiedBadge = conductor.verified
+    ? '<span class="trip-user-verified" title="Identidad verificada con Nosis"><i class="fas fa-circle-check" aria-hidden="true"></i> Verificado</span>'
+    : '';
+
+  return `
+    <div class="trip-user">
+      <img src="${escapeHtml(userImg)}" alt="" class="trip-user-img" loading="lazy" />
+      <div class="trip-user-meta">
+        <span class="trip-user-name">${escapeHtml(conductor.nombre)}</span>
+        ${verifiedBadge}
+      </div>
+    </div>
+  `;
+}
+
+function renderTripCard(data) {
+  const origenRaw = data.nombreOrigen || parseDireccion(data.coordOrigen) || 'Origen';
+  const destinoRaw = data.nombreDestino || parseDireccion(data.coordDestino) || 'Destino';
+  const origenSplit = splitLocalidadDireccion(origenRaw);
+  const destinoSplit = splitLocalidadDireccion(destinoRaw);
+  const fecha = formatearFecha(data.fecha);
+  const hora = formatearHora(data.hora || '');
+  const lugares = data.lugares || (data.listaPasajeros && data.listaPasajeros.lugares) || '';
+  const precio = formatearPrecio(data.precio);
+  const info = data.informacion || '';
+  const qrData = `https://viajapp.com.ar/viaje/${data.id}`;
+  const qrUrl = generarQR(qrData);
+  const conductor = obtenerConductor(data);
+  const infoPaquetes = obtenerInfoPaquetes(data);
+  const paquetesHtml = renderPaquetes(infoPaquetes);
+  const asientosTexto = lugares ? `${lugares} asiento${Number(lugares) === 1 ? '' : 's'}` : 'Sin asientos informados';
+  const infoEscapada = escapeHtml(info);
+  const infoHtml = infoEscapada
+    ? `<div class="trip-info trip-info-multiline" title="${infoEscapada}"><small>${infoEscapada.replace(/\n/g, '<br>')}</small></div>`
+    : '';
+
+  return `
+    <article class="trip-card">
+      ${renderConductor(conductor)}
+      ${renderRuta(origenSplit, destinoSplit)}
+      <div class="trip-details">
+        <div class="trip-detail-item"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>${escapeHtml(fecha)}</span></div>
+        <div class="trip-detail-item"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>${escapeHtml(hora)}</span></div>
+        <div class="trip-detail-item"><i class="fa-solid fa-user-group" aria-hidden="true"></i><span>${escapeHtml(asientosTexto)}</span></div>
+        ${precio ? `<div class="trip-detail-item trip-detail-price"><i class="fa-solid fa-tag" aria-hidden="true"></i><span>${escapeHtml(precio)}</span></div>` : ''}
+      </div>
+      ${paquetesHtml}
+      <div class="trip-footer">
+        <div class="trip-qr">
+          <img src="${qrUrl}" alt="QR para abrir el viaje en la app" width="96" height="96" loading="lazy" />
+        </div>
+        <p class="trip-qr-hint">Escaneá para ver el viaje en la app</p>
+      </div>
+      ${infoHtml}
+    </article>
+  `;
+}
+
+function renderEstadoVacio(mensaje, icono) {
+  return `
+    <div class="trip-card trip-card-empty">
+      <div class="trip-packages trip-packages-disabled">
+        <div class="trip-packages-title">
+          <i class="${icono}" aria-hidden="true"></i>
+          <span>${escapeHtml(mensaje)}</span>
+        </div>
       </div>
     </div>
   `;
@@ -174,16 +301,7 @@ async function mostrarUltimosViajes() {
     payload = await response.json();
   } catch (error) {
     console.error(error);
-    tripsList.innerHTML = `
-      <div class="trip-card">
-        <div class="trip-packages trip-packages-disabled">
-          <div class="trip-packages-title">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <span>No pudimos cargar los viajes ahora</span>
-          </div>
-        </div>
-      </div>
-    `;
+    tripsList.innerHTML = renderEstadoVacio('No pudimos cargar los viajes ahora', 'fa-solid fa-circle-exclamation');
     return;
   }
 
@@ -191,69 +309,11 @@ async function mostrarUltimosViajes() {
   const viajes = viajesRaw.filter(esViajeConSalidaPosteriorAhora);
 
   if (viajes.length === 0) {
-    tripsList.innerHTML = `
-      <div class="trip-card">
-        <div class="trip-packages trip-packages-disabled">
-          <div class="trip-packages-title">
-            <i class="fa-regular fa-calendar"></i>
-            <span>No hay viajes disponibles en este momento</span>
-          </div>
-        </div>
-      </div>
-    `;
+    tripsList.innerHTML = renderEstadoVacio('No hay viajes disponibles en este momento', 'fa-regular fa-calendar');
     return;
   }
 
-  viajes.forEach((data) => {
-    // Usar nombreOrigen/nombreDestino si existen, si no, fallback
-    const origenRaw = data.nombreOrigen || parseDireccion(data.coordOrigen) || 'Origen';
-    const destinoRaw = data.nombreDestino || parseDireccion(data.coordDestino) || 'Destino';
-    const origenSplit = splitLocalidadDireccion(origenRaw);
-    const destinoSplit = splitLocalidadDireccion(destinoRaw);
-    const fecha = formatearFecha(data.fecha);
-    const hora = data.hora || '';
-    const lugares = data.lugares || (data.listaPasajeros && data.listaPasajeros.lugares) || '';
-    const precio = formatearPrecio(data.precio);
-    const info = data.informacion || '';
-    const qrData = `https://viajapp.com.ar/viaje/${data.id}`;
-    const qrUrl = generarQR(qrData);
-    const user = data.userData || data.user || {};
-    const username = user && user.username ? user.username : 'Usuario';
-    const userImg = user && (user.profileImageUrl || user.profile_image_url) ? (user.profileImageUrl || user.profile_image_url) : 'images/viajapp-logo.png';
-    const infoPaquetes = obtenerInfoPaquetes(data);
-    const paquetesHtml = renderPaquetes(infoPaquetes);
-    const asientosTexto = lugares ? `${lugares} asientos` : 'Sin asientos informados';
-    const infoEscapada = escapeHtml(info);
-
-    tripsList.innerHTML += `
-      <div class="trip-card">
-        <div class="trip-user">
-          <img src="${escapeHtml(userImg)}" alt="${escapeHtml(username)}" class="trip-user-img" />
-          <span class="trip-user-name" title="${escapeHtml(username)}">${escapeHtml(username)}</span>
-        </div>
-        <div class="trip-header">
-          <span class="trip-localidad" title="${escapeHtml(origenSplit.localidad)}">${escapeHtml(origenSplit.localidad)}</span>
-          <span class="trip-direccion" title="${escapeHtml(origenSplit.direccion)}">${escapeHtml(origenSplit.direccion)}</span>
-          <span class="trip-arrow"><i class='fa-solid fa-arrow-right'></i></span>
-          <span class="trip-localidad" title="${escapeHtml(destinoSplit.localidad)}">${escapeHtml(destinoSplit.localidad)}</span>
-          <span class="trip-direccion" title="${escapeHtml(destinoSplit.direccion)}">${escapeHtml(destinoSplit.direccion)}</span>
-        </div>
-        <div class="trip-details">
-          <div><i class="fa-regular fa-calendar"></i> ${escapeHtml(fecha)}</div>
-          <div><i class="fa-regular fa-clock"></i> ${escapeHtml(formatearHora(hora))}</div>
-          <div><i class="fa-solid fa-user-group"></i> ${escapeHtml(asientosTexto)}</div>
-          ${precio ? `<div><i class='fa-solid fa-dollar-sign'></i> ${precio}</div>` : ''}
-        </div>
-        ${paquetesHtml}
-        <div class="trip-qr">
-          <img src="${qrUrl}" alt="QR para viaje ${data.id}" />
-        </div>
-        <div class="trip-info trip-info-multiline" title="${infoEscapada}">
-          <small>${infoEscapada.replace(/\n/g, '<br>')}</small>
-        </div>
-      </div>
-    `;
-  });
+  tripsList.innerHTML = viajes.map(renderTripCard).join('');
 }
 
-document.addEventListener('DOMContentLoaded', mostrarUltimosViajes); 
+document.addEventListener('DOMContentLoaded', mostrarUltimosViajes);

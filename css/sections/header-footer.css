@@ -117,10 +117,17 @@ footer {
 
 /* Responsive para el header */
 @media (max-width: 768px) {
+  header {
+    padding: 8px 0;
+  }
+
+  .logo img {
+    height: 42px;
+  }
 
   .nav-links {
     position: fixed;
-    top: 70px;
+    top: var(--header-height, 72px);
     left: 0;
     width: 100%;
     background-color: white;

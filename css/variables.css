@@ -6,9 +6,15 @@
     --white: #f8f9fa;
     --dark-color: #2f5478;
     --gray-color: #333;
+    --surface-muted: #eef2f7;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+    --header-height: 72px;
+}
+
+section[id] {
+    scroll-margin-top: var(--header-height);
 }
 
 @keyframes fadeIn {
@@ -220,7 +226,7 @@ ul {
         padding: 60px 0;
     }
     
-    .features, .benefits, .drivers-recruit, .testimonials, .download {
+    .features, .benefits, .trust-highlights, .testimonials, .download {
         padding: 80px 0;
     }
 }
@@ -230,7 +236,7 @@ ul {
         font-size: 2.2rem;
     }
     
-    .features h2, .benefits-text h2, .drivers-recruit h2, .testimonials h2, .download h2 {
+    .features h2, .benefits-text h2, .trust-highlights h2, .testimonials h2, .download h2 {
         font-size: 2rem;
     }
     

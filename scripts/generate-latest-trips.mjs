@@ -91,6 +91,23 @@ function sanitizePackagesConfig(rawConfig) {
   return Object.keys(result).length > 0 ? result : null;
 }
 
+function sanitizeUserData(userData) {
+  if (!userData || typeof userData !== 'object') {
+    return {
+      username: '',
+      profileImageUrl: '',
+      verified: false
+    };
+  }
+
+  const username = String(userData.username || '').trim();
+  return {
+    username,
+    profileImageUrl: userData.profileImageUrl || userData.profile_image_url || '',
+    verified: Boolean(userData.verified ?? userData.nosis_verified)
+  };
+}
+
 function sanitizeTrip(id, data, userData) {
   const fechaHoraViaje = buildFechaHoraViaje(data);
   const paquetesConfig = sanitizePackagesConfig(
@@ -104,9 +121,11 @@ function sanitizeTrip(id, data, userData) {
     typeof data.hora === 'string'
       ? data.hora
       : (rawDate ? rawDate.toISOString().slice(11, 16) : '');
+  const driver = sanitizeUserData(userData);
 
   return {
     id,
+    driverId: data.driver_id || data.driverId || '',
     nombreOrigen: data.nombreOrigen || data.origin_name || parseDireccion(data.coordOrigen) || '',
     nombreDestino: data.nombreDestino || data.destination_name || parseDireccion(data.coordDestino) || '',
     fecha: rawDate ? rawDate.toISOString() : '',
@@ -120,11 +139,31 @@ function sanitizeTrip(id, data, userData) {
       paquetesConfig
     ),
     paquetesConfig,
-    userData: {
-      username: userData?.username || 'Usuario',
-      profileImageUrl: userData?.profileImageUrl || userData?.profile_image_url || ''
-    }
+    userData: driver
   };
+}
+
+async function fetchPublicProfile(driverId, baseUrl, headers) {
+  if (!driverId) return null;
+
+  const url = `${baseUrl}/api/v1/users/${encodeURIComponent(driverId)}`;
+  const { controller, timeout } = withTimeout(API_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(url, {
+      method: 'GET',
+      headers,
+      signal: controller.signal
+    });
+    if (!response.ok) {
+      return null;
+    }
+    return await response.json();
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timeout);
+  }
 }
 
 async function fetchTripsFromApi() {
@@ -167,16 +206,31 @@ async function fetchTripsFromApi() {
 }
 
 async function buildLatestTrips() {
+  const baseUrl = getApiBaseUrl();
   const apiTrips = await fetchTripsFromApi();
   const now = new Date();
-  const trips = [];
+  const headers = {
+    Accept: 'application/json'
+  };
+  const token = (process.env.BACKEND_API_BEARER_TOKEN || '').trim();
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
+
+  const upcoming = [];
   for (const data of apiTrips) {
     if (data.finalized === true) continue;
     const fechaHoraViaje = buildFechaHoraViaje(data);
     if (!fechaHoraViaje || fechaHoraViaje <= now) continue;
-    trips.push(sanitizeTrip(data.id, data, null));
-    if (trips.length >= MAX_RENDERED_TRIPS) break;
+    upcoming.push(data);
+    if (upcoming.length >= MAX_RENDERED_TRIPS) break;
   }
+
+  const profiles = await Promise.all(
+    upcoming.map((trip) => fetchPublicProfile(trip.driver_id, baseUrl, headers))
+  );
+
+  const trips = upcoming.map((data, index) => sanitizeTrip(data.id, data, profiles[index]));
 
   return {
     generatedAt: new Date().toISOString(),

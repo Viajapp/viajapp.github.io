@@ -52,56 +52,55 @@ document.addEventListener("DOMContentLoaded", () => {
     // Iniciar la rotación cada 3 segundos
     setInterval(rotateScreens, 3000)
   
-    // // Slider de testimonios
-    // const testimonialCards = document.querySelectorAll(".testimonial-card")
-    // const dots = document.querySelectorAll(".dot")
-    // const prevBtn = document.querySelector(".testimonial-prev")
-    // const nextBtn = document.querySelector(".testimonial-next")
-    // let currentTestimonial = 0
-  
-    // function showTestimonial(index) {
-    //   // Ocultar todos los testimonios
-    //   testimonialCards.forEach((card) => {
-    //     card.classList.remove("active")
-    //   })
-  
-    //   // Desactivar todos los dots
-    //   dots.forEach((dot) => {
-    //     dot.classList.remove("active")
-    //   })
-  
-    //   // Mostrar el testimonio seleccionado
-    //   testimonialCards[index].classList.add("active")
-    //   dots[index].classList.add("active")
-    //   currentTestimonial = index
-    // }
-  
-    // // Event listeners para los botones de navegación
-    // prevBtn.addEventListener("click", () => {
-    //   let index = currentTestimonial - 1
-    //   if (index < 0) index = testimonialCards.length - 1
-    //   showTestimonial(index)
-    // })
-  
-    // nextBtn.addEventListener("click", () => {
-    //   let index = currentTestimonial + 1
-    //   if (index >= testimonialCards.length) index = 0
-    //   showTestimonial(index)
-    // })
-  
-    // // Event listeners para los dots
-    // dots.forEach((dot, index) => {
-    //   dot.addEventListener("click", () => {
-    //     showTestimonial(index)
-    //   })
-    // })
-  
-    // // Cambiar automáticamente los testimonios cada 5 segundos
-    // setInterval(() => {
-    //   let index = currentTestimonial + 1
-    //   if (index >= testimonialCards.length) index = 0
-    //   showTestimonial(index)
-    // }, 5000)
+    const testimonialCards = document.querySelectorAll(".testimonial-card")
+    const dots = document.querySelectorAll(".testimonial-dots .dot")
+    const prevBtn = document.querySelector(".testimonial-prev")
+    const nextBtn = document.querySelector(".testimonial-next")
+    let currentTestimonial = 0
+
+    function showTestimonial(index) {
+      if (!testimonialCards.length) return
+
+      testimonialCards.forEach((card) => {
+        card.classList.remove("active")
+      })
+
+      dots.forEach((dot) => {
+        dot.classList.remove("active")
+      })
+
+      testimonialCards[index].classList.add("active")
+      if (dots[index]) {
+        dots[index].classList.add("active")
+      }
+      currentTestimonial = index
+    }
+
+    if (testimonialCards.length && prevBtn && nextBtn) {
+      prevBtn.addEventListener("click", () => {
+        let index = currentTestimonial - 1
+        if (index < 0) index = testimonialCards.length - 1
+        showTestimonial(index)
+      })
+
+      nextBtn.addEventListener("click", () => {
+        let index = currentTestimonial + 1
+        if (index >= testimonialCards.length) index = 0
+        showTestimonial(index)
+      })
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          showTestimonial(index)
+        })
+      })
+
+      setInterval(() => {
+        let index = currentTestimonial + 1
+        if (index >= testimonialCards.length) index = 0
+        showTestimonial(index)
+      }, 5000)
+    }
   
     // Animación para el texto del hero
     const heroTitle = document.querySelector(".hero-text h1")

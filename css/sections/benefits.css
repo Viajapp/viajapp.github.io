@@ -1,7 +1,7 @@
 /* Benefits Section */
 .benefits {
   padding: 100px 0;
-  background-color: var(--secondary-color);
+  background-color: var(--white);
   position: relative;
 }
 
@@ -18,8 +18,9 @@
 .benefits-text h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: var(--white);
+  color: var(--primary-color);
   position: relative;
+  scroll-margin-top: 96px;
 }
 
 .benefits-text h2:after {
