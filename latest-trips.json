@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T22:24:48.537Z",
+  "generatedAt": "2026-06-04T02:55:51.884Z",
   "trips": [
     {
       "id": "105ffcfd-8752-47e3-956b-7bafc80a0e30",
@@ -9,7 +9,7 @@
       "fecha": "2026-06-05T20:00:00.000Z",
       "hora": "20:00",
       "lugares": 4,
-      "precio": 4000000,
+      "precio": 40000,
       "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
@@ -38,7 +38,7 @@
       "fecha": "2026-06-05T21:24:00.000Z",
       "hora": "21:24",
       "lugares": 4,
-      "precio": 1100000,
+      "precio": 11000,
       "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
@@ -67,7 +67,7 @@
       "fecha": "2026-06-12T20:00:00.000Z",
       "hora": "20:00",
       "lugares": 4,
-      "precio": 4000000,
+      "precio": 40000,
       "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
