@@ -30,6 +30,19 @@ function formatearHora(horaStr) {
   return horaStr.slice(0, 5);
 }
 
+function obtenerPrecioEnPesos(data) {
+  const pricePerSeat = data.price_per_seat ?? data.pricePerSeat;
+  if (pricePerSeat != null && pricePerSeat !== '') {
+    const centavos = Number(pricePerSeat);
+    if (Number.isFinite(centavos) && centavos > 0) {
+      return centavos / 100;
+    }
+  }
+
+  const precio = Number(data.precio ?? 0);
+  return Number.isFinite(precio) && precio > 0 ? precio : 0;
+}
+
 function formatearPrecio(valor) {
   const numero = Number(valor);
   if (!Number.isFinite(numero) || numero <= 0) return '';
@@ -239,7 +252,7 @@ function renderTripCard(data) {
   const fecha = formatearFecha(data.fecha);
   const hora = formatearHora(data.hora || '');
   const lugares = data.lugares || (data.listaPasajeros && data.listaPasajeros.lugares) || '';
-  const precio = formatearPrecio(data.precio);
+  const precio = formatearPrecio(obtenerPrecioEnPesos(data));
   const info = data.informacion || '';
   const qrData = `https://viajapp.com.ar/viaje/${data.id}`;
   const qrUrl = generarQR(qrData);

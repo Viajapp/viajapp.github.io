@@ -91,6 +91,19 @@ function sanitizePackagesConfig(rawConfig) {
   return Object.keys(result).length > 0 ? result : null;
 }
 
+function normalizeSeatPricePesos(data) {
+  const pricePerSeat = data.price_per_seat;
+  if (pricePerSeat != null && pricePerSeat !== '') {
+    const cents = Number(pricePerSeat);
+    if (Number.isFinite(cents) && cents > 0) {
+      return cents / 100;
+    }
+  }
+
+  const legacyPesos = Number(data.precio ?? 0);
+  return Number.isFinite(legacyPesos) && legacyPesos > 0 ? legacyPesos : 0;
+}
+
 function sanitizeUserData(userData) {
   if (!userData || typeof userData !== 'object') {
     return {
@@ -131,7 +144,7 @@ function sanitizeTrip(id, data, userData) {
     fecha: rawDate ? rawDate.toISOString() : '',
     hora,
     lugares: seatsFree,
-    precio: Number(data.precio ?? data.price_per_seat ?? 0) || 0,
+    precio: normalizeSeatPricePesos(data),
     informacion: data.informacion || data.info || '',
     aceptaPaquetes: Boolean(
       data.aceptaPaquetes ??
