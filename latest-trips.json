@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T21:54:26.574Z",
+  "generatedAt": "2026-06-12T02:50:07.173Z",
   "trips": [
     {
       "id": "1fc338d9-0c89-41ea-9c1e-3abc584a4eab",
@@ -114,6 +114,35 @@
       "userData": {
         "username": "Maria Bernarda Requena",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F8b2f8602-8db5-4b49-bfc1-2fd7211d1b1b.jpg?alt=media&token=24f50e95-a322-4eb7-b3bc-c8d44c073915",
+        "verified": true
+      }
+    },
+    {
+      "id": "64abc15b-2ed3-4b9c-9eca-4aa5a15e5f2c",
+      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
+      "nombreOrigen": "Tres Arroyos",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-06-26T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 4,
+      "precio": 40000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "cristian swaels",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
         "verified": true
       }
     }
