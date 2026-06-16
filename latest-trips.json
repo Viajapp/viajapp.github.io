@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T09:19:28.867Z",
+  "generatedAt": "2026-06-16T16:28:17.736Z",
   "trips": [
     {
       "id": "13fea8f9-2bbc-4b9f-9c51-164c1f724ede",
@@ -100,7 +100,7 @@
       "nombreDestino": "Mar del Plata",
       "fecha": "2026-06-21T19:00:00.000Z",
       "hora": "19:00",
-      "lugares": 2,
+      "lugares": 1,
       "precio": 28000,
       "informacion": "no se permite fumar en el vehículo.\nllevo mascotas",
       "aceptaPaquetes": true,
