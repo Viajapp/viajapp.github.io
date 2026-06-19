@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-06-19T09:01:28.653Z",
+  "generatedAt": "2026-06-19T14:47:43.363Z",
   "trips": [
-    {
-      "id": "13fea8f9-2bbc-4b9f-9c51-164c1f724ede",
-      "driverId": "L9gY2KRHeza5ARaeSTbctm06jLE3",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-06-19T12:52:00.000Z",
-      "hora": "12:52",
-      "lugares": 4,
-      "precio": 0,
-      "informacion": "remis habilitado  por municipalidad de necochea ",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 14000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Larrañaga ezequiel Car",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2FL9gY2KRHeza5ARaeSTbctm06jLE3.jpg?alt=media&token=00ce5de3-928f-435a-83a3-6e34d7a69d04",
-        "verified": true
-      }
-    },
     {
       "id": "b803d618-f719-4afb-aff6-adba14a145d6",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
