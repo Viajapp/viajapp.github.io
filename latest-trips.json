@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T02:57:54.692Z",
+  "generatedAt": "2026-06-21T08:22:24.081Z",
   "trips": [
     {
       "id": "64abc15b-2ed3-4b9c-9eca-4aa5a15e5f2c",
@@ -27,6 +27,30 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "d032bc44-cbf0-442d-9037-6d4016a06d15",
+      "driverId": "b966915a-2a4c-437b-84e0-dd212a1aa545",
+      "nombreOrigen": "Buenos Aires",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-06-27T20:39:00.000Z",
+      "hora": "20:39",
+      "lugares": 2,
+      "precio": 33000,
+      "informacion": "salgo de directorio al 2500",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "mediano": {
+          "activo": true,
+          "precio": 2000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Claudio Óscar Tardío",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb966915a-2a4c-437b-84e0-dd212a1aa545.jpg?alt=media&token=32863fe6-ec31-4be4-b6f0-f7c496ece3f4",
         "verified": true
       }
     },
