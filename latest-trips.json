@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-06-25T14:09:42.893Z",
+  "generatedAt": "2026-06-25T18:04:36.609Z",
   "trips": [
-    {
-      "id": "ffc0a348-0492-4a04-806d-e93b38b4b250",
-      "driverId": "bbca006f-4af2-41ec-b5d5-3190c3ac410a",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-06-25T14:50:00.000Z",
-      "hora": "14:50",
-      "lugares": 2,
-      "precio": 10000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Paola Lorena Iguacel",
-        "profileImageUrl": "",
-        "verified": true
-      }
-    },
     {
       "id": "64abc15b-2ed3-4b9c-9eca-4aa5a15e5f2c",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
@@ -143,6 +109,35 @@
       "userData": {
         "username": "Claudio Óscar Tardío",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb966915a-2a4c-437b-84e0-dd212a1aa545.jpg?alt=media&token=32863fe6-ec31-4be4-b6f0-f7c496ece3f4",
+        "verified": true
+      }
+    },
+    {
+      "id": "272c8ee7-70af-44a5-986a-fcd911f98508",
+      "driverId": "263e6597-6eae-49c4-bbe4-6d39344929a6",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "Tandil",
+      "fecha": "2026-06-28T20:11:00.000Z",
+      "hora": "20:11",
+      "lugares": 3,
+      "precio": 8000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 3500,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 4500,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Beatriz Vergara",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F263e6597-6eae-49c4-bbe4-6d39344929a6.jpg?alt=media&token=bbf57d65-c308-4009-a0b7-c810d5b0c8f6",
         "verified": true
       }
     }
