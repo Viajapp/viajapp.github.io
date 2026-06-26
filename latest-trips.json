@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T21:24:23.224Z",
+  "generatedAt": "2026-06-26T02:40:35.499Z",
   "trips": [
     {
       "id": "64abc15b-2ed3-4b9c-9eca-4aa5a15e5f2c",
@@ -55,7 +55,7 @@
       },
       "userData": {
         "username": "Beatriz Vergara",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F263e6597-6eae-49c4-bbe4-6d39344929a6.jpg?alt=media&token=bbf57d65-c308-4009-a0b7-c810d5b0c8f6",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F263e6597-6eae-49c4-bbe4-6d39344929a6.jpg?alt=media&token=99d16c4b-a712-4fb4-9631-ffa91767b29c",
         "verified": true
       }
     },
@@ -137,7 +137,7 @@
       },
       "userData": {
         "username": "Beatriz Vergara",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F263e6597-6eae-49c4-bbe4-6d39344929a6.jpg?alt=media&token=bbf57d65-c308-4009-a0b7-c810d5b0c8f6",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F263e6597-6eae-49c4-bbe4-6d39344929a6.jpg?alt=media&token=99d16c4b-a712-4fb4-9631-ffa91767b29c",
         "verified": true
       }
     }
