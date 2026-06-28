@@ -1,35 +1,6 @@
 {
-  "generatedAt": "2026-06-28T17:01:45.385Z",
+  "generatedAt": "2026-06-28T20:54:22.809Z",
   "trips": [
-    {
-      "id": "272c8ee7-70af-44a5-986a-fcd911f98508",
-      "driverId": "263e6597-6eae-49c4-bbe4-6d39344929a6",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Tandil",
-      "fecha": "2026-06-28T20:11:00.000Z",
-      "hora": "20:11",
-      "lugares": 3,
-      "precio": 8000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 3500,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 4500,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "Beatriz Vergara",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F263e6597-6eae-49c4-bbe4-6d39344929a6.jpg?alt=media&token=99d16c4b-a712-4fb4-9631-ffa91767b29c",
-        "verified": true
-      }
-    },
     {
       "id": "fa4e666a-6e7e-4f4a-9928-5fcf6b1928d5",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
