@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-06-27T20:53:08.419Z",
+  "generatedAt": "2026-06-28T02:45:46.670Z",
   "trips": [
-    {
-      "id": "58e7567e-4f73-49b1-9faa-c5a242558840",
-      "driverId": "53f800b4-9779-480a-8f00-32bc7bae1f98",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-06-28T00:21:00.000Z",
-      "hora": "00:21",
-      "lugares": 1,
-      "precio": 21000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "Melisa Molina",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F53f800b4-9779-480a-8f00-32bc7bae1f98.jpg?alt=media&token=9c56c95b-ca4b-4f37-953e-522becd320a1",
-        "verified": true
-      }
-    },
     {
       "id": "272c8ee7-70af-44a5-986a-fcd911f98508",
       "driverId": "263e6597-6eae-49c4-bbe4-6d39344929a6",
