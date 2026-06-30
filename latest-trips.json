@@ -1,6 +1,35 @@
 {
-  "generatedAt": "2026-06-30T14:02:33.440Z",
+  "generatedAt": "2026-06-30T17:47:32.249Z",
   "trips": [
+    {
+      "id": "a988d94c-b0ba-442f-8c34-2024d00ee6b7",
+      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-07-03T13:00:00.000Z",
+      "hora": "13:00",
+      "lugares": 2,
+      "precio": 10000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Fabian Amado",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
+        "verified": true
+      }
+    },
     {
       "id": "fa4e666a-6e7e-4f4a-9928-5fcf6b1928d5",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
