@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T02:46:28.811Z",
+  "generatedAt": "2026-07-01T08:04:53.048Z",
   "trips": [
     {
       "id": "a988d94c-b0ba-442f-8c34-2024d00ee6b7",
@@ -56,6 +56,74 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "35a0ab36-d05b-4141-afb6-351abec7b064",
+      "driverId": "50926c45-a848-405c-92a4-5678895d58e7",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-07-04T11:10:00.000Z",
+      "hora": "11:10",
+      "lugares": 2,
+      "precio": 10000,
+      "informacion": "Salgo desde zona intermedia/parque de Necochea, y voy a la facultad de Derecho en Mar del Plata. Puedo buscar y dejar en domicilio, o buscamos punto medio a convenir dependiendo las distancias.",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 3000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 4000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Iñaki San Martín",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F50926c45-a848-405c-92a4-5678895d58e7.jpg?alt=media&token=6c4af8c4-2107-4e37-bb98-02a39178168d",
+        "verified": true
+      }
+    },
+    {
+      "id": "519cea9c-9997-480d-a081-bb1e2aced729",
+      "driverId": "50926c45-a848-405c-92a4-5678895d58e7",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-07-04T20:11:00.000Z",
+      "hora": "20:11",
+      "lugares": 2,
+      "precio": 10000,
+      "informacion": "Salgo desde zona intermedia/parque de Necochea, y voy a la facultad de Derecho en Mar del Plata. Puedo buscar y dejar en domicilio, o buscamos punto medio a convenir dependiendo las distancias.",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 3000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 4000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Iñaki San Martín",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F50926c45-a848-405c-92a4-5678895d58e7.jpg?alt=media&token=6c4af8c4-2107-4e37-bb98-02a39178168d",
         "verified": true
       }
     },
