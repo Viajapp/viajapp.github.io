@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T14:15:39.931Z",
+  "generatedAt": "2026-07-01T17:47:47.507Z",
   "trips": [
     {
       "id": "a988d94c-b0ba-442f-8c34-2024d00ee6b7",
@@ -128,36 +128,20 @@
       }
     },
     {
-      "id": "576cc2a4-3bd9-480a-92fd-b47c5dcbd9c3",
-      "driverId": "cb9c5596-cc11-4277-9927-e8b35e40eaa5",
-      "nombreOrigen": "Lobería",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-07-05T01:19:00.000Z",
-      "hora": "01:19",
-      "lugares": 4,
-      "precio": 2000,
-      "informacion": "viajes y encomiendas ",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
+      "id": "b053fa68-bb9f-4858-ac1b-1406cf35da33",
+      "driverId": "7d0823e0-76eb-43b0-8bc0-6fcd56572cbb",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-07-05T21:50:00.000Z",
+      "hora": "21:50",
+      "lugares": 3,
+      "precio": 7000,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
       "userData": {
-        "username": "Maximiliano Mauco",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fcb9c5596-cc11-4277-9927-e8b35e40eaa5.jpg?alt=media&token=c1d00464-d09b-477e-83a3-2b65eaad3499",
+        "username": "Mayra Espindola",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F7d0823e0-76eb-43b0-8bc0-6fcd56572cbb.jpg?alt=media&token=ea1a80ad-1724-48f6-8dab-f9b8c0b228ba",
         "verified": true
       }
     }
