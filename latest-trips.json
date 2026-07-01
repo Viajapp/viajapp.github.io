@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T08:04:53.048Z",
+  "generatedAt": "2026-07-01T14:15:39.931Z",
   "trips": [
     {
       "id": "a988d94c-b0ba-442f-8c34-2024d00ee6b7",
@@ -128,31 +128,36 @@
       }
     },
     {
-      "id": "cb6da335-e69a-4ce1-9f37-8d53eed467ad",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-07-10T20:00:00.000Z",
-      "hora": "20:00",
+      "id": "576cc2a4-3bd9-480a-92fd-b47c5dcbd9c3",
+      "driverId": "cb9c5596-cc11-4277-9927-e8b35e40eaa5",
+      "nombreOrigen": "Lobería",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-07-05T01:19:00.000Z",
+      "hora": "01:19",
       "lugares": 4,
-      "precio": 40000,
-      "informacion": "",
+      "precio": 2000,
+      "informacion": "viajes y encomiendas ",
       "aceptaPaquetes": true,
       "paquetesConfig": {
         "chico": {
           "activo": true,
-          "precio": 20000,
+          "precio": 5000,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
         },
         "mediano": {
           "activo": true,
-          "precio": 20000,
+          "precio": 5000,
           "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
         }
       },
       "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "username": "Maximiliano Mauco",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fcb9c5596-cc11-4277-9927-e8b35e40eaa5.jpg?alt=media&token=c1d00464-d09b-477e-83a3-2b65eaad3499",
         "verified": true
       }
     }
