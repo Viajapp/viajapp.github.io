@@ -1,35 +1,6 @@
 {
-  "generatedAt": "2026-07-03T10:28:19.636Z",
+  "generatedAt": "2026-07-03T13:47:17.297Z",
   "trips": [
-    {
-      "id": "a988d94c-b0ba-442f-8c34-2024d00ee6b7",
-      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-07-03T13:00:00.000Z",
-      "hora": "13:00",
-      "lugares": 2,
-      "precio": 10000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 8000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "Fabian Amado",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
-        "verified": true
-      }
-    },
     {
       "id": "fa4e666a-6e7e-4f4a-9928-5fcf6b1928d5",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
@@ -132,16 +103,45 @@
       "driverId": "7d0823e0-76eb-43b0-8bc0-6fcd56572cbb",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-07-05T21:50:00.000Z",
-      "hora": "21:50",
-      "lugares": 3,
-      "precio": 7000,
+      "fecha": "2026-07-05T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 1,
+      "precio": 15000,
       "informacion": "",
       "aceptaPaquetes": false,
       "paquetesConfig": null,
       "userData": {
         "username": "Mayra Espindola",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F7d0823e0-76eb-43b0-8bc0-6fcd56572cbb.jpg?alt=media&token=ea1a80ad-1724-48f6-8dab-f9b8c0b228ba",
+        "verified": true
+      }
+    },
+    {
+      "id": "cb6da335-e69a-4ce1-9f37-8d53eed467ad",
+      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
+      "nombreOrigen": "Tres Arroyos",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-07-10T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 4,
+      "precio": 40000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "cristian swaels",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
         "verified": true
       }
     }
