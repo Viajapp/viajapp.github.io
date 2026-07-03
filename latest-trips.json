@@ -1,35 +1,6 @@
 {
-  "generatedAt": "2026-07-03T17:16:20.810Z",
+  "generatedAt": "2026-07-03T20:55:47.157Z",
   "trips": [
-    {
-      "id": "fa4e666a-6e7e-4f4a-9928-5fcf6b1928d5",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-07-03T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
-        "verified": true
-      }
-    },
     {
       "id": "35a0ab36-d05b-4141-afb6-351abec7b064",
       "driverId": "50926c45-a848-405c-92a4-5678895d58e7",
@@ -142,6 +113,40 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "b55b8012-b514-46d5-9a9c-aad1c0b52dd8",
+      "driverId": "bbca006f-4af2-41ec-b5d5-3190c3ac410a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-07-15T19:26:00.000Z",
+      "hora": "19:26",
+      "lugares": 2,
+      "precio": 20000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 12000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Paola Lorena Iguacel",
+        "profileImageUrl": "",
         "verified": true
       }
     }
