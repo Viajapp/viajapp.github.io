@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T20:56:44.572Z",
+  "generatedAt": "2026-07-03T02:11:35.365Z",
   "trips": [
     {
       "id": "a988d94c-b0ba-442f-8c34-2024d00ee6b7",
@@ -66,7 +66,7 @@
       "nombreDestino": "Mar del Plata",
       "fecha": "2026-07-04T11:10:00.000Z",
       "hora": "11:10",
-      "lugares": 2,
+      "lugares": 0,
       "precio": 10000,
       "informacion": "Salgo desde zona intermedia/parque de Necochea, y voy a la facultad de Derecho en Mar del Plata. Puedo buscar y dejar en domicilio, o buscamos punto medio a convenir dependiendo las distancias.",
       "aceptaPaquetes": true,
