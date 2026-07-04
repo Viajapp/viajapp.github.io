@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-07-04T16:55:57.967Z",
+  "generatedAt": "2026-07-04T20:45:55.522Z",
   "trips": [
-    {
-      "id": "519cea9c-9997-480d-a081-bb1e2aced729",
-      "driverId": "50926c45-a848-405c-92a4-5678895d58e7",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-07-04T20:11:00.000Z",
-      "hora": "20:11",
-      "lugares": 2,
-      "precio": 10000,
-      "informacion": "Salgo desde zona intermedia/parque de Necochea, y voy a la facultad de Derecho en Mar del Plata. Puedo buscar y dejar en domicilio, o buscamos punto medio a convenir dependiendo las distancias.",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 3000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 4000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Iñaki San Martín",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F50926c45-a848-405c-92a4-5678895d58e7.jpg?alt=media&token=6c4af8c4-2107-4e37-bb98-02a39178168d",
-        "verified": true
-      }
-    },
     {
       "id": "b053fa68-bb9f-4858-ac1b-1406cf35da33",
       "driverId": "7d0823e0-76eb-43b0-8bc0-6fcd56572cbb",
@@ -147,6 +113,35 @@
       "userData": {
         "username": "Fabian Amado",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
+        "verified": true
+      }
+    },
+    {
+      "id": "c55c9da3-9351-48b9-a939-ef914fb3fb4f",
+      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
+      "nombreOrigen": "Tres Arroyos",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-07-17T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 4,
+      "precio": 40000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "cristian swaels",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
         "verified": true
       }
     }
