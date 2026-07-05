@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-07-05T16:59:37.495Z",
+  "generatedAt": "2026-07-05T20:50:04.828Z",
   "trips": [
-    {
-      "id": "b053fa68-bb9f-4858-ac1b-1406cf35da33",
-      "driverId": "7d0823e0-76eb-43b0-8bc0-6fcd56572cbb",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-07-05T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 0,
-      "precio": 15000,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Mayra Espindola",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F7d0823e0-76eb-43b0-8bc0-6fcd56572cbb.jpg?alt=media&token=ea1a80ad-1724-48f6-8dab-f9b8c0b228ba",
-        "verified": true
-      }
-    },
     {
       "id": "50b49ae8-2307-4454-ba7c-de932e175b57",
       "driverId": "8530ea95-f89d-4087-a84f-253c5574eeb9",
@@ -137,6 +119,40 @@
       "userData": {
         "username": "Paola Lorena Iguacel",
         "profileImageUrl": "",
+        "verified": true
+      }
+    },
+    {
+      "id": "bdec9a4e-4cf4-42e2-9b3f-5fea20749530",
+      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-07-16T16:47:00.000Z",
+      "hora": "16:47",
+      "lugares": 3,
+      "precio": 10000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 6000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 9000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Fabian Amado",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
         "verified": true
       }
     }
