@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T20:45:55.522Z",
+  "generatedAt": "2026-07-05T02:25:53.605Z",
   "trips": [
     {
       "id": "b053fa68-bb9f-4858-ac1b-1406cf35da33",
@@ -8,7 +8,7 @@
       "nombreDestino": "Mar del Plata",
       "fecha": "2026-07-05T20:00:00.000Z",
       "hora": "20:00",
-      "lugares": 1,
+      "lugares": 0,
       "precio": 15000,
       "informacion": "",
       "aceptaPaquetes": false,
