@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T13:15:21.081Z",
+  "generatedAt": "2026-07-05T16:59:37.495Z",
   "trips": [
     {
       "id": "b053fa68-bb9f-4858-ac1b-1406cf35da33",
@@ -16,6 +16,35 @@
       "userData": {
         "username": "Mayra Espindola",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F7d0823e0-76eb-43b0-8bc0-6fcd56572cbb.jpg?alt=media&token=ea1a80ad-1724-48f6-8dab-f9b8c0b228ba",
+        "verified": true
+      }
+    },
+    {
+      "id": "50b49ae8-2307-4454-ba7c-de932e175b57",
+      "driverId": "8530ea95-f89d-4087-a84f-253c5574eeb9",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-07-07T21:00:00.000Z",
+      "hora": "21:00",
+      "lugares": 1,
+      "precio": 0,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 4000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 7000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Sofía Guas",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F8530ea95-f89d-4087-a84f-253c5574eeb9.jpg?alt=media&token=be3ef0bc-ed81-4125-a759-9ae9c4e308d3",
         "verified": true
       }
     },
@@ -45,6 +74,35 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "747dba3e-5a4e-47e9-854c-e586018249ad",
+      "driverId": "8530ea95-f89d-4087-a84f-253c5574eeb9",
+      "nombreOrigen": "Buenos Aires",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-07-12T15:00:00.000Z",
+      "hora": "15:00",
+      "lugares": 1,
+      "precio": 0,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 4000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 7000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Sofía Guas",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F8530ea95-f89d-4087-a84f-253c5574eeb9.jpg?alt=media&token=be3ef0bc-ed81-4125-a759-9ae9c4e308d3",
         "verified": true
       }
     },
@@ -79,69 +137,6 @@
       "userData": {
         "username": "Paola Lorena Iguacel",
         "profileImageUrl": "",
-        "verified": true
-      }
-    },
-    {
-      "id": "bdec9a4e-4cf4-42e2-9b3f-5fea20749530",
-      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Buenos Aires",
-      "fecha": "2026-07-16T16:47:00.000Z",
-      "hora": "16:47",
-      "lugares": 3,
-      "precio": 10000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 6000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 9000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Fabian Amado",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
-        "verified": true
-      }
-    },
-    {
-      "id": "c55c9da3-9351-48b9-a939-ef914fb3fb4f",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-07-17T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
         "verified": true
       }
     }
