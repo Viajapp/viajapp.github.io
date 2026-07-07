@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T21:22:29.008Z",
+  "generatedAt": "2026-07-07T02:25:54.944Z",
   "trips": [
     {
       "id": "50b49ae8-2307-4454-ba7c-de932e175b57",
@@ -93,10 +93,10 @@
       "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Buenos Aires",
-      "fecha": "2026-07-15T17:47:00.000Z",
-      "hora": "17:47",
+      "fecha": "2026-07-15T12:00:00.000Z",
+      "hora": "12:00",
       "lugares": 3,
-      "precio": 15000,
+      "precio": 20000,
       "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
