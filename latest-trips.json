@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T10:48:44.464Z",
+  "generatedAt": "2026-07-07T14:12:35.436Z",
   "trips": [
     {
       "id": "50b49ae8-2307-4454-ba7c-de932e175b57",
@@ -152,7 +152,7 @@
       },
       "userData": {
         "username": "Paola Lorena Iguacel",
-        "profileImageUrl": "",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbbca006f-4af2-41ec-b5d5-3190c3ac410a.jpg?alt=media&token=263e7641-c8d0-40f1-b847-c5d01a0af334",
         "verified": true
       }
     }
