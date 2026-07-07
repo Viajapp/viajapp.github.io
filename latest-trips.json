@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T02:25:54.944Z",
+  "generatedAt": "2026-07-07T07:31:31.783Z",
   "trips": [
     {
       "id": "50b49ae8-2307-4454-ba7c-de932e175b57",
@@ -129,7 +129,7 @@
       "nombreDestino": "Buenos Aires",
       "fecha": "2026-07-15T19:26:00.000Z",
       "hora": "19:26",
-      "lugares": 2,
+      "lugares": 0,
       "precio": 20000,
       "informacion": "",
       "aceptaPaquetes": true,
