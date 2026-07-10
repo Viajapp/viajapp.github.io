@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T21:15:21.486Z",
+  "generatedAt": "2026-07-10T02:12:24.195Z",
   "trips": [
     {
       "id": "d8eea3ef-3017-431a-a30b-1f7dd94db61f",
@@ -8,7 +8,7 @@
       "nombreDestino": "Necochea",
       "fecha": "2026-07-10T16:00:00.000Z",
       "hora": "16:00",
-      "lugares": 2,
+      "lugares": 0,
       "precio": 8000,
       "informacion": "",
       "aceptaPaquetes": true,
