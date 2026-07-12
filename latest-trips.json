@@ -1,35 +1,6 @@
 {
-  "generatedAt": "2026-07-12T13:02:06.149Z",
+  "generatedAt": "2026-07-12T16:50:49.850Z",
   "trips": [
-    {
-      "id": "747dba3e-5a4e-47e9-854c-e586018249ad",
-      "driverId": "8530ea95-f89d-4087-a84f-253c5574eeb9",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-07-12T15:00:00.000Z",
-      "hora": "15:00",
-      "lugares": 1,
-      "precio": 0,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 4000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 7000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "Sofía Guas",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F8530ea95-f89d-4087-a84f-253c5574eeb9.jpg?alt=media&token=be3ef0bc-ed81-4125-a759-9ae9c4e308d3",
-        "verified": true
-      }
-    },
     {
       "id": "3fb77f4b-d819-43cc-a6cf-b7636858659b",
       "driverId": "09700541-5014-46f6-87d2-a8a91c951b9e",
@@ -153,6 +124,40 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "9339a918-4885-4ca1-9567-79f7d1d7e83c",
+      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
+      "nombreOrigen": "Buenos Aires",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-07-18T17:49:00.000Z",
+      "hora": "17:49",
+      "lugares": 0,
+      "precio": 10000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 6000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 9000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Fabian Amado",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
         "verified": true
       }
     }
