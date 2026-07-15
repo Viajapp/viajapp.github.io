@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T01:45:45.488Z",
+  "generatedAt": "2026-07-15T06:08:34.892Z",
   "trips": [
     {
       "id": "e479468f-0ecf-4039-af4e-21d32f0c63e0",
@@ -31,7 +31,7 @@
       },
       "userData": {
         "username": "Fabian Amado",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=bc368dc9-ee50-4a57-ac05-8e11eea30f88",
         "verified": true
       }
     },
@@ -162,7 +162,7 @@
       },
       "userData": {
         "username": "Fabian Amado",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=026a2578-1c0d-42d4-b851-db9ca01ce8c9",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=bc368dc9-ee50-4a57-ac05-8e11eea30f88",
         "verified": true
       }
     }
