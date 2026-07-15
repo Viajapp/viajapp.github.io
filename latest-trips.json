@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-07-15T17:08:32.925Z",
+  "generatedAt": "2026-07-15T20:51:44.358Z",
   "trips": [
-    {
-      "id": "b55b8012-b514-46d5-9a9c-aad1c0b52dd8",
-      "driverId": "bbca006f-4af2-41ec-b5d5-3190c3ac410a",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Buenos Aires",
-      "fecha": "2026-07-15T19:26:00.000Z",
-      "hora": "19:26",
-      "lugares": 0,
-      "precio": 20000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 8000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 12000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Paola Lorena Iguacel",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbbca006f-4af2-41ec-b5d5-3190c3ac410a.jpg?alt=media&token=263e7641-c8d0-40f1-b847-c5d01a0af334",
-        "verified": true
-      }
-    },
     {
       "id": "f7c3bee9-1ba1-4814-82a7-e5e994791d03",
       "driverId": "09700541-5014-46f6-87d2-a8a91c951b9e",
