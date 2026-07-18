@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-07-18T16:47:32.412Z",
+  "generatedAt": "2026-07-18T20:38:39.148Z",
   "trips": [
-    {
-      "id": "9339a918-4885-4ca1-9567-79f7d1d7e83c",
-      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-07-18T17:49:00.000Z",
-      "hora": "17:49",
-      "lugares": 0,
-      "precio": 10000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 6000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 9000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Fabian Amado",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=bc368dc9-ee50-4a57-ac05-8e11eea30f88",
-        "verified": true
-      }
-    },
     {
       "id": "7143698a-a150-4824-9746-59994fbec4b0",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
