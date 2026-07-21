@@ -1,6 +1,74 @@
 {
-  "generatedAt": "2026-07-21T17:08:11.967Z",
+  "generatedAt": "2026-07-21T20:58:53.807Z",
   "trips": [
+    {
+      "id": "58248b42-06bd-4824-a0b9-dd25cdcf4dc8",
+      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-07-22T18:50:00.000Z",
+      "hora": "18:50",
+      "lugares": 2,
+      "precio": 10000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 9500,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 12500,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Fabian Amado",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=bc368dc9-ee50-4a57-ac05-8e11eea30f88",
+        "verified": true
+      }
+    },
+    {
+      "id": "fd3d99cf-3146-4fb7-a41c-36b08a760000",
+      "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-07-24T19:51:00.000Z",
+      "hora": "19:51",
+      "lugares": 2,
+      "precio": 10000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 9500,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 12500,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Fabian Amado",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=bc368dc9-ee50-4a57-ac05-8e11eea30f88",
+        "verified": true
+      }
+    },
     {
       "id": "7143698a-a150-4824-9746-59994fbec4b0",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
