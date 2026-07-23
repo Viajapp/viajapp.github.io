@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T13:29:31.654Z",
+  "generatedAt": "2026-07-23T17:11:29.900Z",
   "trips": [
     {
       "id": "fd3d99cf-3146-4fb7-a41c-36b08a760000",
@@ -36,12 +36,12 @@
       }
     },
     {
-      "id": "9c4cba90-4fc6-43b8-aa8d-622a1220a9ee",
+      "id": "9800a636-f7a8-43e3-a5aa-60e5926a91dd",
       "driverId": "0564066d-eac8-4c63-bef2-694be13414b2",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-07-24T13:05:00.000Z",
-      "hora": "13:05",
+      "fecha": "2026-07-24T12:54:00.000Z",
+      "hora": "12:54",
       "lugares": 2,
       "precio": 10000,
       "informacion": "",
