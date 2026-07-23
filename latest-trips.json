@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T02:04:39.624Z",
+  "generatedAt": "2026-07-23T06:24:35.387Z",
   "trips": [
     {
       "id": "fd3d99cf-3146-4fb7-a41c-36b08a760000",
@@ -32,6 +32,40 @@
       "userData": {
         "username": "Fabian Amado",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F91799f25-bb05-4d26-a00b-f8371b6c89b7.jpg?alt=media&token=bc368dc9-ee50-4a57-ac05-8e11eea30f88",
+        "verified": true
+      }
+    },
+    {
+      "id": "9c4cba90-4fc6-43b8-aa8d-622a1220a9ee",
+      "driverId": "0564066d-eac8-4c63-bef2-694be13414b2",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-07-24T13:05:00.000Z",
+      "hora": "13:05",
+      "lugares": 2,
+      "precio": 10000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 4000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "sebastian pereyra",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F0564066d-eac8-4c63-bef2-694be13414b2.jpg?alt=media&token=a22c3c06-77ad-469e-a227-c3d6eca079b5",
         "verified": true
       }
     },
