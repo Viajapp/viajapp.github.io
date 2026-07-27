@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-07-27T17:36:54.345Z",
+  "generatedAt": "2026-07-27T21:03:51.801Z",
   "trips": [
-    {
-      "id": "6b9ddd90-1cc8-4f08-b62e-2dca3bf15b01",
-      "driverId": "6d6c8ad4-be2f-4af8-bbd2-3bed6f6cff60",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Bahía Blanca",
-      "fecha": "2026-07-27T19:41:00.000Z",
-      "hora": "19:41",
-      "lugares": 3,
-      "precio": 28000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "mediano": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "nacho beltran",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F6d6c8ad4-be2f-4af8-bbd2-3bed6f6cff60.jpg?alt=media&token=38b9c508-c83a-4213-8355-b037b9059043",
-        "verified": false
-      }
-    },
     {
       "id": "7f766450-4e90-4c20-9a15-fb7c83dcb8c1",
       "driverId": "91799f25-bb05-4d26-a00b-f8371b6c89b7",
