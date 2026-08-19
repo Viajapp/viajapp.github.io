@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-08-19T16:21:29.114Z",
+  "generatedAt": "2026-08-19T20:17:55.999Z",
   "trips": [
-    {
-      "id": "71028392-bf39-41fc-ac2f-2e99f35b490a",
-      "driverId": "c1611df1-e156-4463-b5ec-fe8c43bf5b84",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-08-20T10:50:00.000Z",
-      "hora": "10:50",
-      "lugares": 4,
-      "precio": 4000,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Ivone Burgardt",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fc1611df1-e156-4463-b5ec-fe8c43bf5b84.jpg?alt=media&token=5dc4a0dd-467d-4a46-802c-08ab60113949",
-        "verified": true
-      }
-    },
     {
       "id": "95f1efe5-f44c-413e-afea-9da026e6ed7f",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
@@ -45,24 +27,6 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
-        "verified": true
-      }
-    },
-    {
-      "id": "15a72763-bae5-4abe-86a1-9c1c88e3dabd",
-      "driverId": "c1611df1-e156-4463-b5ec-fe8c43bf5b84",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-08-22T12:52:00.000Z",
-      "hora": "12:52",
-      "lugares": 4,
-      "precio": 4000,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Ivone Burgardt",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fc1611df1-e156-4463-b5ec-fe8c43bf5b84.jpg?alt=media&token=5dc4a0dd-467d-4a46-802c-08ab60113949",
         "verified": true
       }
     },
