@@ -1,32 +1,100 @@
 {
-  "generatedAt": "2026-08-21T16:22:57.886Z",
+  "generatedAt": "2026-08-21T20:16:39.393Z",
   "trips": [
     {
-      "id": "95f1efe5-f44c-413e-afea-9da026e6ed7f",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-08-21T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
+      "id": "1c144b0e-4188-45e1-a82a-d8455f379a8e",
+      "driverId": "e77b46cd-beec-434c-9246-c71309c593ed",
+      "nombreOrigen": "Buenos Aires",
+      "nombreDestino": "La Plata",
+      "fecha": "2026-08-21T20:30:00.000Z",
+      "hora": "20:30",
+      "lugares": 1,
+      "precio": 8000,
       "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
         "chico": {
           "activo": true,
-          "precio": 20000,
+          "precio": 8000,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
         },
         "mediano": {
           "activo": true,
-          "precio": 20000,
+          "precio": 12000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 18000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Matias Fernandez",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fe77b46cd-beec-434c-9246-c71309c593ed.jpg?alt=media&token=7b43089a-34da-4dd4-bdb6-99ac2a0276b0",
+        "verified": true
+      }
+    },
+    {
+      "id": "bc6752da-019a-4cbf-b9a5-1e6f8c541df5",
+      "driverId": "e77b46cd-beec-434c-9246-c71309c593ed",
+      "nombreOrigen": "La Plata",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-08-22T21:58:00.000Z",
+      "hora": "21:58",
+      "lugares": 1,
+      "precio": 8000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 12000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 18000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Matias Fernandez",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fe77b46cd-beec-434c-9246-c71309c593ed.jpg?alt=media&token=7b43089a-34da-4dd4-bdb6-99ac2a0276b0",
+        "verified": true
+      }
+    },
+    {
+      "id": "ba619256-5e49-496e-960c-9b1cf18e2c0b",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-08-24T11:50:00.000Z",
+      "hora": "11:50",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
           "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
         }
       },
       "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
         "verified": true
       }
     },
@@ -85,30 +153,6 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
-        "verified": true
-      }
-    },
-    {
-      "id": "409e2505-2442-4000-b2ca-953fb069b61f",
-      "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-09-15T20:28:00.000Z",
-      "hora": "20:28",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "el 15/09 viajo desde Caba a Rosario, dispongo de 4 asientos libres. también puedo transportar documentos o paquetería ligera.",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 15000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "matias javier moriondo",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
         "verified": true
       }
     }
