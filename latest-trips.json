@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T20:19:23.700Z",
+  "generatedAt": "2026-08-21T00:52:28.704Z",
   "trips": [
     {
       "id": "95f1efe5-f44c-413e-afea-9da026e6ed7f",
@@ -36,6 +36,35 @@
       "nombreOrigen": "Tres Arroyos",
       "nombreDestino": "Mar del Plata",
       "fecha": "2026-08-28T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 4,
+      "precio": 40000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "cristian swaels",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "e5916b4f-a7d4-4602-91c7-a42f4298bb76",
+      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
+      "nombreOrigen": "Tres Arroyos",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-09-04T20:00:00.000Z",
       "hora": "20:00",
       "lugares": 4,
       "precio": 40000,
