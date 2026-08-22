@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-08-21T20:16:39.393Z",
+  "generatedAt": "2026-08-22T00:48:15.476Z",
   "trips": [
-    {
-      "id": "1c144b0e-4188-45e1-a82a-d8455f379a8e",
-      "driverId": "e77b46cd-beec-434c-9246-c71309c593ed",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "La Plata",
-      "fecha": "2026-08-21T20:30:00.000Z",
-      "hora": "20:30",
-      "lugares": 1,
-      "precio": 8000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 8000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 12000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 18000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Matias Fernandez",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fe77b46cd-beec-434c-9246-c71309c593ed.jpg?alt=media&token=7b43089a-34da-4dd4-bdb6-99ac2a0276b0",
-        "verified": true
-      }
-    },
     {
       "id": "bc6752da-019a-4cbf-b9a5-1e6f8c541df5",
       "driverId": "e77b46cd-beec-434c-9246-c71309c593ed",
@@ -99,6 +65,35 @@
       }
     },
     {
+      "id": "d2f06b60-9459-4ccf-95d8-9b7221903946",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-08-24T12:00:00.000Z",
+      "hora": "12:00",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
+        "verified": true
+      }
+    },
+    {
       "id": "2ad1a270-abda-4f93-aa32-a3cbf3b74f20",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
       "nombreOrigen": "Tres Arroyos",
@@ -128,31 +123,31 @@
       }
     },
     {
-      "id": "e5916b4f-a7d4-4602-91c7-a42f4298bb76",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
+      "id": "6b29a4c2-a768-4303-8d0c-704df88f99ab",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-09-04T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
-      "informacion": "",
+      "fecha": "2026-08-31T12:00:00.000Z",
+      "hora": "12:00",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
       "aceptaPaquetes": true,
       "paquetesConfig": {
         "chico": {
           "activo": true,
-          "precio": 20000,
+          "precio": 8000,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
         },
         "mediano": {
           "activo": true,
-          "precio": 20000,
+          "precio": 10000,
           "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
         }
       },
       "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
         "verified": true
       }
     }
