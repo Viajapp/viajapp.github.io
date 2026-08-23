@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-08-22T20:13:45.073Z",
+  "generatedAt": "2026-08-23T00:52:47.533Z",
   "trips": [
-    {
-      "id": "bc6752da-019a-4cbf-b9a5-1e6f8c541df5",
-      "driverId": "e77b46cd-beec-434c-9246-c71309c593ed",
-      "nombreOrigen": "La Plata",
-      "nombreDestino": "Buenos Aires",
-      "fecha": "2026-08-22T21:58:00.000Z",
-      "hora": "21:58",
-      "lugares": 1,
-      "precio": 8000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 8000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 12000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 18000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Matias Fernandez",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fe77b46cd-beec-434c-9246-c71309c593ed.jpg?alt=media&token=7b43089a-34da-4dd4-bdb6-99ac2a0276b0",
-        "verified": true
-      }
-    },
     {
       "id": "2ad1a270-abda-4f93-aa32-a3cbf3b74f20",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
