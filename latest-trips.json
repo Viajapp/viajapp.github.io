@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T16:42:20.750Z",
+  "generatedAt": "2026-08-26T22:37:32.358Z",
   "trips": [
     {
       "id": "2ad1a270-abda-4f93-aa32-a3cbf3b74f20",
@@ -103,6 +103,30 @@
         "chico": {
           "activo": true,
           "precio": 15000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        }
+      },
+      "userData": {
+        "username": "matias javier moriondo",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
+        "verified": true
+      }
+    },
+    {
+      "id": "2e1dd3b6-96cb-49a1-8301-1d8b3e48df46",
+      "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
+      "nombreOrigen": "Buenos Aires",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-09-22T21:58:00.000Z",
+      "hora": "21:58",
+      "lugares": 3,
+      "precio": 25000,
+      "informacion": "Hola,  mi nombre es Matías, vuelvo de aeroparque hasta rosario. ",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 18000,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
         }
       },
