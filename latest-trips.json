@@ -1,35 +1,6 @@
 {
-  "generatedAt": "2026-08-28T15:53:30.020Z",
+  "generatedAt": "2026-08-29T00:17:46.601Z",
   "trips": [
-    {
-      "id": "2ad1a270-abda-4f93-aa32-a3cbf3b74f20",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-08-28T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
-        "verified": true
-      }
-    },
     {
       "id": "e5916b4f-a7d4-4602-91c7-a42f4298bb76",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
@@ -132,6 +103,30 @@
         "chico": {
           "activo": true,
           "precio": 15000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        }
+      },
+      "userData": {
+        "username": "matias javier moriondo",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
+        "verified": true
+      }
+    },
+    {
+      "id": "2e1dd3b6-96cb-49a1-8301-1d8b3e48df46",
+      "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
+      "nombreOrigen": "Buenos Aires",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-09-22T21:58:00.000Z",
+      "hora": "21:58",
+      "lugares": 3,
+      "precio": 25000,
+      "informacion": "Hola,  mi nombre es Matías, vuelvo de aeroparque hasta rosario. ",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 18000,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
         }
       },
