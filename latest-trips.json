@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T22:16:37.321Z",
+  "generatedAt": "2026-08-31T02:44:24.125Z",
   "trips": [
     {
       "id": "e5916b4f-a7d4-4602-91c7-a42f4298bb76",
@@ -89,6 +89,35 @@
       }
     },
     {
+      "id": "731c7352-4aa4-4e47-b1a1-a29123bbcd9d",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-09-14T12:00:00.000Z",
+      "hora": "12:00",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
+        "verified": true
+      }
+    },
+    {
       "id": "409e2505-2442-4000-b2ca-953fb069b61f",
       "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
       "nombreOrigen": "Buenos Aires",
@@ -103,30 +132,6 @@
         "chico": {
           "activo": true,
           "precio": 15000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "matias javier moriondo",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
-        "verified": true
-      }
-    },
-    {
-      "id": "2e1dd3b6-96cb-49a1-8301-1d8b3e48df46",
-      "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-09-22T21:58:00.000Z",
-      "hora": "21:58",
-      "lugares": 3,
-      "precio": 25000,
-      "informacion": "Hola,  mi nombre es Matías, vuelvo de aeroparque hasta rosario. ",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 18000,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
         }
       },
