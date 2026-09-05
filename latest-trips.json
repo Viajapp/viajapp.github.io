@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-09-04T21:59:14.341Z",
+  "generatedAt": "2026-09-05T02:19:04.389Z",
   "trips": [
-    {
-      "id": "a96ed5a3-e160-4b75-be2f-cc2a5f4a0804",
-      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
-      "nombreOrigen": "Tandil",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-09-04T23:10:00.000Z",
-      "hora": "23:10",
-      "lugares": 3,
-      "precio": 38000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Catalina Rojas",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
-        "verified": true
-      }
-    },
     {
       "id": "9b06cdd3-11bd-4a77-ac4c-09b0ebc583a6",
       "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
@@ -61,6 +27,40 @@
       "userData": {
         "username": "Erica Alberto",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
+        "verified": true
+      }
+    },
+    {
+      "id": "d04a1f7f-bb9c-4b47-9e18-c6e2d6976ed1",
+      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
+      "nombreOrigen": "Tandil",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-09-11T18:00:00.000Z",
+      "hora": "18:00",
+      "lugares": 3,
+      "precio": 38000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Catalina Rojas",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
         "verified": true
       }
     },
