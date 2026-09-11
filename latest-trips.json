@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-09-11T08:27:10.459Z",
+  "generatedAt": "2026-09-11T15:38:25.933Z",
   "trips": [
-    {
-      "id": "321b5a91-dfce-4589-b6a5-13319865eaa2",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-09-11T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
-        "verified": true
-      }
-    },
     {
       "id": "d04a1f7f-bb9c-4b47-9e18-c6e2d6976ed1",
       "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
@@ -83,12 +65,12 @@
       }
     },
     {
-      "id": "8517a51f-f427-4073-aee8-e715560ac176",
+      "id": "b3fbc1aa-87a8-49de-82bf-b7c6262e4ff7",
       "driverId": "adf2e7b9-0b7a-4731-ab9e-cd046ef9e610",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-09-12T03:17:00.000Z",
-      "hora": "03:17",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-09-14T03:27:00.000Z",
+      "hora": "03:27",
       "lugares": 2,
       "precio": 35000,
       "informacion": "",
@@ -115,6 +97,35 @@
       "userData": {
         "username": "Agustín Guardia",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "731c7352-4aa4-4e47-b1a1-a29123bbcd9d",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-09-14T12:00:00.000Z",
+      "hora": "12:00",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
         "verified": true
       }
     }
