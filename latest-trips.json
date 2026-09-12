@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T14:45:13.644Z",
+  "generatedAt": "2026-09-12T18:00:19.330Z",
   "trips": [
     {
       "id": "05641214-05a5-48fe-9cad-bfee61dc70df",
@@ -73,7 +73,7 @@
       "nombreDestino": "Mar del Plata",
       "fecha": "2026-09-14T12:00:00.000Z",
       "hora": "12:00",
-      "lugares": 3,
+      "lugares": 1,
       "precio": 15000,
       "informacion": "solo los lunes\n\n\n",
       "aceptaPaquetes": true,
