@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-09-14T02:44:22.311Z",
+  "generatedAt": "2026-09-14T09:26:14.738Z",
   "trips": [
-    {
-      "id": "b3fbc1aa-87a8-49de-82bf-b7c6262e4ff7",
-      "driverId": "adf2e7b9-0b7a-4731-ab9e-cd046ef9e610",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Buenos Aires",
-      "fecha": "2026-09-14T03:27:00.000Z",
-      "hora": "03:27",
-      "lugares": 2,
-      "precio": 35000,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Mauro Gimenez",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fadf2e7b9-0b7a-4731-ab9e-cd046ef9e610.jpg?alt=media&token=4743a832-440b-4d31-8e7c-b730d1621f65",
-        "verified": true
-      }
-    },
     {
       "id": "a619544b-de94-4940-95c0-858065dc81db",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -105,6 +87,24 @@
       "userData": {
         "username": "matias javier moriondo",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
+        "verified": true
+      }
+    },
+    {
+      "id": "4a8a788f-494d-4f0a-9c04-4f7b51fa7638",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-09-16T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
         "verified": true
       }
     }
