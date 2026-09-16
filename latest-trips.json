@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-09-16T08:58:19.519Z",
+  "generatedAt": "2026-09-16T15:52:41.670Z",
   "trips": [
-    {
-      "id": "4a8a788f-494d-4f0a-9c04-4f7b51fa7638",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-09-16T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
-        "verified": true
-      }
-    },
     {
       "id": "a54aefe3-a72d-446d-9d0d-7f0e4bf6bfcd",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -115,6 +97,24 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "f029ca83-a3a0-4cab-8d53-b3e160054460",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-09-21T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
         "verified": true
       }
     }
