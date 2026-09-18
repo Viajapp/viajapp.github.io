@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-09-18T15:33:50.475Z",
+  "generatedAt": "2026-09-18T18:46:02.627Z",
   "trips": [
-    {
-      "id": "27055182-8f49-451d-a756-b36667b095dd",
-      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
-      "nombreOrigen": "Tandil",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-09-18T18:00:00.000Z",
-      "hora": "18:00",
-      "lugares": 3,
-      "precio": 38000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Catalina Rojas",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
-        "verified": true
-      }
-    },
     {
       "id": "03d8a540-d702-4cc1-9dff-76cda7685f76",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
@@ -126,6 +92,30 @@
       "userData": {
         "username": "Agustín Guardia",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "2e1dd3b6-96cb-49a1-8301-1d8b3e48df46",
+      "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
+      "nombreOrigen": "Buenos Aires",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-09-22T21:58:00.000Z",
+      "hora": "21:58",
+      "lugares": 3,
+      "precio": 25000,
+      "informacion": "Hola,  mi nombre es Matías, vuelvo de aeroparque hasta rosario. ",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 18000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        }
+      },
+      "userData": {
+        "username": "matias javier moriondo",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
         "verified": true
       }
     }
