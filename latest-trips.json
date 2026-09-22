@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-09-22T16:02:02.885Z",
+  "generatedAt": "2026-09-22T22:35:31.417Z",
   "trips": [
-    {
-      "id": "2e1dd3b6-96cb-49a1-8301-1d8b3e48df46",
-      "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-09-22T21:58:00.000Z",
-      "hora": "21:58",
-      "lugares": 3,
-      "precio": 25000,
-      "informacion": "Hola,  mi nombre es Matías, vuelvo de aeroparque hasta rosario. ",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 18000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "matias javier moriondo",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
-        "verified": true
-      }
-    },
     {
       "id": "c9434299-d7d4-4267-a67c-7359ba49c3b8",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -110,6 +86,35 @@
       "userData": {
         "username": "Catalina Rojas",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
+        "verified": true
+      }
+    },
+    {
+      "id": "f1ac712c-2bad-4640-a33b-46182f7e0252",
+      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
+      "nombreOrigen": "Tres Arroyos",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-09-25T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 4,
+      "precio": 40000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "cristian swaels",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
         "verified": true
       }
     }
