@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-09-22T08:55:53.145Z",
+  "generatedAt": "2026-09-22T16:02:02.885Z",
   "trips": [
-    {
-      "id": "0b84aaa2-5a3b-4b68-9fe3-e8490038e93f",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-09-22T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
-        "verified": true
-      }
-    },
     {
       "id": "2e1dd3b6-96cb-49a1-8301-1d8b3e48df46",
       "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
@@ -94,6 +76,40 @@
       "userData": {
         "username": "Agustín Guardia",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "68a138f9-6741-4296-a688-dbddbfd480ef",
+      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
+      "nombreOrigen": "Tandil",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-09-25T18:00:00.000Z",
+      "hora": "18:00",
+      "lugares": 3,
+      "precio": 38000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Catalina Rojas",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
         "verified": true
       }
     }
