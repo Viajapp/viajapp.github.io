@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-09-24T08:53:59.711Z",
+  "generatedAt": "2026-09-24T16:15:05.464Z",
   "trips": [
-    {
-      "id": "8b29f2a4-bc07-4878-ae54-3abca5792f22",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-09-24T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
-        "verified": true
-      }
-    },
     {
       "id": "e953ed7c-1078-4569-9f10-a31c06507bc9",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -115,6 +97,35 @@
       "userData": {
         "username": "cristian swaels",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "verified": true
+      }
+    },
+    {
+      "id": "839846f0-d051-4436-a686-a6c7c5c61e43",
+      "driverId": "63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a",
+      "nombreOrigen": "Rosario",
+      "nombreDestino": "Buenos Aires",
+      "fecha": "2026-09-25T20:29:00.000Z",
+      "hora": "20:29",
+      "lugares": 4,
+      "precio": 25000,
+      "informacion": "Viajo de Rosario con destino a CABA, llevar bolsos pequeños. Puedo transportar paquetería mediana.",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 15000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "matias javier moriondo",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F63b135b9-f9dd-4b5e-b6ff-64b6d06e1d6a.jpg?alt=media&token=b8f38c2b-4a36-46f0-af1e-169445a84b36",
         "verified": true
       }
     }
