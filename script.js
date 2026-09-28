@@ -97,6 +97,56 @@
     }).observe(phone);
   }
 
+  /** Messages of the two floating cards for each phone screen, in screen order. */
+  const FLOAT_CARD_MESSAGES = [
+    [['green', 'fa-check', '¡Viaje publicado!', 'Ya está visible para pasajeros'],
+      ['coral', 'fa-hand-holding-dollar', 'Compartí gastos', 'Vos ponés el precio por asiento']],
+    [['navy', 'fa-magnifying-glass', 'Buscá tu viaje', 'Filtrá por fecha y horario'],
+      ['coral', 'fa-box', 'También paquetes', 'Enviá con quien ya viaja']],
+    [['navy', 'fa-location-dot', 'Cerca tuyo', 'Viajes según tu ubicación'],
+      ['coral', 'fa-bell', 'Dejá un aviso', 'Te avisamos cuando aparezca uno']],
+    [['green', 'fa-circle-check', '¡Reserva enviada!', 'Pagaste con Mercado Pago'],
+      ['coral', 'fa-rotate-left', 'Sin riesgo', 'Si te rechazan, se devuelve']],
+    [['navy', 'fa-comment', 'Nuevo mensaje', '¿Nos vemos en la terminal?'],
+      ['coral', 'fa-location-arrow', 'Ubicación en vivo', 'Compartila durante el viaje']],
+    [['green', 'fa-flag-checkered', '¡Llegaste!', 'Contanos cómo fue el viaje'],
+      ['coral', 'fa-star', 'Valoraciones reales', 'Después de cada viaje']],
+  ];
+
+  /** Swaps the floating cards' content each time a phone screen fades in. */
+  function initFloatCards() {
+    const phone = document.getElementById('phone-mockup');
+    const cards = [document.querySelector('.float-card--top'), document.querySelector('.float-card--bottom')];
+    if (!phone || cards.some((c) => !c)) return;
+
+    const fill = (card, [tone, icon, title, subtitle]) => {
+      const tile = card.querySelector('.icon-tile');
+      tile.className = `icon-tile${tone === 'coral' ? '' : ` icon-tile--${tone}`}`;
+      tile.querySelector('i').className = `fas ${icon}`;
+      card.querySelector('strong').textContent = title;
+      card.querySelector('small').textContent = subtitle;
+    };
+
+    const show = (index) => {
+      const messages = FLOAT_CARD_MESSAGES[index];
+      if (!messages) return;
+      cards.forEach((card, i) => {
+        if (card.querySelector('strong').textContent === messages[i][2]) return;
+        card.classList.add('is-swapping');
+        setTimeout(() => {
+          fill(card, messages[i]);
+          card.classList.remove('is-swapping');
+        }, 240 + i * 120);
+      });
+    };
+
+    const screens = Array.from(phone.querySelectorAll('.phone-screen'));
+    screens.forEach((screen, index) => {
+      screen.addEventListener('animationstart', () => show(index));
+      screen.addEventListener('animationiteration', () => show(index));
+    });
+  }
+
   function initYear() {
     const year = document.getElementById('year');
     if (year) year.textContent = String(new Date().getFullYear());
@@ -107,5 +157,6 @@
   initMobileMenu();
   initActiveNav();
   initPhoneCycle();
+  initFloatCards();
   initYear();
 })();

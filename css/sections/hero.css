@@ -149,6 +149,15 @@
     font-size: 1rem;
 }
 
+.float-card > :not(.fx-glare) {
+    transition: opacity 240ms var(--ease), transform 240ms var(--ease);
+}
+
+.float-card.is-swapping > :not(.fx-glare) {
+    opacity: 0;
+    transform: translateY(6px);
+}
+
 .float-card--top {
     top: 14%;
     left: -4%;

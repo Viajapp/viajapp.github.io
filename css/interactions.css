@@ -51,6 +51,10 @@ header {
     transition: transform 520ms var(--ease), box-shadow var(--t-medium) var(--ease);
 }
 
+.fx .float-card.fx-tilt {
+    position: absolute;
+}
+
 .fx .fx-tilt.is-tilting {
     --lift: -4px;
     transition: transform 90ms linear, box-shadow var(--t-medium) var(--ease);
