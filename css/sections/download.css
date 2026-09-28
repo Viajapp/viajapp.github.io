@@ -1,60 +1,95 @@
-/* Download Section */
+/* Descarga: momento de marca en navy */
 .download {
-    padding: 100px 0;
-    background-color: var(--white);
-    color: var(--primary-color);
-    text-align: center;
+    padding: 0 0 var(--section-y);
+}
+
+.download-card {
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 72px 32px;
+    border-radius: 32px;
+    background: var(--navy);
+    color: #fff;
 }
 
-.download h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.download-card::before,
+.download-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.download-card::before {
+    width: 420px;
+    height: 420px;
+    top: -200px;
+    right: -120px;
+    background: radial-gradient(circle, rgba(218, 92, 88, 0.45), rgba(218, 92, 88, 0) 70%);
+}
+
+.download-card::after {
+    width: 360px;
+    height: 360px;
+    bottom: -220px;
+    left: -100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0) 70%);
+}
+
+.download-card > * {
     position: relative;
-    display: inline-block;
 }
 
-.download h2 span {
-    color: var(--secondary-color);
+.download-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
-.download p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    max-width: 700px;
+.download-card .section-title {
+    color: #fff;
+}
+
+.download-card .section-lead {
+    color: rgba(255, 255, 255, 0.78);
     margin-left: auto;
     margin-right: auto;
-    color: var(--gray-color);
 }
 
-.download .cta-buttons {
+.download-card .cta-buttons {
     justify-content: center;
-    margin-bottom: 40px;
+}
+
+.download-card .btn-ghost {
+    background: #fff;
+    box-shadow: none;
 }
 
 .social-link-large {
-    display: inline-block;
-    margin-top: 20px;
+    margin-top: 28px;
 }
 
 .social-link-large a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
-    font-weight: 600;
-    transition: var(--transition);
-    padding: 10px 20px;
-    border-radius: var(--border-radius);
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-link-large i {
-    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color var(--t-short) var(--ease);
 }
 
 .social-link-large a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .download-card {
+        padding: 56px 20px;
+        border-radius: var(--r-card);
+    }
 }

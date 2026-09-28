@@ -1,224 +1,111 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Loader
-    const loader = document.querySelector(".loader")
-  
-    // Ocultar el loader después de que la página cargue
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        loader.classList.add("hidden")
-        // Iniciar animaciones AOS después de que el loader desaparezca
-        initAOS()
-      }, 1000)
-    })
-  
-    // Función para inicializar animaciones al hacer scroll
-    function initAOS() {
-      const aosElements = document.querySelectorAll("[data-aos]")
-  
-      const checkIfInView = () => {
-        aosElements.forEach((element) => {
-          const elementPosition = element.getBoundingClientRect().top
-          const windowHeight = window.innerHeight
-          const elementVisible = 150
-  
-          if (elementPosition < windowHeight - elementVisible) {
-            element.classList.add("aos-animate")
-          }
-        })
-      }
-  
-      // Ejecutar una vez al inicio
-      checkIfInView()
-  
-      // Ejecutar al hacer scroll
-      window.addEventListener("scroll", checkIfInView)
-    }
-  
-    // Rotación automática de imágenes en el mockup del teléfono
-    const phoneScreens = document.querySelectorAll(".phone-mockup .phone-screen")
-    let currentScreen = 0
-  
-    function rotateScreens() {
-      // Ocultar todas las pantallas
-      phoneScreens.forEach((screen) => {
-        screen.classList.remove("active")
-      })
-  
-      // Mostrar la siguiente pantalla
-      currentScreen = (currentScreen + 1) % phoneScreens.length
-      phoneScreens[currentScreen].classList.add("active")
-    }
-  
-    // Iniciar la rotación cada 3 segundos
-    setInterval(rotateScreens, 3000)
-  
-    const testimonialCards = document.querySelectorAll(".testimonial-card")
-    const dots = document.querySelectorAll(".testimonial-dots .dot")
-    const prevBtn = document.querySelector(".testimonial-prev")
-    const nextBtn = document.querySelector(".testimonial-next")
-    let currentTestimonial = 0
+/* Interacciones de la landing: revelado por IntersectionObserver, header, menú móvil y navegación activa. */
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    function showTestimonial(index) {
-      if (!testimonialCards.length) return
-
-      testimonialCards.forEach((card) => {
-        card.classList.remove("active")
-      })
-
-      dots.forEach((dot) => {
-        dot.classList.remove("active")
-      })
-
-      testimonialCards[index].classList.add("active")
-      if (dots[index]) {
-        dots[index].classList.add("active")
-      }
-      currentTestimonial = index
+  function initReveal() {
+    const items = document.querySelectorAll('[data-reveal]');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach((el) => el.classList.add('is-visible'));
+      return;
     }
 
-    if (testimonialCards.length && prevBtn && nextBtn) {
-      prevBtn.addEventListener("click", () => {
-        let index = currentTestimonial - 1
-        if (index < 0) index = testimonialCards.length - 1
-        showTestimonial(index)
-      })
+    items.forEach((el) => {
+      const siblings = Array.from(el.parentElement.children).filter((c) => c.hasAttribute('data-reveal'));
+      const index = Math.min(siblings.indexOf(el), 5);
+      el.style.setProperty('--reveal-delay', `${index * 70}ms`);
+    });
 
-      nextBtn.addEventListener("click", () => {
-        let index = currentTestimonial + 1
-        if (index >= testimonialCards.length) index = 0
-        showTestimonial(index)
-      })
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.add('is-visible');
+        observer.unobserve(el);
+        el.addEventListener('transitionend', function done(e) {
+          if (e.target !== el || e.propertyName !== 'opacity') return;
+          el.removeAttribute('data-reveal');
+          el.style.removeProperty('--reveal-delay');
+          el.removeEventListener('transitionend', done);
+        });
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
 
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          showTestimonial(index)
-        })
-      })
+    items.forEach((el) => observer.observe(el));
+  }
 
-      setInterval(() => {
-        let index = currentTestimonial + 1
-        if (index >= testimonialCards.length) index = 0
-        showTestimonial(index)
-      }, 5000)
-    }
-  
-    // Animación para el texto del hero
-    const heroTitle = document.querySelector(".hero-text h1")
-    if (heroTitle) {
-      const words = document.querySelectorAll(".hero-text h1 span")
-      words.forEach((word, index) => {
-        word.style.animationDelay = `${index * 0.1}s`
-        word.style.opacity = "0"
-        word.style.animation = "fadeIn 0.5s forwards"
-      })
-    }
-  
-    // Efecto hover para las tarjetas de características
-    const featureCards = document.querySelectorAll(".feature-card")
-    featureCards.forEach((card) => {
-      card.addEventListener("mouseenter", function () {
-        this.style.transform = "translateY(-10px)"
-        this.style.boxShadow = "0 20px 40px rgba(0, 0, 0, 0.1)"
-      })
-  
-      card.addEventListener("mouseleave", function () {
-        this.style.transform = "translateY(0)"
-        this.style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.05)"
-      })
-    })
-  
-    // Animación para los botones
-    const buttons = document.querySelectorAll(".btn")
-    buttons.forEach((button) => {
-      button.addEventListener("mouseenter", function () {
-        this.style.transform = "translateY(-3px)"
-      })
-  
-      button.addEventListener("mouseleave", function () {
-        this.style.transform = "translateY(0)"
-      })
-    })
-  
-    // Animación para el logo en el header
-    const logo = document.querySelector(".logo img")
-    logo.addEventListener("mouseenter", function () {
-      this.style.transform = "scale(1.05)"
-    })
-  
-    logo.addEventListener("mouseleave", function () {
-      this.style.transform = "scale(1)"
-    })
-  
-    // Menú móvil
-    const mobileMenuToggle = document.querySelector(".mobile-menu-toggle")
-    const navLinks = document.querySelector(".nav-links")
-  
-    if (mobileMenuToggle) {
-      mobileMenuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active")
-        const isOpen = navLinks.classList.contains("active")
-        mobileMenuToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>'
-      })
-    }
-  
-    // Marcar sección activa en el menú
-    const sections = document.querySelectorAll("section[id]")
-    const navItems = document.querySelectorAll(".nav-links a")
-  
-    function highlightNavItem() {
-      const scrollPosition = window.scrollY
-  
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 100
-        const sectionHeight = section.offsetHeight
-        const sectionId = section.getAttribute("id")
-  
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-          navItems.forEach((item) => {
-            item.classList.remove("active")
-            if (item.getAttribute("href") === "#" + sectionId) {
-              item.classList.add("active")
-            }
-          })
-        }
-      })
-  
-      // Si estamos en la parte superior, activar el primer elemento
-      if (scrollPosition < 100) {
-        navItems.forEach((item, index) => {
-          item.classList.remove("active")
-          if (index === 0) {
-            item.classList.add("active")
-          }
-        })
-      }
-    }
-  
-    window.addEventListener("scroll", highlightNavItem)
-    highlightNavItem() // Ejecutar una vez al cargar
-  
-    // Animación para el scroll suave
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault()
-  
-        const targetId = this.getAttribute("href")
-        if (targetId === "#") return
-  
-        const targetElement = document.querySelector(targetId)
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: "smooth",
-          })
-  
-          // Cerrar menú móvil si está abierto
-          if (navLinks && navLinks.classList.contains("active")) {
-            navLinks.classList.remove("active")
-            mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>'
-          }
-        }
-      })
-    })
-  })
-  
+  function initHeader() {
+    const header = document.querySelector('header');
+    const hero = document.getElementById('hero');
+    if (!header || !hero || !('IntersectionObserver' in window)) return;
+    const sentinel = document.createElement('div');
+    sentinel.setAttribute('aria-hidden', 'true');
+    sentinel.style.cssText = 'position:absolute;top:0;height:8px;width:1px;';
+    hero.prepend(sentinel);
+    new IntersectionObserver(([entry]) => {
+      header.classList.toggle('is-scrolled', !entry.isIntersecting);
+    }).observe(sentinel);
+  }
+
+  function initMobileMenu() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const links = document.getElementById('nav-links');
+    if (!toggle || !links) return;
+
+    const setOpen = (open) => {
+      links.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      toggle.innerHTML = open
+        ? '<i class="fas fa-xmark" aria-hidden="true"></i>'
+        : '<i class="fas fa-bars" aria-hidden="true"></i>';
+    };
+
+    toggle.addEventListener('click', () => setOpen(!links.classList.contains('active')));
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setOpen(false);
+    });
+  }
+
+  function initActiveNav() {
+    const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+    if (!navItems.length || !('IntersectionObserver' in window)) return;
+    const byId = new Map(Array.from(navItems).map((a) => [a.getAttribute('href').slice(1), a]));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const link = byId.get(entry.target.id);
+        if (!link) return;
+        navItems.forEach((a) => a.classList.remove('active'));
+        link.classList.add('active');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+
+    byId.forEach((_, id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+  }
+
+  /** Pauses the phone screen cycle while it is off-screen or motion is reduced. */
+  function initPhoneCycle() {
+    const phone = document.getElementById('phone-mockup');
+    if (!phone || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(([entry]) => {
+      phone.classList.toggle('is-paused', !entry.isIntersecting || reduceMotion.matches);
+    }).observe(phone);
+  }
+
+  function initYear() {
+    const year = document.getElementById('year');
+    if (year) year.textContent = String(new Date().getFullYear());
+  }
+
+  initReveal();
+  initHeader();
+  initMobileMenu();
+  initActiveNav();
+  initPhoneCycle();
+  initYear();
+})();

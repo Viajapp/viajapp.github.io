@@ -1,0 +1,199 @@
+/* Páginas auxiliares: resultado de pago, verificación de correo, recuperar contraseña y 404. */
+body.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page header {
+    position: static;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
+.page-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 32px 0 80px;
+}
+
+.page-card {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 44px 36px;
+    text-align: center;
+    animation: pageIn var(--t-reveal) var(--ease) both;
+}
+
+.page-card--left {
+    text-align: left;
+}
+
+@keyframes pageIn {
+    from { opacity: 0; transform: translateY(16px); filter: blur(6px); }
+    to { opacity: 1; transform: none; filter: none; }
+}
+
+.status-hero {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 24px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--hero-soft, var(--coral-soft));
+    color: var(--hero, var(--coral));
+    font-size: 2.4rem;
+    animation: heroPop var(--t-moment) var(--ease) both 120ms;
+}
+
+.status-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 var(--hero, var(--coral));
+    opacity: 0.35;
+    animation: heroRing 1200ms var(--ease) both 420ms;
+}
+
+.status-hero--success { --hero: var(--green); --hero-soft: var(--green-soft); }
+.status-hero--error { --hero: var(--error); --hero-soft: var(--error-soft); }
+.status-hero--pending { --hero: var(--warning); --hero-soft: var(--warning-soft); }
+
+@keyframes heroPop {
+    0% { opacity: 0; transform: scale(0.6); }
+    60% { opacity: 1; transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+@keyframes heroRing {
+    from { box-shadow: 0 0 0 0 var(--hero, var(--coral)); opacity: 0.35; }
+    to { box-shadow: 0 0 0 28px var(--hero, var(--coral)); opacity: 0; }
+}
+
+.page-title {
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+}
+
+.page-title span {
+    color: var(--coral);
+}
+
+.page-lead {
+    margin: 12px auto 0;
+    max-width: 440px;
+    font-size: 1.05rem;
+    color: var(--text-2);
+}
+
+.page-card--left .page-lead {
+    margin-left: 0;
+}
+
+.page-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 28px 0 0;
+    text-align: left;
+}
+
+.page-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px;
+    border-radius: var(--r-panel);
+    background: var(--track);
+    color: var(--text-2);
+    font-size: 0.97rem;
+}
+
+.page-step .icon-tile {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    background: var(--surface);
+}
+
+.step-number {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.inline-code {
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    color: var(--navy);
+}
+
+.page-card .cta-buttons {
+    justify-content: center;
+}
+
+.page-card--left .cta-buttons {
+    justify-content: flex-start;
+}
+
+.page-back {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--text-2);
+    transition: color var(--t-short) var(--ease);
+}
+
+.page-back:hover {
+    color: var(--coral);
+}
+
+.page-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.page-brand img {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-card,
+    .status-hero,
+    .status-hero::after {
+        animation-name: none;
+    }
+
+    .status-hero::after {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-card {
+        padding: 32px 22px;
+    }
+}

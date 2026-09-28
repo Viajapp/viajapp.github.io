@@ -1,224 +1,206 @@
-/* Hero Section */
+/* Hero */
 .hero {
-  padding: 80px 0 120px 0;
-  background-color: var(--white);
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    padding: 56px 0 var(--section-y);
+    overflow: hidden;
 }
 
-.hero:before { /*Circulo azul*/
-  content: "";
-  position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 300px;
-  height: 300px;
-  background-color: var(--primary-color);
-  opacity: 0.4;
-  border-radius: 50%;
-  z-index: 0;
-}
-  
-.hero:after { /*Circulo naranja*/
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  left: -100px;
-  width: 300px;
-  height: 300px;
-  background-color: var(--secondary-color);
-  opacity: 0.4;
-  border-radius: 50%;
-  z-index: 0;
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: -20% -10% auto auto;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(218, 92, 88, 0.14), rgba(218, 92, 88, 0) 65%);
+    pointer-events: none;
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.car-logo-container {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.car-logo {
-  width: 160px;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px var(--black);
-  margin-bottom: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 56px;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  line-height: 1.2;
+    margin-top: 20px;
+    font-size: clamp(2.5rem, 6vw, 4.2rem);
+    line-height: 1.04;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    color: var(--navy);
 }
 
-.hero-text h1 .blue-text {
-  color: var(--primary-color);
-  position: relative;
-  display: inline-block;
+.hero-text h1 .accent {
+    display: block;
 }
 
-.hero-text h1 .orange-text {
-  color: var(--secondary-color);
-  position: relative;
-  display: inline-block;
-}
-
-.hero-text h1 span:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s ease;
-}
-
-.hero-text h1:hover span:after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  color: var(--gray-color);
-  margin-bottom: 30px;
+.hero-lead {
+    margin-top: 20px;
+    max-width: 540px;
+    font-size: 1.15rem;
+    color: var(--text-2);
 }
 
 .hero-trust-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
 }
 
-.hero-trust-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  background-color: rgba(44, 82, 130, 0.08);
-  border: 1px solid rgba(44, 82, 130, 0.15);
-  border-radius: 999px;
-  padding: 8px 14px;
-}
-
-.hero-trust-badge i {
-  color: var(--secondary-color);
-}
-
-@media (max-width: 576px) {
-  .hero-trust-badges {
-    justify-content: center;
-  }
-
-  .hero-trust-badge {
-    font-size: 0.82rem;
-    padding: 7px 12px;
-  }
-}
-
+/* Mockup del teléfono sobre un disco navy */
 .hero-image {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.app-logo-container {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  top: -40px;
-  right: 0;
-  z-index: 2;
-  animation: pulse 3s infinite ease-in-out;
+.hero-disc {
+    position: absolute;
+    width: min(460px, 92vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 30% 25%, rgba(218, 92, 88, 0.35), rgba(218, 92, 88, 0) 45%),
+        radial-gradient(circle at 50% 50%, #22314F, var(--navy) 72%);
+    box-shadow: 0 0 0 14px var(--navy-soft);
+    pointer-events: none;
 }
 
-.app-logo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+.hero-disc::after {
+    content: "";
+    position: absolute;
+    inset: -34px;
+    border-radius: 50%;
+    border: 2px dashed rgba(24, 36, 61, 0.14);
 }
 
 .phone-mockup {
-  position: relative;
-  width: 280px;
-  height: 560px;
-  border-radius: 30px;
-  background-color: #000;
-  padding: 10px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
-  transition: var(--transition);
+    position: relative;
+    width: 290px;
+    aspect-ratio: 1242 / 2688;
+    border-radius: 44px;
+    padding: 10px;
+    background: #0E1628;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14), var(--shadow-float), 0 40px 80px -30px rgba(24, 36, 61, 0.55);
 }
 
-.phone-mockup:hover {
-  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+.phone-mockup .phone-screen {
+    position: absolute;
+    inset: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    object-fit: cover;
+    border-radius: 34px;
+    opacity: 0;
+    animation: phoneCycle 18s infinite;
+    animation-delay: calc(var(--i, 0) * 3s);
 }
 
-.phone-screen {
-  width: 100%;
-  height: 100%;
-  border-radius: 24px;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease;
+.phone-mockup.is-paused .phone-screen {
+    animation-play-state: paused;
 }
 
-.phone-screen.active {
-  opacity: 1;
+.phone-mockup .phone-screen:first-child {
+    opacity: 1;
 }
 
-/* Responsive para hero */
-@media (max-width: 992px) {
-  .hero-content {
-    flex-direction: column;
-  }
-
-  .hero-text {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .car-logo-container {
-    justify-content: center;
-  }
+@keyframes phoneCycle {
+    0% { opacity: 0; transform: scale(1.02); }
+    3% { opacity: 1; transform: scale(1); }
+    16.6% { opacity: 1; transform: scale(1); }
+    19.6% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
+/* Cards flotantes alrededor del teléfono */
+.float-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px 12px 12px;
+    background: var(--surface);
+    border-radius: var(--r-panel);
+    box-shadow: var(--shadow-float);
+    font-size: 0.9rem;
+    line-height: 1.3;
+    z-index: 2;
+}
+
+.float-card strong {
+    display: block;
+    color: var(--navy);
+    font-weight: 800;
+}
+
+.float-card small {
+    color: var(--text-2);
+    font-weight: 500;
+}
+
+.float-card .icon-tile {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.float-card--top {
+    top: 14%;
+    left: -4%;
+}
+
+.float-card--bottom {
+    bottom: 12%;
+    right: -6%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .phone-mockup .phone-screen {
+        animation-name: none;
+    }
+
+    .phone-mockup .phone-screen:not(:first-child) {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 48px;
+    }
+
+    .hero-lead {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-trust-badges,
+    .hero .cta-buttons {
+        justify-content: center;
+    }
+
+    .float-card--top {
+        left: 0;
+    }
+
+    .float-card--bottom {
+        right: 0;
+    }
 }
 
 @media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 2rem;
-  }
+    .phone-mockup {
+        width: 240px;
+    }
 
-  .hero {
-    padding: 60px 0 40px;
-  }
+    .float-card {
+        font-size: 0.8rem;
+    }
 }

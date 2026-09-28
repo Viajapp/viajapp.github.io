@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajapp - Viajes Compartidos y Paquetes</title>
+    <meta name="description" content="Encontrá viajes, publicá el tuyo o enviá paquetes desde una sola app. Perfiles verificados con Nosis y 0% de comisión de Viajapp.">
+    <script>document.documentElement.classList.add('js')</script>
 
+    <link rel="preload" href="/fonts/PlusJakartaSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/sections/header-footer.css">
     <link rel="stylesheet" href="/css/sections/hero.css">
@@ -14,308 +17,299 @@
     <link rel="stylesheet" href="/css/sections/trust-highlights.css">
     <link rel="stylesheet" href="/css/sections/testimonials.css">
     <link rel="stylesheet" href="/css/sections/download.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/interactions.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link rel="preload" href="images/1.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="icon" type="image/png" href="images/viajapp-logo.png">
-    <meta name="theme-color" content="#2c5282">
+    <meta name="theme-color" content="#F8F9FB">
 </head>
 <body>
-    <div class="loader">
-        <div class="loader-logo">
-            <img src="images/viajapp-logo.png" alt="Viajapp cargando">
-        </div>
-    </div>
-
     <header>
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="images/viajapp-logo.png" alt="Viajapp">
-                </div>
-    
-                <ul class="nav-links">
+            <nav aria-label="Principal">
+                <a href="#hero" class="logo" aria-label="Viajapp inicio">
+                    <img src="images/viajapp-logo.webp" alt="" width="40" height="40">
+                    <span>Viajapp</span>
+                </a>
+
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#hero" class="active">Inicio</a></li>
-                    <li><a href="#features">Cómo Funciona</a></li>
+                    <li><a href="#latest-trips">Viajes</a></li>
+                    <li><a href="#features">Cómo funciona</a></li>
                     <li><a href="#benefits">Beneficios</a></li>
                     <li><a href="#valoraciones">Valoraciones</a></li>
-                    <li><a href="#download">Descargar</a></li>
                 </ul>
-                
-                <button class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
+
+                <a href="#download" class="btn btn-primary nav-cta">Descargar</a>
+
+                <button class="mobile-menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
-                
-                <!-- <div class="social-link">
-                    <a href="https://instagram.com/viajapp_ar" target="_blank" aria-label="Instagram de Viajapp">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div> -->
             </nav>
         </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
     </header>
 
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text" data-aos="fade-right">
-                    <div class="car-logo-container">
-                        <img src="images/viajapp-logo.png" alt="Viajapp Logo" class="car-logo">
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="eyebrow" data-reveal><i class="fas fa-route" aria-hidden="true"></i> Viajes compartidos y paquetes</span>
+                        <h1 data-reveal>Viajá más, <span class="accent">gastá menos</span></h1>
+                        <p class="hero-lead" data-reveal>Encontrá viajes, publicá el tuyo o enviá paquetes desde una sola app. Coordiná todo con perfiles verificados y elegí la opción que mejor se adapte a vos.</p>
+                        <div class="cta-buttons" data-reveal>
+                            <a href="https://play.google.com/store/apps/details?id=com.viajapp.app&hl=es_AR" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fab fa-google-play" aria-hidden="true"></i>
+                                Google Play
+                            </a>
+                            <a href="https://apps.apple.com/us/app/viajapp/id6745457759" target="_blank" rel="noopener" class="btn btn-secondary">
+                                <i class="fab fa-apple" aria-hidden="true"></i>
+                                App Store
+                            </a>
+                        </div>
+                        <div class="hero-trust-badges" data-reveal>
+                            <span class="pill"><i class="fas fa-user-shield" aria-hidden="true"></i> Perfiles verificados con Nosis</span>
+                            <span class="pill"><i class="fas fa-percent" aria-hidden="true"></i> 0% comisión de Viajapp</span>
+                        </div>
                     </div>
-                    <h1><span class="blue-text">Viajá más,</span> <span class="orange-text">gastá menos</span></h1>
-                    <p>Encontrá viajes, publicá el tuyo o enviá paquetes desde una sola app. Coordiná todo con perfiles verificados y elegí la opción que mejor se adapte a vos.</p>
-                    <p class="hero-trust-badges" data-aos="fade-up" data-aos-delay="50">
-                        <span class="hero-trust-badge"><i class="fas fa-user-shield" aria-hidden="true"></i> Perfiles verificados con Nosis</span>
-                        <span class="hero-trust-badge"><i class="fas fa-percent" aria-hidden="true"></i> 0% comisión de Viajapp</span>
-                    </p>
+                    <div class="hero-image" data-reveal>
+                        <div class="hero-disc" aria-hidden="true"></div>
+                        <div class="float-card float-card--top" aria-hidden="true">
+                            <span class="icon-tile icon-tile--green"><i class="fas fa-check"></i></span>
+                            <span><strong>¡Viaje publicado!</strong><small>Ya está visible para pasajeros</small></span>
+                        </div>
+                        <div class="phone-mockup" id="phone-mockup">
+                            <img src="images/1.webp" alt="Publicar viajes en Viajapp" class="phone-screen" style="--i:0" width="600" height="1298" fetchpriority="high" decoding="async">
+                            <img src="images/2.webp" alt="Buscar viajes en Viajapp" class="phone-screen" style="--i:1" width="600" height="1298" loading="lazy" decoding="async">
+                            <img src="images/3.webp" alt="Explorar viajes cercanos en Viajapp" class="phone-screen" style="--i:2" width="600" height="1298" loading="lazy" decoding="async">
+                            <img src="images/4.webp" alt="Reservar viajes en Viajapp" class="phone-screen" style="--i:3" width="600" height="1298" loading="lazy" decoding="async">
+                            <img src="images/5.webp" alt="Chatear con conductores en Viajapp" class="phone-screen" style="--i:4" width="600" height="1298" loading="lazy" decoding="async">
+                            <img src="images/6.webp" alt="Valorar viajes en Viajapp" class="phone-screen" style="--i:5" width="600" height="1298" loading="lazy" decoding="async">
+                        </div>
+                        <div class="float-card float-card--bottom" aria-hidden="true">
+                            <span class="icon-tile"><i class="fas fa-star"></i></span>
+                            <span><strong>Valoraciones reales</strong><small>Después de cada viaje</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-trips" id="latest-trips">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow"><i class="fas fa-bolt" aria-hidden="true"></i> En vivo</span>
+                    <h2 class="section-title">Últimos viajes <span>publicados</span></h2>
+                </div>
+                <div id="trips-list" class="trips-list">
+                </div>
+                <p class="trips-note">Para reservar un viaje o enviar un paquete es necesario descargar la app.</p>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow eyebrow--navy">Paso a paso</span>
+                    <h2 class="section-title">¿Cómo funciona <span>Viajapp</span>?</h2>
+                    <p class="section-lead">Todo lo que necesitás para moverte o enviar algo, en una sola app.</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card card" data-reveal>
+                        <span class="icon-tile"><i class="fas fa-car" aria-hidden="true"></i></span>
+                        <h3>Publicá tu viaje</h3>
+                        <p>Si viajás en auto, compartí tu trayecto, ofrecé asientos disponibles y recuperá parte de tus gastos.</p>
+                    </article>
+                    <article class="feature-card card" data-reveal>
+                        <span class="icon-tile"><i class="fas fa-magnifying-glass" aria-hidden="true"></i></span>
+                        <h3>Buscá un viaje</h3>
+                        <p>Elegí origen, destino y fecha para encontrar opciones que se adapten a tu recorrido y a tu presupuesto.</p>
+                    </article>
+                    <article class="feature-card card" data-reveal>
+                        <span class="icon-tile"><i class="fas fa-box" aria-hidden="true"></i></span>
+                        <h3>Enviá un paquete</h3>
+                        <p>Consultá qué viajes aceptan paquetes, qué tamaños permiten y cuánto cuesta cada opción antes de confirmar.</p>
+                    </article>
+                    <article class="feature-card card" data-reveal>
+                        <span class="icon-tile"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                        <h3>Reservá y coordiná</h3>
+                        <p>Elegí tu viaje o envío, reservá desde la app y coordiná los detalles con la otra persona de forma simple.</p>
+                    </article>
+                    <article class="feature-card card" data-reveal>
+                        <span class="icon-tile"><i class="fas fa-wallet" aria-hidden="true"></i></span>
+                        <h3>Pagá de forma simple</h3>
+                        <p>Confirmá tu reserva desde la app y seguí todo el proceso de una forma clara, rápida y cómoda.</p>
+                    </article>
+                    <article class="feature-card card" data-reveal>
+                        <span class="icon-tile icon-tile--green"><i class="fas fa-user-shield" aria-hidden="true"></i></span>
+                        <h3>Viajá con más confianza</h3>
+                        <p>Conductores verificados con Nosis, valoraciones visibles después de cada viaje y más señales para elegir con tranquilidad.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits" id="benefits">
+            <div class="container">
+                <div class="benefits-content">
+                    <div class="benefits-text">
+                        <div data-reveal>
+                            <span class="eyebrow">Beneficios</span>
+                            <h2 class="section-title">¿Por qué elegir <span>Viajapp</span>?</h2>
+                        </div>
+                        <ul class="benefits-list">
+                            <li data-reveal>
+                                <span class="icon-tile"><i class="fas fa-money-bill-wave" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3>Ahorrá en tus viajes</h3>
+                                    <p>Encontrá opciones para moverte por menos y aprovechá mejor cada trayecto que ya tenías pensado hacer.</p>
+                                </div>
+                            </li>
+                            <li data-reveal>
+                                <span class="icon-tile"><i class="fas fa-box-open" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3>Enviá paquetes fácil</h3>
+                                    <p>Revisá si un viaje acepta paquetes, qué tamaños permite y el precio de cada opción antes de reservar.</p>
+                                </div>
+                            </li>
+                            <li data-reveal>
+                                <span class="icon-tile icon-tile--green"><i class="fas fa-user-check" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3>Identidad verificada con Nosis</h3>
+                                    <p>Quienes publican viajes completan verificación de identidad con Nosis, además de email y teléfono, para una comunidad más segura.</p>
+                                </div>
+                            </li>
+                            <li data-reveal>
+                                <span class="icon-tile"><i class="fas fa-hand-holding-dollar" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3>0% comisión de Viajapp</h3>
+                                    <p>Viajapp no retiene comisión de plataforma sobre lo que cobrás por asientos o paquetes. Mercado Pago puede aplicar sus propias comisiones por transacción.</p>
+                                </div>
+                            </li>
+                            <li data-reveal>
+                                <span class="icon-tile icon-tile--navy"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3>Coordiná todo desde la app</h3>
+                                    <p>Buscá, reservá, pagá y seguí tu viaje o envío desde un solo lugar, con una experiencia simple para el día a día.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="benefits-image" data-reveal>
+                        <div class="phone-frame">
+                            <img src="images/2.webp" alt="Buscar viajes en Viajapp" width="600" height="1298" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-highlights" id="confianza">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Confianza</span>
+                    <h2 class="section-title">Más confianza, <span>mejor viaje</span></h2>
+                </div>
+                <div class="trust-highlights-grid">
+                    <article class="trust-card card" data-reveal>
+                        <span class="icon-tile icon-tile--green" aria-hidden="true"><i class="fas fa-id-card"></i></span>
+                        <h3>Verificación de identidad con Nosis</h3>
+                        <p>Viajapp usa Nosis para confirmar que cada conductor es quien dice ser, con un cuestionario de seguridad basado en datos del DNI. Completás email, teléfono y Nosis para publicar con un perfil verificado.</p>
+                    </article>
+                    <article class="trust-card card" data-reveal>
+                        <span class="icon-tile" aria-hidden="true"><i class="fas fa-percent"></i></span>
+                        <h3>0% de comisión de Viajapp</h3>
+                        <p>Lo que acordás por el viaje o paquete es tuyo: Viajapp no retiene comisión de plataforma.</p>
+                        <small class="trust-card-footnote">Mercado Pago puede aplicar comisiones por transacción según su propia política.</small>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="valoraciones">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow eyebrow--navy">Comunidad</span>
+                    <h2 class="section-title">Valoraciones de la <span>comunidad</span></h2>
+                </div>
+                <div class="testimonials-grid">
+                    <!-- PLACEHOLDER: reemplazar con valoración real -->
+                    <figure class="testimonial-card card" data-reveal>
+                        <div class="testimonial-rating" role="img" aria-label="5 de 5 estrellas">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-text">"Viajo todas las semanas de Tandil a Capital y gracias a Viajapp pude reducir mis gastos a la mitad. Además conocí gente re copada en el camino."</blockquote>
+                        <figcaption class="testimonial-author"><span class="testimonial-avatar" aria-hidden="true">M</span> Martín · Pasajero</figcaption>
+                    </figure>
+                    <!-- PLACEHOLDER: reemplazar con valoración real -->
+                    <figure class="testimonial-card card" data-reveal>
+                        <div class="testimonial-rating" role="img" aria-label="4.5 de 5 estrellas">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <blockquote class="testimonial-text">"Como conductora, me ayuda a cubrir los gastos de nafta y peajes cuando viajo a la costa. La app es súper intuitiva y el soporte es excelente."</blockquote>
+                        <figcaption class="testimonial-author"><span class="testimonial-avatar" aria-hidden="true">C</span> Carolina · Conductora</figcaption>
+                    </figure>
+                    <!-- PLACEHOLDER: reemplazar con valoración real -->
+                    <figure class="testimonial-card card" data-reveal>
+                        <div class="testimonial-rating" role="img" aria-label="5 de 5 estrellas">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-text">"Soy estudiante y viajo seguido a Córdoba. Con Viajapp encontré una forma económica y segura de viajar. ¡Totalmente recomendable!"</blockquote>
+                        <figcaption class="testimonial-author"><span class="testimonial-avatar" aria-hidden="true">L</span> Lucas · Pasajero</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="download" id="download">
+            <div class="container">
+                <div class="download-card" data-reveal>
+                    <img src="images/viajapp-logo.webp" alt="" class="download-logo" width="72" height="72" loading="lazy">
+                    <h2 class="section-title">¡Descargá <span>Viajapp</span> ahora!</h2>
+                    <p class="section-lead">Empezá a viajar, publicar trayectos o enviar paquetes desde una sola app, con más información y más confianza en cada reserva.</p>
                     <div class="cta-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.viajapp.app&hl=es_AR" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i>
+                        <a href="https://play.google.com/store/apps/details?id=com.viajapp.app&hl=es_AR" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i class="fab fa-google-play" aria-hidden="true"></i>
                             Google Play
                         </a>
-                        <a href="https://apps.apple.com/us/app/viajapp/id6745457759" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-apple"></i>
+                        <a href="https://apps.apple.com/us/app/viajapp/id6745457759" target="_blank" rel="noopener" class="btn btn-ghost">
+                            <i class="fab fa-apple" aria-hidden="true"></i>
                             App Store
                         </a>
                     </div>
-                </div>
-                <div class="hero-image" data-aos="fade-left">
-                    <div class="phone-mockup">
-                        <img src="images/1.png" alt="Publicar viajes en Viajapp" class="phone-screen active">
-                        <img src="images/2.png" alt="Buscar viajes en Viajapp" class="phone-screen">
-                        <img src="images/3.png" alt="Explorar viajes cercanos en Viajapp" class="phone-screen">
-                        <img src="images/4.png" alt="Reservar viajes en Viajapp" class="phone-screen">
-                        <img src="images/5.png" alt="Chatear con conductores en Viajapp" class="phone-screen">
-                        <img src="images/6.png" alt="Valorar viajes en Viajapp" class="phone-screen">
+                    <div class="social-link-large">
+                        <a href="https://instagram.com/viajapp_ar" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span>Seguinos en Instagram</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="latest-trips" id="latest-trips">
-        <div class="container">
-            <h2 data-aos="fade-up">Últimos viajes <span>publicados</span></h2>
-            <div id="trips-list" class="trips-list" data-aos="fade-up">
-                <!-- Aquí se insertarán las tarjetas de viajes dinámicamente -->
-            </div>
-            <p class="trips-note" data-aos="fade-up">Para reservar un viaje o enviar un paquete es necesario descargar la app.</p>
-        </div>
-    </section>
-
-    <section class="features" id="features">
-        <div class="container">
-            <h2 data-aos="fade-up">¿Cómo funciona <span>Viajapp</span>?</h2>
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h3>Publicá tu viaje</h3>
-                    <p>Si viajás en auto, compartí tu trayecto, ofrecé asientos disponibles y recuperá parte de tus gastos.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Buscá un viaje</h3>
-                    <p>Elegí origen, destino y fecha para encontrar opciones que se adapten a tu recorrido y a tu presupuesto.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">
-                        <i class="fas fa-box"></i>
-                    </div>
-                    <h3>Enviá un paquete</h3>
-                    <p>Consultá qué viajes aceptan paquetes, qué tamaños permiten y cuánto cuesta cada opción antes de confirmar.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Reservá y coordiná</h3>
-                    <p>Elegí tu viaje o envío, reservá desde la app y coordiná los detalles con la otra persona de forma simple.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-icon">
-                        <i class="fas fa-wallet"></i>
-                    </div>
-                    <h3>Pagá de forma simple</h3>
-                    <p>Confirmá tu reserva desde la app y seguí todo el proceso de una forma clara, rápida y cómoda.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h3>Viajá con más confianza</h3>
-                    <p>Conductores verificados con Nosis, valoraciones visibles después de cada viaje y más señales para elegir con tranquilidad.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="benefits" id="benefits">
-        <div class="container">
-            <div class="benefits-content">
-                <div class="benefits-text" data-aos="fade-right">
-                    <h2>¿Por qué elegir <span>Viajapp</span>?</h2>
-                    <ul class="benefits-list">
-                        <li data-aos="fade-up" data-aos-delay="100">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <div>
-                                <h3>Ahorrá en tus viajes</h3>
-                                <p>Encontrá opciones para moverte por menos y aprovechá mejor cada trayecto que ya tenías pensado hacer.</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="400">
-                            <i class="fas fa-box-open"></i>
-                            <div>
-                                <h3>Enviá paquetes fácil</h3>
-                                <p>Revisá si un viaje acepta paquetes, qué tamaños permite y el precio de cada opción antes de reservar.</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="300">
-                            <i class="fas fa-user-check"></i>
-                            <div>
-                                <h3>Identidad verificada con Nosis</h3>
-                                <p>Quienes publican viajes completan verificación de identidad con Nosis, además de email y teléfono, para una comunidad más segura.</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <i class="fas fa-hand-holding-dollar"></i>
-                            <div>
-                                <h3>0% comisión de Viajapp</h3>
-                                <p>Viajapp no retiene comisión de plataforma sobre lo que cobrás por asientos o paquetes. Mercado Pago puede aplicar sus propias comisiones por transacción.</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="250">
-                            <i class="fas fa-mobile-screen-button"></i>
-                            <div>
-                                <h3>Coordiná todo desde la app</h3>
-                                <p>Buscá, reservá, pagá y seguí tu viaje o envío desde un solo lugar, con una experiencia simple para el día a día.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="benefits-image" data-aos="fade-left">
-                    <img src="images/2.png" alt="Buscar viajes en Viajapp" class="phone-screen">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="trust-highlights" id="confianza">
-        <div class="container">
-            <h2 data-aos="fade-up">Más confianza, <span>mejor viaje</span></h2>
-            <div class="trust-highlights-grid">
-                <article class="trust-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="trust-card-icon trust-card-icon--security" aria-hidden="true">
-                        <i class="fas fa-id-card"></i>
-                    </div>
-                    <h3>Verificación de identidad con Nosis</h3>
-                    <p>Viajapp usa Nosis para confirmar que cada conductor es quien dice ser, con un cuestionario de seguridad basado en datos del DNI. Completás email, teléfono y Nosis para publicar con un perfil verificado.</p>
-                </article>
-                <article class="trust-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="trust-card-icon trust-card-icon--commission" aria-hidden="true">
-                        <i class="fas fa-percent"></i>
-                    </div>
-                    <h3>0% de comisión de Viajapp</h3>
-                    <p>Lo que acordás por el viaje o paquete es tuyo: Viajapp no retiene comisión de plataforma.</p>
-                    <small class="trust-card-footnote">Mercado Pago puede aplicar comisiones por transacción según su propia política.</small>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials" id="valoraciones">
-        <div class="container">
-            <h2 data-aos="fade-up">Valoraciones de la <span>comunidad</span></h2>
-            <div class="testimonials-slider" data-aos="fade-up">
-                <!-- PLACEHOLDER: reemplazar con valoración real -->
-                <div class="testimonial-card active">
-                    <div class="testimonial-rating" aria-label="5 de 5 estrellas">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Viajo todas las semanas de Tandil a Capital y gracias a Viajapp pude reducir mis gastos a la mitad. Además conocí gente re copada en el camino."</p>
-                    <p class="testimonial-author">Martín · Pasajero</p>
-                </div>
-                <!-- PLACEHOLDER: reemplazar con valoración real -->
-                <div class="testimonial-card">
-                    <div class="testimonial-rating" aria-label="4.5 de 5 estrellas">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="testimonial-text">"Como conductora, me ayuda a cubrir los gastos de nafta y peajes cuando viajo a la costa. La app es súper intuitiva y el soporte es excelente."</p>
-                    <p class="testimonial-author">Carolina · Conductora</p>
-                </div>
-                <!-- PLACEHOLDER: reemplazar con valoración real -->
-                <div class="testimonial-card">
-                    <div class="testimonial-rating" aria-label="5 de 5 estrellas">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Soy estudiante y viajo seguido a Córdoba. Con Viajapp encontré una forma económica y segura de viajar. ¡Totalmente recomendable!"</p>
-                    <p class="testimonial-author">Lucas · Pasajero</p>
-                </div>
-                <div class="testimonial-controls">
-                    <button type="button" class="testimonial-prev" aria-label="Valoración anterior"><i class="fas fa-chevron-left"></i></button>
-                    <div class="testimonial-dots">
-                        <span class="dot active" role="button" tabindex="0" aria-label="Valoración 1"></span>
-                        <span class="dot" role="button" tabindex="0" aria-label="Valoración 2"></span>
-                        <span class="dot" role="button" tabindex="0" aria-label="Valoración 3"></span>
-                    </div>
-                    <button type="button" class="testimonial-next" aria-label="Valoración siguiente"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="download" id="download">
-        <div class="container">
-            <h2 data-aos="fade-up">¡Descargá <span>Viajapp</span> ahora!</h2>
-            <p data-aos="fade-up">Empezá a viajar, publicar trayectos o enviar paquetes desde una sola app, con más información y más confianza en cada reserva.</p>
-            <div class="cta-buttons" data-aos="fade-up">
-                <a href="https://play.google.com/store/apps/details?id=com.viajapp.app&hl=es_AR" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-google-play"></i>
-                    Google Play
-                </a>
-                <a href="https://apps.apple.com/us/app/viajapp/id6745457759" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-apple"></i>
-                    App Store
-                </a>
-            </div>
-            <div class="social-link-large" data-aos="fade-up">
-                <a href="https://instagram.com/viajapp_ar" target="_blank" aria-label="Seguinos en Instagram">
-                    <i class="fab fa-instagram"></i>
-                    <span>Seguinos en Instagram</span>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/viajapp-logo.png" alt="Viajapp">
+                    <img src="images/viajapp-logo.webp" alt="" width="32" height="32" loading="lazy">
+                    <span>Viajapp</span>
                 </div>
-                <p>&copy; 2025 Viajapp. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="https://sites.google.com/view/viajapp-politica-privacidad/inicio" target="_blank" rel="noopener">Privacidad</a>
+                    <a href="https://sites.google.com/view/viajapp-terminos-y-condiciones/inicio" target="_blank" rel="noopener">Términos</a>
+                    <a href="https://instagram.com/viajapp_ar" target="_blank" rel="noopener">Instagram</a>
+                </div>
+                <p>&copy; <span id="year">2025</span> Viajapp. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="interactions.js" defer></script>
     <script type="module" src="latest-trips.js"></script>
 </body>
 </html>
