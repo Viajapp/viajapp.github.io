@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T22:43:54.837Z",
+  "generatedAt": "2026-09-28T02:54:18.958Z",
   "trips": [
     {
       "id": "f11decd5-4450-41c9-98b8-01fcc2756983",
@@ -85,20 +85,26 @@
       }
     },
     {
-      "id": "b0826417-7fde-4eeb-b423-1d04e090f661",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-10-01T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
+      "id": "89cf4aca-dd10-46fc-8896-2fa19475ad9a",
+      "driverId": "bad83802-26eb-4c12-bbdc-392b2cce57a9",
+      "nombreOrigen": "Bahía Blanca",
+      "nombreDestino": "Lobería",
+      "fecha": "2026-10-01T05:56:00.000Z",
+      "hora": "05:56",
+      "lugares": 3,
+      "precio": 0,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 4000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        }
+      },
       "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "username": "Franco Caraffo",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbad83802-26eb-4c12-bbdc-392b2cce57a9.jpg?alt=media&token=5deda36d-34e5-4365-a09f-1fa690117066",
         "verified": true
       }
     }
