@@ -51,9 +51,10 @@
                     <img src="/images/viajapp-logo.png" alt="" width="32" height="32">
                     <span>Viajapp</span>
                 </div>
-                <p>&copy; 2025 Viajapp. Todos los derechos reservados.</p>
+                <p>&copy; <span id="year">2026</span> Viajapp. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
