@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-09-29T17:24:06.886Z",
+  "generatedAt": "2026-09-29T23:19:00.463Z",
   "trips": [
-    {
-      "id": "39c3d52f-e455-4296-8335-c1f6230f0fa5",
-      "driverId": "adf2e7b9-0b7a-4731-ab9e-cd046ef9e610",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-09-29T19:57:00.000Z",
-      "hora": "19:57",
-      "lugares": 3,
-      "precio": 15000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "Mauro Gimenez",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fadf2e7b9-0b7a-4731-ab9e-cd046ef9e610.jpg?alt=media&token=4743a832-440b-4d31-8e7c-b730d1621f65",
-        "verified": true
-      }
-    },
     {
       "id": "1f321c00-55c7-4e13-9dcf-a974daf44362",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -100,6 +76,24 @@
       "userData": {
         "username": "Mauro Gimenez",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fadf2e7b9-0b7a-4731-ab9e-cd046ef9e610.jpg?alt=media&token=4743a832-440b-4d31-8e7c-b730d1621f65",
+        "verified": true
+      }
+    },
+    {
+      "id": "1b9c7701-809a-420a-8c3e-3e3b89c2d1ab",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-02T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
         "verified": true
       }
     }
