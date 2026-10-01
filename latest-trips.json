@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-10-01T03:26:42.171Z",
+  "generatedAt": "2026-10-01T10:37:19.582Z",
   "trips": [
-    {
-      "id": "89cf4aca-dd10-46fc-8896-2fa19475ad9a",
-      "driverId": "bad83802-26eb-4c12-bbdc-392b2cce57a9",
-      "nombreOrigen": "Bahía Blanca",
-      "nombreDestino": "Lobería",
-      "fecha": "2026-10-01T05:56:00.000Z",
-      "hora": "05:56",
-      "lugares": 3,
-      "precio": 0,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 4000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "Franco Caraffo",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbad83802-26eb-4c12-bbdc-392b2cce57a9.jpg?alt=media&token=5deda36d-34e5-4365-a09f-1fa690117066",
-        "verified": true
-      }
-    },
     {
       "id": "b0826417-7fde-4eeb-b423-1d04e090f661",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -110,6 +86,35 @@
       "userData": {
         "username": "Catalina Rojas",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
+        "verified": true
+      }
+    },
+    {
+      "id": "3a3eab7d-b346-4bdb-ba97-a330970f4883",
+      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
+      "nombreOrigen": "Tres Arroyos",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-02T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 4,
+      "precio": 40000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "cristian swaels",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
         "verified": true
       }
     }
