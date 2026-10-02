@@ -1,69 +1,6 @@
 {
-  "generatedAt": "2026-10-02T17:10:38.831Z",
+  "generatedAt": "2026-10-02T23:28:18.030Z",
   "trips": [
-    {
-      "id": "52bce405-3fe0-4c72-b227-7e9a822e62f6",
-      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
-      "nombreOrigen": "Tandil",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-10-02T18:00:00.000Z",
-      "hora": "18:00",
-      "lugares": 3,
-      "precio": 38000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Catalina Rojas",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
-        "verified": true
-      }
-    },
-    {
-      "id": "3a3eab7d-b346-4bdb-ba97-a330970f4883",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-10-02T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
-        "verified": true
-      }
-    },
     {
       "id": "5f82f334-3ab4-4cf1-8c88-788bb3d1d01b",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -108,6 +45,74 @@
       "userData": {
         "username": "Erica Alberto",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
+        "verified": true
+      }
+    },
+    {
+      "id": "6b1790ce-bbab-464f-9327-6230a74999e8",
+      "driverId": "ededf89a-b48d-4bb1-8957-9a31bc2028be",
+      "nombreOrigen": "Chaves",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-10-05T13:42:00.000Z",
+      "hora": "13:42",
+      "lugares": 3,
+      "precio": 10000,
+      "informacion": "Paso por Energia y San Cayetano",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "German Ariel Pérez",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fededf89a-b48d-4bb1-8957-9a31bc2028be.jpg?alt=media&token=5d09d11f-2392-4e68-83ce-581651be1bbb",
+        "verified": true
+      }
+    },
+    {
+      "id": "a9616fdc-3b6f-42d3-9602-49c48f85dadc",
+      "driverId": "ededf89a-b48d-4bb1-8957-9a31bc2028be",
+      "nombreOrigen": "San Cayetano",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-10-05T14:13:00.000Z",
+      "hora": "14:13",
+      "lugares": 2,
+      "precio": 7000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "German Ariel Pérez",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fededf89a-b48d-4bb1-8957-9a31bc2028be.jpg?alt=media&token=5d09d11f-2392-4e68-83ce-581651be1bbb",
         "verified": true
       }
     },
