@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-10-02T03:27:18.027Z",
+  "generatedAt": "2026-10-02T10:12:23.379Z",
   "trips": [
-    {
-      "id": "d712e985-4189-4123-a6ba-4509de897c69",
-      "driverId": "adf2e7b9-0b7a-4731-ab9e-cd046ef9e610",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Buenos Aires",
-      "fecha": "2026-10-02T05:19:00.000Z",
-      "hora": "05:19",
-      "lugares": 2,
-      "precio": 30000,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Mauro Gimenez",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fadf2e7b9-0b7a-4731-ab9e-cd046ef9e610.jpg?alt=media&token=4743a832-440b-4d31-8e7c-b730d1621f65",
-        "verified": true
-      }
-    },
     {
       "id": "1b9c7701-809a-420a-8c3e-3e3b89c2d1ab",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -115,6 +97,35 @@
       "userData": {
         "username": "Agustín Guardia",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "5ca22b0a-83d0-4dad-b831-9616f49b263b",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-05T12:00:00.000Z",
+      "hora": "12:00",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
         "verified": true
       }
     }
