@@ -1,103 +1,6 @@
 {
-  "generatedAt": "2026-10-05T11:03:09.981Z",
+  "generatedAt": "2026-10-06T04:10:14.445Z",
   "trips": [
-    {
-      "id": "5ca22b0a-83d0-4dad-b831-9616f49b263b",
-      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-10-05T12:00:00.000Z",
-      "hora": "12:00",
-      "lugares": 3,
-      "precio": 15000,
-      "informacion": "solo los lunes\n\n\n",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 8000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "Erica Alberto",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
-        "verified": true
-      }
-    },
-    {
-      "id": "6b1790ce-bbab-464f-9327-6230a74999e8",
-      "driverId": "ededf89a-b48d-4bb1-8957-9a31bc2028be",
-      "nombreOrigen": "Chaves",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-10-05T13:42:00.000Z",
-      "hora": "13:42",
-      "lugares": 3,
-      "precio": 10000,
-      "informacion": "Paso por Energia y San Cayetano",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "German Ariel Pérez",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fededf89a-b48d-4bb1-8957-9a31bc2028be.jpg?alt=media&token=5d09d11f-2392-4e68-83ce-581651be1bbb",
-        "verified": true
-      }
-    },
-    {
-      "id": "a9616fdc-3b6f-42d3-9602-49c48f85dadc",
-      "driverId": "ededf89a-b48d-4bb1-8957-9a31bc2028be",
-      "nombreOrigen": "San Cayetano",
-      "nombreDestino": "Necochea",
-      "fecha": "2026-10-05T14:13:00.000Z",
-      "hora": "14:13",
-      "lugares": 2,
-      "precio": 7000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "German Ariel Pérez",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fededf89a-b48d-4bb1-8957-9a31bc2028be.jpg?alt=media&token=5d09d11f-2392-4e68-83ce-581651be1bbb",
-        "verified": true
-      }
-    },
     {
       "id": "8f1602bb-30f4-4b92-8b17-3881da2d992a",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -131,6 +34,76 @@
       "userData": {
         "username": "Agustín Guardia",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "ccd61eb9-b8df-4459-afb0-ba676a2bc90d",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-08T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "7d9ca0ea-942e-4be4-ad21-15279da5a882",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-09T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "14f5b6fd-fbcc-4731-90ae-fd549d37d6d9",
+      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
+      "nombreOrigen": "Tandil",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-10-09T18:00:00.000Z",
+      "hora": "18:00",
+      "lugares": 3,
+      "precio": 38000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Catalina Rojas",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
         "verified": true
       }
     }
