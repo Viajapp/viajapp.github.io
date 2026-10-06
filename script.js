@@ -99,18 +99,18 @@
 
   /** Messages of the two floating cards for each phone screen, in screen order. */
   const FLOAT_CARD_MESSAGES = [
-    [['green', 'fa-check', '¡Viaje publicado!', 'Ya está visible para pasajeros'],
-      ['coral', 'fa-hand-holding-dollar', 'Compartí gastos', 'Vos ponés el precio por asiento']],
     [['navy', 'fa-magnifying-glass', 'Buscá tu viaje', 'Filtrá por fecha y horario'],
       ['coral', 'fa-box', 'También paquetes', 'Enviá con quien ya viaja']],
     [['navy', 'fa-location-dot', 'Cerca tuyo', 'Viajes según tu ubicación'],
       ['coral', 'fa-bell', 'Dejá un aviso', 'Te avisamos cuando aparezca uno']],
+    [['green', 'fa-user-check', 'Conductor verificado', 'Identidad validada con Nosis'],
+      ['coral', 'fa-star', 'Valoraciones reales', 'Después de cada viaje']],
     [['green', 'fa-circle-check', '¡Reserva enviada!', 'Pagaste con Mercado Pago'],
       ['coral', 'fa-rotate-left', 'Sin riesgo', 'Si te rechazan, se devuelve']],
+    [['green', 'fa-check', '¡Viaje publicado!', 'Ya está visible para pasajeros'],
+      ['coral', 'fa-hand-holding-dollar', 'Compartí gastos', 'Vos ponés el precio por asiento']],
     [['navy', 'fa-comment', 'Nuevo mensaje', '¿Nos vemos en la terminal?'],
       ['coral', 'fa-location-arrow', 'Ubicación en vivo', 'Compartila durante el viaje']],
-    [['green', 'fa-flag-checkered', '¡Llegaste!', 'Contanos cómo fue el viaje'],
-      ['coral', 'fa-star', 'Valoraciones reales', 'Después de cada viaje']],
   ];
 
   /** Swaps the floating cards' content each time a phone screen fades in. */
