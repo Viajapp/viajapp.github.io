@@ -1,0 +1,56 @@
+/* Carrusel con flechas laterales (las muestra trips-carousel.js si hay overflow) */
+.trips-carousel {
+    position: relative;
+}
+
+.trips-nav {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--navy);
+    font-size: 1rem;
+    box-shadow: var(--shadow-float);
+    cursor: pointer;
+    translate: 0 -50%;
+    transition: background-color var(--t-short) var(--ease), color var(--t-short) var(--ease), opacity var(--t-short) var(--ease), transform var(--t-press) var(--ease);
+}
+
+.trips-nav[hidden] {
+    display: none;
+}
+
+.trips-nav--prev { left: -24px; }
+.trips-nav--next { right: -24px; }
+
+.trips-nav:hover:not(:disabled) {
+    background: var(--coral);
+    color: #fff;
+}
+
+.trips-nav:active:not(:disabled) {
+    transform: scale(0.94);
+}
+
+.trips-nav:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 1280px) {
+    .trips-nav--prev { left: 4px; }
+    .trips-nav--next { right: 4px; }
+}
+
+/* En touch se scrollea con el dedo; las flechas tapan contenido */
+@media (hover: none) {
+    .trips-nav {
+        display: none;
+    }
+}

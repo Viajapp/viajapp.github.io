@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/sections/header-footer.css">
     <link rel="stylesheet" href="/css/sections/hero.css">
     <link rel="stylesheet" href="/css/sections/trips.css">
+    <link rel="stylesheet" href="/css/sections/trips-carousel.css">
     <link rel="stylesheet" href="/css/sections/features.css">
     <link rel="stylesheet" href="/css/sections/benefits.css">
     <link rel="stylesheet" href="/css/sections/trust-highlights.css">
@@ -104,7 +105,15 @@
                     <span class="eyebrow"><i class="fas fa-bolt" aria-hidden="true"></i> En vivo</span>
                     <h2 class="section-title">Últimos viajes <span>publicados</span></h2>
                 </div>
-                <div id="trips-list" class="trips-list">
+                <div class="trips-carousel">
+                    <button type="button" class="trips-nav trips-nav--prev" aria-label="Ver viajes anteriores" aria-controls="trips-list" hidden>
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div id="trips-list" class="trips-list">
+                    </div>
+                    <button type="button" class="trips-nav trips-nav--next" aria-label="Ver más viajes" aria-controls="trips-list" hidden>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
                 </div>
                 <p class="trips-note">Para reservar un viaje o enviar un paquete es necesario descargar la app.</p>
             </div>

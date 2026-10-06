@@ -1,3 +1,5 @@
+import { initTripsCarousel } from './trips-carousel.js';
+
 function parseFecha(fechaRaw) {
   if (!fechaRaw) return '';
   if (typeof fechaRaw === 'string') {
@@ -62,8 +64,11 @@ function escapeHtml(texto) {
     .replaceAll("'", '&#39;');
 }
 
+const QR_SIZE_PX = 240;
+const QR_COLOR = '18243D';
+
 function generarQR(texto) {
-  return `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(texto)}`;
+  return `https://api.qrserver.com/v1/create-qr-code/?size=${QR_SIZE_PX}x${QR_SIZE_PX}&margin=0&ecc=M&color=${QR_COLOR}&data=${encodeURIComponent(texto)}`;
 }
 
 function parseDireccion(obj) {
@@ -278,9 +283,12 @@ function renderTripCard(data) {
       ${paquetesHtml}
       <div class="trip-footer">
         <div class="trip-qr">
-          <img src="${qrUrl}" alt="QR para abrir el viaje en la app" width="96" height="96" loading="lazy" />
+          <img src="${qrUrl}" alt="QR para abrir el viaje en la app" width="84" height="84" loading="lazy" />
         </div>
-        <p class="trip-qr-hint">Escaneá para ver el viaje en la app</p>
+        <div class="trip-qr-text">
+          <span class="trip-qr-title"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Abrilo en la app</span>
+          <p class="trip-qr-hint">Escaneá el código con tu celular</p>
+        </div>
       </div>
       ${infoHtml}
     </article>
@@ -327,6 +335,7 @@ async function mostrarUltimosViajes() {
   }
 
   tripsList.innerHTML = viajes.map(renderTripCard).join('');
+  initTripsCarousel(tripsList);
 }
 
 document.addEventListener('DOMContentLoaded', mostrarUltimosViajes);

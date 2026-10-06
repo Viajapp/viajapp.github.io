@@ -1,9 +1,39 @@
 /* Últimos viajes (las cards las genera latest-trips.js) */
 .latest-trips {
+    position: relative;
+    overflow: hidden;
     padding: var(--section-y) 0;
-    background: var(--surface);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
+    background: var(--navy);
+    color: #fff;
+}
+
+.latest-trips::before {
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    left: -220px;
+    bottom: -260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(218, 92, 88, 0.24), rgba(218, 92, 88, 0) 68%);
+    pointer-events: none;
+}
+
+.latest-trips .container {
+    position: relative;
+}
+
+.latest-trips .section-title {
+    color: #fff;
+}
+
+.latest-trips .eyebrow {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.latest-trips .eyebrow i {
+    color: var(--coral);
 }
 
 .trips-list {
@@ -15,7 +45,7 @@
     padding: 8px 4px 24px;
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;
-    scrollbar-color: var(--line) transparent;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
 .trips-list::-webkit-scrollbar {
@@ -23,7 +53,7 @@
 }
 
 .trips-list::-webkit-scrollbar-thumb {
-    background: var(--line);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: var(--r-pill);
 }
 
@@ -250,18 +280,49 @@
     align-items: center;
     gap: 14px;
     margin-top: auto;
+    padding: 10px;
+    border-radius: var(--r-panel);
+    background: var(--navy-soft);
+}
+
+.trip-qr {
+    flex-shrink: 0;
+    padding: 8px;
+    border-radius: var(--r-field);
+    background: var(--surface);
+    box-shadow: var(--shadow-card);
 }
 
 .trip-qr img {
-    width: 72px;
-    height: 72px;
-    border-radius: var(--r-field);
-    box-shadow: inset 0 0 0 1px var(--line);
+    width: 84px;
+    height: 84px;
+    image-rendering: pixelated;
+}
+
+.trip-qr-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.trip-qr-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: var(--navy);
+    white-space: nowrap;
+}
+
+.trip-qr-title i {
+    color: var(--coral);
 }
 
 .trip-qr-hint {
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.4;
     color: var(--text-2);
 }
 
@@ -280,7 +341,7 @@
     margin-top: 12px;
     text-align: center;
     font-size: 0.92rem;
-    color: var(--text-2);
+    color: rgba(255, 255, 255, 0.72);
 }
 
 @media (prefers-reduced-motion: reduce) {
