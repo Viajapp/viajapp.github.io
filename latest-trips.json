@@ -1,32 +1,21 @@
 {
-  "generatedAt": "2026-10-16T19:09:38.403Z",
+  "generatedAt": "2026-10-16T22:21:44.622Z",
   "trips": [
     {
-      "id": "3767e33c-8d79-4d2b-a045-89baf90cdd99",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-10-16T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
+      "id": "88764dac-f79a-4e6e-959d-ae820a71589c",
+      "driverId": "adf2e7b9-0b7a-4731-ab9e-cd046ef9e610",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "Necochea",
+      "fecha": "2026-10-17T18:23:00.000Z",
+      "hora": "18:23",
+      "lugares": 2,
+      "precio": 20000,
       "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
       "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
+        "username": "Mauro Gimenez",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fadf2e7b9-0b7a-4731-ab9e-cd046ef9e610.jpg?alt=media&token=4743a832-440b-4d31-8e7c-b730d1621f65",
         "verified": true
       }
     },
