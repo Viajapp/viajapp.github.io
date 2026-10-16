@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-10-16T15:52:01.635Z",
+  "generatedAt": "2026-10-16T19:09:38.403Z",
   "trips": [
-    {
-      "id": "ec7f4251-5083-4754-b846-678aebc75283",
-      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
-      "nombreOrigen": "Tandil",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-10-16T18:00:00.000Z",
-      "hora": "18:00",
-      "lugares": 3,
-      "precio": 38000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Catalina Rojas",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
-        "verified": true
-      }
-    },
     {
       "id": "3767e33c-8d79-4d2b-a045-89baf90cdd99",
       "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
@@ -117,6 +83,24 @@
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
       "fecha": "2026-10-20T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "d43c9c3c-40ac-4e8e-ad7e-6bdd4de5e168",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-21T11:00:00.000Z",
       "hora": "11:00",
       "lugares": 4,
       "precio": 30000,
