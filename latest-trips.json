@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-18T18:23:17.276Z",
+  "generatedAt": "2026-10-18T22:07:51.751Z",
   "trips": [
     {
-      "id": "23e47062-541f-4104-b59a-25e52c864778",
+      "id": "77d59426-e49b-4127-93dd-a400e47cf8f0",
       "driverId": "6f65d7bd-a792-47d2-8b0b-67333ad3b1b6",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Buenos Aires",
       "fecha": "2026-10-19T04:35:00.000Z",
       "hora": "04:35",
       "lugares": 3,
-      "precio": 32000,
-      "informacion": "desde chapadmalal paso x mdp y voy hasta once en caba",
+      "precio": 30000,
+      "informacion": "",
       "aceptaPaquetes": false,
       "paquetesConfig": null,
       "userData": {
