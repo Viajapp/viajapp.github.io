@@ -1,64 +1,6 @@
 {
-  "generatedAt": "2026-10-24T08:31:57.653Z",
+  "generatedAt": "2026-10-24T15:09:27.514Z",
   "trips": [
-    {
-      "id": "12152d61-d659-4243-83a4-c0dcc5ced0cb",
-      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Miramar",
-      "fecha": "2026-10-24T14:00:00.000Z",
-      "hora": "14:00",
-      "lugares": 1,
-      "precio": 0,
-      "informacion": "transporte en Fiat uno rojo 3 puertas año 2005. consultar por bultos de más de 10kg y especificar tamaño",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 15000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 30000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Martin Pulcini",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
-        "verified": true
-      }
-    },
-    {
-      "id": "15fa7974-9195-44f0-b1dd-0aa6fd70ea99",
-      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Miramar",
-      "fecha": "2026-10-24T14:00:00.000Z",
-      "hora": "14:00",
-      "lugares": 3,
-      "precio": 8000,
-      "informacion": "viaje en Fiat uno rojo 3 puertas modelo 2005 con Vtv vigente y papeles en regla.",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "Martin Pulcini",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
-        "verified": true
-      }
-    },
     {
       "id": "4b229f8d-292c-46d6-a669-63b26f01dac9",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
@@ -126,6 +68,69 @@
       "userData": {
         "username": "Agustín Guardia",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "185092a9-1c1a-4712-8a58-3165c37396f6",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-26T12:00:00.000Z",
+      "hora": "12:00",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
+        "verified": true
+      }
+    },
+    {
+      "id": "6823817e-857d-4807-9952-1a83d95aa6e7",
+      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "Miramar",
+      "fecha": "2026-10-26T14:00:00.000Z",
+      "hora": "14:00",
+      "lugares": 1,
+      "precio": 0,
+      "informacion": "transporte en Fiat uno rojo 3 puertas año 2005. consultar por bultos de más de 10kg y especificar tamaño",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 15000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 30000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Martin Pulcini",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
         "verified": true
       }
     }
