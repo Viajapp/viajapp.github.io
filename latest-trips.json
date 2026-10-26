@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-26T09:32:25.944Z",
+  "generatedAt": "2026-10-26T18:01:10.559Z",
   "trips": [
     {
-      "id": "d36ccf5e-7c72-4572-a27d-0ebcd5371750",
+      "id": "8b5967d5-9c34-42ba-a64e-722661e29afe",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-10-26T11:00:00.000Z",
+      "fecha": "2026-10-27T11:00:00.000Z",
       "hora": "11:00",
       "lugares": 4,
       "precio": 30000,
@@ -20,40 +20,11 @@
       }
     },
     {
-      "id": "185092a9-1c1a-4712-8a58-3165c37396f6",
-      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-10-26T12:00:00.000Z",
-      "hora": "12:00",
-      "lugares": 3,
-      "precio": 15000,
-      "informacion": "solo los lunes\n\n\n",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 8000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "Erica Alberto",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
-        "verified": true
-      }
-    },
-    {
-      "id": "6823817e-857d-4807-9952-1a83d95aa6e7",
+      "id": "9b618bca-686f-40c5-8bc2-e616d8fa33db",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-10-26T14:00:00.000Z",
+      "fecha": "2026-10-27T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 1,
       "precio": 0,
@@ -83,11 +54,11 @@
       }
     },
     {
-      "id": "6638f89d-2ab2-4c4f-9557-3d4d53f9179e",
+      "id": "c3504a83-e3fb-46bb-a074-f716caf0f432",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-10-26T14:00:00.000Z",
+      "fecha": "2026-10-27T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 3,
       "precio": 8000,
@@ -107,20 +78,54 @@
       }
     },
     {
-      "id": "d4628bd2-deef-4054-b387-6a80a8770134",
-      "driverId": "b083889b-22ce-45e3-a005-1095e1a48870",
-      "nombreOrigen": "Mendoza",
-      "nombreDestino": "San Rafael",
-      "fecha": "2026-10-26T14:13:00.000Z",
-      "hora": "14:13",
+      "id": "acf2a38a-56aa-40f3-b8bc-8e538fd13c86",
+      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
+      "nombreOrigen": "Miramar",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-27T15:30:00.000Z",
+      "hora": "15:30",
       "lugares": 1,
-      "precio": 12000,
-      "informacion": "",
+      "precio": 0,
+      "informacion": "transporte en Fiat uno rojo 3 puertas año 2005. por bultos mayores a 10kg consulte especificando tamaño.",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 6500,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 17000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 40000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Martin Pulcini",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "9ed86243-c8f0-4f64-a865-fe70b1c6e7ac",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-10-28T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
       "aceptaPaquetes": false,
       "paquetesConfig": null,
       "userData": {
-        "username": "Juan Andrés Ruiz",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb083889b-22ce-45e3-a005-1095e1a48870.jpg?alt=media&token=7da62c5e-f432-44f7-af60-94092e2944ff",
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
         "verified": true
       }
     }
