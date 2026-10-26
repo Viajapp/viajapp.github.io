@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T22:12:30.795Z",
+  "generatedAt": "2026-10-26T02:35:04.816Z",
   "trips": [
     {
       "id": "d36ccf5e-7c72-4572-a27d-0ebcd5371750",
@@ -107,36 +107,20 @@
       }
     },
     {
-      "id": "56abd07d-6014-45c7-b040-e8faba848920",
-      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
-      "nombreOrigen": "Miramar",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-10-26T15:30:00.000Z",
-      "hora": "15:30",
+      "id": "d4628bd2-deef-4054-b387-6a80a8770134",
+      "driverId": "b083889b-22ce-45e3-a005-1095e1a48870",
+      "nombreOrigen": "Mendoza",
+      "nombreDestino": "San Rafael",
+      "fecha": "2026-10-26T14:13:00.000Z",
+      "hora": "14:13",
       "lugares": 1,
-      "precio": 0,
-      "informacion": "transporte en Fiat uno rojo 3 puertas año 2005. por bultos mayores a 10kg consulte especificando tamaño.",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 6500,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 17000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 40000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
+      "precio": 12000,
+      "informacion": "",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
       "userData": {
-        "username": "Martin Pulcini",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "username": "Juan Andrés Ruiz",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb083889b-22ce-45e3-a005-1095e1a48870.jpg?alt=media&token=7da62c5e-f432-44f7-af60-94092e2944ff",
         "verified": true
       }
     }
