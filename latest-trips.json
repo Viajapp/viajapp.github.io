@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-11-02T03:44:38.493Z",
+  "generatedAt": "2026-11-02T11:54:09.125Z",
   "trips": [
-    {
-      "id": "551acc0f-56ef-4f18-b0ac-6397bf5e14c0",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-02T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
-        "verified": true
-      }
-    },
     {
       "id": "65d271d2-b5df-42a4-ae3b-c77545b58803",
       "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
@@ -137,6 +119,40 @@
       "userData": {
         "username": "Martin Pulcini",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "79f80bd0-7803-4011-b37b-eb59118b808b",
+      "driverId": "ededf89a-b48d-4bb1-8957-9a31bc2028be",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-02T16:49:00.000Z",
+      "hora": "16:49",
+      "lugares": 1,
+      "precio": 10000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 7000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "German Ariel Pérez",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fededf89a-b48d-4bb1-8957-9a31bc2028be.jpg?alt=media&token=5d09d11f-2392-4e68-83ce-581651be1bbb",
         "verified": true
       }
     }
