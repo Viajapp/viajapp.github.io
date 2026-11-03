@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-03T04:49:09.027Z",
+  "generatedAt": "2026-11-03T15:40:19.644Z",
   "trips": [
     {
-      "id": "9ea666a2-23fa-40bd-b446-aa248c7db39c",
+      "id": "82b81a54-3846-4c04-9794-c0d776ec9598",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-03T11:00:00.000Z",
+      "fecha": "2026-11-04T11:00:00.000Z",
       "hora": "11:00",
       "lugares": 4,
       "precio": 30000,
@@ -20,11 +20,35 @@
       }
     },
     {
-      "id": "802c0927-9473-44bf-bd0e-cea3310879db",
+      "id": "d84bfd6a-2461-4848-b0f1-45cc75ea6a69",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-03T14:00:00.000Z",
+      "fecha": "2026-11-04T14:00:00.000Z",
+      "hora": "14:00",
+      "lugares": 3,
+      "precio": 8000,
+      "informacion": "viaje en Fiat uno rojo 3 puertas modelo 2005 con Vtv vigente y papeles en regla.",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        }
+      },
+      "userData": {
+        "username": "Martin Pulcini",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "1a3a36f5-7db9-4ab9-8d8a-efc996686e83",
+      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "Miramar",
+      "fecha": "2026-11-04T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 1,
       "precio": 0,
@@ -54,35 +78,11 @@
       }
     },
     {
-      "id": "448bcab0-5c41-471f-8238-a7e1a63c2c0e",
-      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Miramar",
-      "fecha": "2026-11-03T14:00:00.000Z",
-      "hora": "14:00",
-      "lugares": 3,
-      "precio": 8000,
-      "informacion": "viaje en Fiat uno rojo 3 puertas modelo 2005 con Vtv vigente y papeles en regla.",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        }
-      },
-      "userData": {
-        "username": "Martin Pulcini",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
-        "verified": true
-      }
-    },
-    {
-      "id": "b294ca09-d97c-4fc6-a0f0-00ac56735e5b",
+      "id": "ff9eadd9-ecb0-4a45-b5c6-3170705edec9",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Miramar",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-03T15:30:00.000Z",
+      "fecha": "2026-11-04T15:30:00.000Z",
       "hora": "15:30",
       "lugares": 1,
       "precio": 0,
@@ -112,11 +112,11 @@
       }
     },
     {
-      "id": "82b81a54-3846-4c04-9794-c0d776ec9598",
+      "id": "a6e09455-f402-45af-941d-f86032ed377f",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-04T11:00:00.000Z",
+      "fecha": "2026-11-05T11:00:00.000Z",
       "hora": "11:00",
       "lugares": 4,
       "precio": 30000,
