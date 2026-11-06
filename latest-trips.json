@@ -1,40 +1,6 @@
 {
-  "generatedAt": "2026-11-05T21:47:28.199Z",
+  "generatedAt": "2026-11-06T04:31:49.805Z",
   "trips": [
-    {
-      "id": "23438f5a-94e5-4464-8794-dcae0900f34a",
-      "driverId": "2a5d2279-6915-4bc4-8be1-f5c5e7b81405",
-      "nombreOrigen": "Buenos Aires",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-11-05T22:29:00.000Z",
-      "hora": "22:29",
-      "lugares": 1,
-      "precio": 0,
-      "informacion": "viajo en Renault Kangoo con espacio para lo que haya que llevar. tambien tengo rastreador satelital y puedo compartir el estado del viaje en vivo.",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 7000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Nicolas Antonio Grosso",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F2a5d2279-6915-4bc4-8be1-f5c5e7b81405.jpg?alt=media&token=2c0c691d-2d9d-4639-b98b-d7e965786f4f",
-        "verified": true
-      }
-    },
     {
       "id": "42018ed1-2912-4546-9d46-2df28eba9a4a",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -60,8 +26,8 @@
       "nombreDestino": "Mar del Plata",
       "fecha": "2026-11-06T13:30:00.000Z",
       "hora": "13:30",
-      "lugares": 3,
-      "precio": 25000,
+      "lugares": 2,
+      "precio": 20000,
       "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
@@ -127,6 +93,40 @@
           "activo": true,
           "precio": 5000,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        }
+      },
+      "userData": {
+        "username": "Martin Pulcini",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "6f5e763e-f398-464e-8fb4-df9d1c4e41f5",
+      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
+      "nombreOrigen": "Miramar",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-06T15:30:00.000Z",
+      "hora": "15:30",
+      "lugares": 1,
+      "precio": 0,
+      "informacion": "transporte en Fiat uno rojo 3 puertas año 2005. por bultos mayores a 10kg consulte especificando tamaño.",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 6500,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 17000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 40000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
         }
       },
       "userData": {
