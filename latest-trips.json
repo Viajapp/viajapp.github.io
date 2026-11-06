@@ -1,54 +1,75 @@
 {
-  "generatedAt": "2026-11-06T04:31:49.805Z",
+  "generatedAt": "2026-11-06T15:30:23.603Z",
   "trips": [
     {
-      "id": "42018ed1-2912-4546-9d46-2df28eba9a4a",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-06T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
+      "id": "96d377f9-f3ad-4fbf-b9bf-c32b6b714b2d",
+      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
+      "nombreOrigen": "Tandil",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-11-06T18:00:00.000Z",
+      "hora": "18:00",
+      "lugares": 3,
+      "precio": 38000,
+      "informacion": "",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
       "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "username": "Catalina Rojas",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
         "verified": true
       }
     },
     {
-      "id": "fca258e3-a80d-406c-b7eb-150da11ce14f",
-      "driverId": "545ff754-b5a7-4e38-aece-4ff1e8176ea3",
-      "nombreOrigen": "Olavarría",
+      "id": "f7ddcaa0-7bb2-4d55-94da-bb2da04b38ec",
+      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
+      "nombreOrigen": "Tres Arroyos",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-06T13:30:00.000Z",
-      "hora": "13:30",
-      "lugares": 2,
-      "precio": 20000,
+      "fecha": "2026-11-06T20:00:00.000Z",
+      "hora": "20:00",
+      "lugares": 4,
+      "precio": 40000,
       "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 20000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
         "mediano": {
           "activo": true,
-          "precio": 10000,
+          "precio": 20000,
           "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
         }
       },
       "userData": {
-        "username": "Rosario Del Pilar Cuéllar Moreno",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F545ff754-b5a7-4e38-aece-4ff1e8176ea3.jpg?alt=media&token=a1c497ea-81ee-42e7-9a11-f220b9762207",
+        "username": "cristian swaels",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
         "verified": true
       }
     },
     {
-      "id": "b474597c-aa84-4c18-8496-5495978972ff",
+      "id": "948f2ffd-7fa6-4cae-be59-7326a8f32686",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-06T14:00:00.000Z",
+      "fecha": "2026-11-07T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 1,
       "precio": 0,
@@ -78,11 +99,11 @@
       }
     },
     {
-      "id": "079d618b-ada8-4af8-ac50-ddaf050c041c",
+      "id": "ebce3945-c84e-4b1f-b6ef-bad01d7c58ca",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-06T14:00:00.000Z",
+      "fecha": "2026-11-07T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 3,
       "precio": 8000,
@@ -102,11 +123,11 @@
       }
     },
     {
-      "id": "6f5e763e-f398-464e-8fb4-df9d1c4e41f5",
+      "id": "8a9dbc9b-a86f-4527-9fb8-0a1a25e9357e",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Miramar",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-06T15:30:00.000Z",
+      "fecha": "2026-11-07T15:30:00.000Z",
       "hora": "15:30",
       "lugares": 1,
       "precio": 0,
