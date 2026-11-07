@@ -1,12 +1,59 @@
 {
-  "generatedAt": "2026-11-07T10:54:07.166Z",
+  "generatedAt": "2026-11-07T17:14:29.804Z",
   "trips": [
     {
-      "id": "948f2ffd-7fa6-4cae-be59-7326a8f32686",
+      "id": "62e50b7e-b775-4d0e-bc8c-170b73e75cdb",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-09T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "ada37a55-c166-4d35-be7f-7086918177ba",
+      "driverId": "3187cffc-0b04-4576-a9f8-6682651e8c2a",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-09T12:00:00.000Z",
+      "hora": "12:00",
+      "lugares": 3,
+      "precio": 15000,
+      "informacion": "solo los lunes\n\n\n",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 8000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 10000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        }
+      },
+      "userData": {
+        "username": "Erica Alberto",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3187cffc-0b04-4576-a9f8-6682651e8c2a.jpg?alt=media&token=f2654a43-58fb-49a4-9a92-2a6e1ab01949",
+        "verified": true
+      }
+    },
+    {
+      "id": "92b9e0e9-39d2-49b2-a912-97a6065c0606",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-07T14:00:00.000Z",
+      "fecha": "2026-11-09T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 1,
       "precio": 0,
@@ -36,11 +83,11 @@
       }
     },
     {
-      "id": "ebce3945-c84e-4b1f-b6ef-bad01d7c58ca",
+      "id": "6c6468b0-037f-4cc0-9962-5f0b9b346dc1",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-07T14:00:00.000Z",
+      "fecha": "2026-11-09T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 3,
       "precio": 8000,
@@ -60,11 +107,11 @@
       }
     },
     {
-      "id": "8a9dbc9b-a86f-4527-9fb8-0a1a25e9357e",
+      "id": "36c0eb28-4eee-4b3c-befa-04fa06524a77",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Miramar",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-07T15:30:00.000Z",
+      "fecha": "2026-11-09T15:30:00.000Z",
       "hora": "15:30",
       "lugares": 1,
       "precio": 0,
@@ -90,58 +137,6 @@
       "userData": {
         "username": "Martin Pulcini",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
-        "verified": true
-      }
-    },
-    {
-      "id": "de97efbd-3df5-4715-bee4-c7974656f12d",
-      "driverId": "2a5d2279-6915-4bc4-8be1-f5c5e7b81405",
-      "nombreOrigen": "Rosario",
-      "nombreDestino": "Buenos Aires",
-      "fecha": "2026-11-07T15:30:00.000Z",
-      "hora": "15:30",
-      "lugares": 1,
-      "precio": 0,
-      "informacion": "viajo en Renault Kangoo con espacio para lo que haya que llevar. tambien tengo rastreador satelital y puedo compartir el estado del viaje en vivo.",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 5000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 7000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 10000,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Nicolas Antonio Grosso",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F2a5d2279-6915-4bc4-8be1-f5c5e7b81405.jpg?alt=media&token=2c0c691d-2d9d-4639-b98b-d7e965786f4f",
-        "verified": true
-      }
-    },
-    {
-      "id": "62e50b7e-b775-4d0e-bc8c-170b73e75cdb",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-09T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
         "verified": true
       }
     }
