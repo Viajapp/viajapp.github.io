@@ -1,12 +1,30 @@
 {
-  "generatedAt": "2026-11-12T12:01:17.886Z",
+  "generatedAt": "2026-11-12T21:58:54.359Z",
   "trips": [
     {
-      "id": "eeab0e33-e291-4a38-b9de-56e14dbd0c24",
+      "id": "623fe7c6-44eb-4313-9c1a-a7b0be58ca04",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-13T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
+        "verified": true
+      }
+    },
+    {
+      "id": "e201e78a-06be-4c46-aebd-d2a86e0e62a4",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-12T14:00:00.000Z",
+      "fecha": "2026-11-13T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 1,
       "precio": 0,
@@ -36,11 +54,11 @@
       }
     },
     {
-      "id": "96674adf-5357-460a-aac4-3998cc1ab7e5",
+      "id": "20370c35-08c2-469c-80c9-3f14417601e1",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-12T14:00:00.000Z",
+      "fecha": "2026-11-13T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 3,
       "precio": 8000,
@@ -60,11 +78,11 @@
       }
     },
     {
-      "id": "3cb3e193-9f40-4587-9dad-b8428c8f905b",
+      "id": "da38142c-8174-4fc1-b9a7-1aaf27c14051",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Miramar",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-12T15:30:00.000Z",
+      "fecha": "2026-11-13T15:30:00.000Z",
       "hora": "15:30",
       "lugares": 1,
       "precio": 0,
@@ -94,44 +112,36 @@
       }
     },
     {
-      "id": "623fe7c6-44eb-4313-9c1a-a7b0be58ca04",
-      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-13T11:00:00.000Z",
-      "hora": "11:00",
-      "lugares": 4,
-      "precio": 30000,
-      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Agustín Guardia",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
-        "verified": true
-      }
-    },
-    {
-      "id": "20370c35-08c2-469c-80c9-3f14417601e1",
-      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
-      "nombreOrigen": "Mar del Plata",
-      "nombreDestino": "Miramar",
-      "fecha": "2026-11-13T14:00:00.000Z",
-      "hora": "14:00",
+      "id": "84bdc2e3-9fb7-4277-8461-4be04bf2b0fe",
+      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
+      "nombreOrigen": "Tandil",
+      "nombreDestino": "Rosario",
+      "fecha": "2026-11-13T18:00:00.000Z",
+      "hora": "18:00",
       "lugares": 3,
-      "precio": 8000,
-      "informacion": "viaje en Fiat uno rojo 3 puertas modelo 2005 con Vtv vigente y papeles en regla.",
+      "precio": 38000,
+      "informacion": "",
       "aceptaPaquetes": true,
       "paquetesConfig": {
         "chico": {
           "activo": true,
-          "precio": 5000,
+          "precio": 0,
           "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 0,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
         }
       },
       "userData": {
-        "username": "Martin Pulcini",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "username": "Catalina Rojas",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
         "verified": true
       }
     }
