@@ -1,24 +1,6 @@
 {
-  "generatedAt": "2026-11-11T19:05:05.345Z",
+  "generatedAt": "2026-11-12T01:44:58.294Z",
   "trips": [
-    {
-      "id": "30b018df-4d26-47eb-9094-f83ab2e35c9f",
-      "driverId": "3ee188ba-5f45-441b-90c1-b6882c48a0bf",
-      "nombreOrigen": "Necochea",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-11-11T21:18:00.000Z",
-      "hora": "21:18",
-      "lugares": 2,
-      "precio": 30000,
-      "informacion": "",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Javier Zubillaga",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F3ee188ba-5f45-441b-90c1-b6882c48a0bf.jpg?alt=media&token=9c4bee9e-14de-4043-aa2e-4cee8741f605",
-        "verified": true
-      }
-    },
     {
       "id": "c1b5524b-6470-4595-86d1-83b57b50835c",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
@@ -126,6 +108,24 @@
       "userData": {
         "username": "Martin Pulcini",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "623fe7c6-44eb-4313-9c1a-a7b0be58ca04",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-13T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
         "verified": true
       }
     }
