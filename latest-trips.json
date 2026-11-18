@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-18T05:25:07.516Z",
+  "generatedAt": "2026-11-18T16:51:04.360Z",
   "trips": [
     {
-      "id": "1aeabfcc-003f-4c22-bba8-70537953cde6",
+      "id": "d6f3b7c6-bb1a-4d9f-90aa-a8e6e4e64d87",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-18T11:00:00.000Z",
+      "fecha": "2026-11-19T11:00:00.000Z",
       "hora": "11:00",
       "lugares": 4,
       "precio": 30000,
@@ -20,11 +20,11 @@
       }
     },
     {
-      "id": "adf1fc33-549d-4dce-86c0-b07f1b22b991",
+      "id": "e4c0ef84-adaa-4041-af78-cc893c438dec",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-18T14:00:00.000Z",
+      "fecha": "2026-11-19T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 3,
       "precio": 8000,
@@ -44,11 +44,11 @@
       }
     },
     {
-      "id": "633634bf-9e6c-4d5b-be6c-f8f41082a848",
+      "id": "ef084c5d-667c-447a-aff8-4569f2b19334",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Mar del Plata",
       "nombreDestino": "Miramar",
-      "fecha": "2026-11-18T14:00:00.000Z",
+      "fecha": "2026-11-19T14:00:00.000Z",
       "hora": "14:00",
       "lugares": 1,
       "precio": 0,
@@ -78,11 +78,11 @@
       }
     },
     {
-      "id": "93f13a6b-18fb-422c-90e7-c172aa5a744e",
+      "id": "c3c691a0-0a65-42ac-bda8-8547c52936f5",
       "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
       "nombreOrigen": "Miramar",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-18T15:30:00.000Z",
+      "fecha": "2026-11-19T15:30:00.000Z",
       "hora": "15:30",
       "lugares": 1,
       "precio": 0,
@@ -112,11 +112,11 @@
       }
     },
     {
-      "id": "d6f3b7c6-bb1a-4d9f-90aa-a8e6e4e64d87",
+      "id": "1faa1493-373e-44d2-841d-5c23988e861b",
       "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
       "nombreOrigen": "Necochea",
       "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-19T11:00:00.000Z",
+      "fecha": "2026-11-20T11:00:00.000Z",
       "hora": "11:00",
       "lugares": 4,
       "precio": 30000,
