@@ -1,87 +1,6 @@
 {
-  "generatedAt": "2026-11-20T16:32:57.999Z",
+  "generatedAt": "2026-11-21T00:59:54.761Z",
   "trips": [
-    {
-      "id": "e16f9002-8e5e-41d7-b284-d264bd87f957",
-      "driverId": "29ce139f-2b06-4956-a920-7af82e230576",
-      "nombreOrigen": "Tandil",
-      "nombreDestino": "Rosario",
-      "fecha": "2026-11-20T18:00:00.000Z",
-      "hora": "18:00",
-      "lugares": 3,
-      "precio": 38000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        },
-        "grande": {
-          "activo": true,
-          "precio": 0,
-          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
-        }
-      },
-      "userData": {
-        "username": "Catalina Rojas",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F29ce139f-2b06-4956-a920-7af82e230576.jpg?alt=media&token=040abeac-bb79-4f3d-86ae-4d01b3700ca1",
-        "verified": true
-      }
-    },
-    {
-      "id": "288ff6a1-81b5-4e52-b080-f26c56e12554",
-      "driverId": "f0062cf3-0d5b-4120-bfd4-d11c6001d3c3",
-      "nombreOrigen": "Tres Arroyos",
-      "nombreDestino": "Mar del Plata",
-      "fecha": "2026-11-20T20:00:00.000Z",
-      "hora": "20:00",
-      "lugares": 4,
-      "precio": 40000,
-      "informacion": "",
-      "aceptaPaquetes": true,
-      "paquetesConfig": {
-        "chico": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
-        },
-        "mediano": {
-          "activo": true,
-          "precio": 20000,
-          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
-        }
-      },
-      "userData": {
-        "username": "cristian swaels",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Ff0062cf3-0d5b-4120-bfd4-d11c6001d3c3.jpg?alt=media&token=e9a2593d-66e3-4b61-bf2c-a8488e1d768f",
-        "verified": true
-      }
-    },
-    {
-      "id": "8f361222-b943-4232-ae96-4973d9354103",
-      "driverId": "6c1a0a72-8b9c-4b1e-a2bc-a58266ae3b2d",
-      "nombreOrigen": "Río Cuarto",
-      "nombreDestino": "Mendoza",
-      "fecha": "2026-11-20T23:47:00.000Z",
-      "hora": "23:47",
-      "lugares": 3,
-      "precio": 35000,
-      "informacion": "valija chica o bolso por persona ",
-      "aceptaPaquetes": false,
-      "paquetesConfig": null,
-      "userData": {
-        "username": "Manavella María José",
-        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2F6c1a0a72-8b9c-4b1e-a2bc-a58266ae3b2d.jpg?alt=media&token=5bed0f2a-6a6d-43c5-8804-fdd8a2958cd3",
-        "verified": false
-      }
-    },
     {
       "id": "9e2ece8c-229f-4027-89d2-b6b33b9c8d84",
       "driverId": "8e082d35-604c-44cc-b650-9a4603a8a405",
@@ -127,6 +46,92 @@
       "userData": {
         "username": "Martin Pulcini",
         "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "9679bda8-717f-463f-aa59-ef9d96fd8517",
+      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
+      "nombreOrigen": "Mar del Plata",
+      "nombreDestino": "Miramar",
+      "fecha": "2026-11-21T14:00:00.000Z",
+      "hora": "14:00",
+      "lugares": 1,
+      "precio": 0,
+      "informacion": "transporte en Fiat uno rojo 3 puertas año 2005. consultar por bultos de más de 10kg y especificar tamaño",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 5000,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 15000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 30000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Martin Pulcini",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "92829b76-41c1-47c3-947b-e12bb107db10",
+      "driverId": "bf70d5bc-98f6-4985-aeda-d7773e1c7417",
+      "nombreOrigen": "Miramar",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-21T15:30:00.000Z",
+      "hora": "15:30",
+      "lugares": 1,
+      "precio": 0,
+      "informacion": "transporte en Fiat uno rojo 3 puertas año 2005. por bultos mayores a 10kg consulte especificando tamaño.",
+      "aceptaPaquetes": true,
+      "paquetesConfig": {
+        "chico": {
+          "activo": true,
+          "precio": 6500,
+          "descripcion": "Hasta 30x30x30 cm, máximo 5 kg"
+        },
+        "mediano": {
+          "activo": true,
+          "precio": 17000,
+          "descripcion": "Hasta 50x50x50 cm, máximo 15 kg"
+        },
+        "grande": {
+          "activo": true,
+          "precio": 40000,
+          "descripcion": "Hasta 80x80x80 cm, máximo 30 kg"
+        }
+      },
+      "userData": {
+        "username": "Martin Pulcini",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fbf70d5bc-98f6-4985-aeda-d7773e1c7417.jpg?alt=media&token=7921c3b1-42ce-4535-8294-26d054050f2a",
+        "verified": true
+      }
+    },
+    {
+      "id": "4ea2c526-029a-4e52-b752-e780ce533b49",
+      "driverId": "b2e9447e-e41a-49be-ad49-17ca42c60944",
+      "nombreOrigen": "Necochea",
+      "nombreDestino": "Mar del Plata",
+      "fecha": "2026-11-23T11:00:00.000Z",
+      "hora": "11:00",
+      "lugares": 4,
+      "precio": 30000,
+      "informacion": "Cuento con auto habilitado para transporte de pasajeros (taxi)",
+      "aceptaPaquetes": false,
+      "paquetesConfig": null,
+      "userData": {
+        "username": "Agustín Guardia",
+        "profileImageUrl": "https://firebasestorage.googleapis.com/v0/b/viajapp-fir.appspot.com/o/profile_images%2Fb2e9447e-e41a-49be-ad49-17ca42c60944.jpg?alt=media&token=bd6cedb8-33fa-417d-8428-20a53d5c8be8",
         "verified": true
       }
     }
